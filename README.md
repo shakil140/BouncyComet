@@ -58,6 +58,17 @@ Hosted on **GitHub Pages**, served from the `main` branch, root folder.
 - Preview URL: <https://shakil140.github.io/BouncyComet/>
 - Live URL: <https://bouncycomet.com>
 
+### Step 0 - make the repo public
+
+GitHub Pages only serves **public** repos on the free plan. This repo is currently private,
+so Pages cannot be turned on yet.
+
+**Settings -> General -> scroll to Danger Zone -> Change repository visibility -> Make public.**
+
+(Nothing secret is in here: it is a marketing site. If you would rather keep it private you
+need GitHub Pro, or deploy to Cloudflare Pages / Netlify instead, which serve private repos
+on their free tiers.)
+
 ### First push
 
 ```bash
