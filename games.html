@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Games | Bouncy Comet</title>
+  <meta name="description" content="DiceBack, our 2 player dice game, is in development, and puzzle, hypercasual, arcade, hybrid-casual and kids prototypes are taking shape in the lab.">
+  <link rel="canonical" href="https://bouncycomet.com/games.html">
+  <meta name="theme-color" content="#071A33">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bouncy Comet">
+  <meta property="og:title" content="Games | Bouncy Comet">
+  <meta property="og:description" content="DiceBack, our 2 player dice game, is in development, and puzzle, hypercasual, arcade, hybrid-casual and kids prototypes are taking shape in the lab.">
+  <meta property="og:url" content="https://bouncycomet.com/games.html">
+  <meta property="og:image" content="https://bouncycomet.com/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Games | Bouncy Comet">
+  <meta name="twitter:description" content="DiceBack, our 2 player dice game, is in development, and puzzle, hypercasual, arcade, hybrid-casual and kids prototypes are taking shape in the lab.">
+  <meta name="twitter:image" content="https://bouncycomet.com/assets/img/og-image.jpg">
+  <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/icons/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap">
+  <!-- Set before first paint so .reveal blocks are only hidden when JS can reveal them. -->
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Page-scoped tweak only. No new class is introduced and style.css is untouched.
+       The shared .hero__inner grid centre-aligns its text below 900px, which is right
+       for the home hero but wrong for the featured card here, whose highlight list
+       must stay left-aligned to stay readable. .hero__art keeps its own centring. */
+    @media (max-width: 899px) {
+      #featured .hero__inner { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="siteHeader">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="nav__logo" href="index.html" aria-label="Bouncy Comet - home">
+      <svg class="nav__logo-mark" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="bcTail" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0" stop-color="#FFC61A" stop-opacity="0"/>
+            <stop offset="1" stop-color="#FFC61A" stop-opacity=".95"/>
+          </linearGradient>
+          <radialGradient id="bcHead" cx=".35" cy=".3" r=".75">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFC61A"/>
+          </radialGradient>
+        </defs>
+        <path d="M6 58C6 40 18 20 40 10l12 12C42 44 24 56 6 58Z" fill="url(#bcTail)"/>
+        <circle cx="45" cy="19" r="13" fill="url(#bcHead)"/>
+      </svg>
+      <span class="nav__logo-text">Bouncy<span>Comet</span></span>
+    </a>
+    <button class="nav__burger" id="navBurger" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__links" id="navLinks">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link is-active" href="games.html" aria-current="page">Games</a>
+      <a class="nav__link" href="diceback.html">DiceBack</a>
+      <a class="nav__link" href="about.html">About</a>
+      <a class="nav__cta btn btn--primary" href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ===================================================================
+       PAGE HEADER - compact dark band, not a full hero
+       =================================================================== -->
+  <section class="section section--dark section--tight">
+    <div class="wrap">
+      <p class="eyebrow">Our slate</p>
+      <h1 class="h1 balance">Our Games</h1>
+      <p class="lead">One game in development, five genres on the bench. This page is the whole list, with nothing dressed up as bigger than it is. When something ships, it appears here first.</p>
+      <div class="pill-row mt-5">
+        <span class="pill">Puzzle</span>
+        <span class="pill">Hypercasual</span>
+        <span class="pill">Arcade</span>
+        <span class="pill">Hybrid-casual</span>
+        <span class="pill">Multiplayer</span>
+        <span class="pill">Kids</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FEATURED - DiceBack as one large horizontal card
+       =================================================================== -->
+  <section class="section" id="featured">
+    <div class="wrap">
+      <article class="card reveal">
+        <div class="hero__inner">
+          <div>
+            <p class="eyebrow">Featured title</p>
+            <h2 class="h2">DiceBack - 2 Player Dice Game</h2>
+            <p class="lead">Roll. Think. Bounce. Win! A head to head dice duel where small moves win big games, built for one quick round on the bus and ten more at home.</p>
+
+            <div class="pill-row mt-4">
+              <span class="badge">In development</span>
+              <span class="pill">Multiplayer</span>
+              <span class="pill">Board</span>
+              <span class="pill">Casual</span>
+            </div>
+
+            <div class="prose">
+              <ul>
+                <li><strong>Three rules, one round to learn them.</strong> Roll the dice, send that many tokens to the other side, clear your side to win.</li>
+                <li><strong>Three ways to play.</strong> VS Bot against a smart opponent, 2 Players sharing one device, or Quick Match against a random player.</li>
+                <li><strong>Reasons to come back.</strong> A seven day reward ladder, token and dice skins, achievements and a weekly leaderboard.</li>
+                <li><strong>No account needed.</strong> Jump in as a guest, or sign in to keep your matches, win streak and level progress.</li>
+              </ul>
+            </div>
+
+            <div class="btn-row mt-5">
+              <a class="btn btn--primary btn--lg" href="diceback.html">See DiceBack</a>
+            </div>
+            <div class="btn-row mt-4">
+              <button class="btn btn--soon" type="button" disabled>App Store - coming soon</button>
+              <button class="btn btn--soon" type="button" disabled>Google Play - coming soon</button>
+            </div>
+          </div>
+
+          <div class="hero__art">
+            <div class="phone">
+              <picture>
+                <source type="image/webp" srcset="assets/img/diceback-menu.webp 1x, assets/img/diceback-menu@2x.webp 2x">
+                <img src="assets/img/diceback-menu.jpg" srcset="assets/img/diceback-menu.jpg 1x, assets/img/diceback-menu@2x.jpg 2x" width="540" height="959" alt="DiceBack main menu screen with the Play button" loading="eager" fetchpriority="high" decoding="async">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       IN THE LAB - honest, forward-looking genre directions.
+       Nothing here is an announced product.
+       =================================================================== -->
+  <section class="section section--tint" id="lab">
+    <div class="wrap">
+      <div class="section__head section__head--center">
+        <p class="eyebrow">In the lab</p>
+        <h2 class="h2 balance">What we are prototyping next</h2>
+        <p class="lead">None of these are announced games. They are the directions we build in, the kind of thing we are sketching and play testing right now. The moment one of them earns a name and a release date, it moves up this page.</p>
+      </div>
+
+      <div class="grid grid--3 reveal">
+        <article class="card">
+          <div class="btn-row mb-4"><span class="badge badge--blue">In concept</span></div>
+          <span class="card__icon" aria-hidden="true">&#129513;</span>
+          <h3 class="card__title">Puzzle</h3>
+          <p class="card__text">Short, clever runs you can finish while the kettle boils. We are sketching boards where one simple rule generates a hundred different problems, plus a daily challenge worth opening the app for.</p>
+        </article>
+
+        <article class="card">
+          <div class="btn-row mb-4"><span class="badge badge--blue">Prototype</span></div>
+          <span class="card__icon" aria-hidden="true">&#9889;</span>
+          <h3 class="card__title">Hypercasual</h3>
+          <p class="card__text">One input, one rule, understood in under three seconds. We build these fast and test them faster, and we only keep the loops that still feel good on the fiftieth attempt.</p>
+        </article>
+
+        <article class="card">
+          <div class="btn-row mb-4"><span class="badge badge--blue">Prototype</span></div>
+          <span class="card__icon" aria-hidden="true">&#128377;</span>
+          <h3 class="card__title">Arcade</h3>
+          <p class="card__text">Thirty second rounds, a score that stings, and a retry button you hit before you have finished being annoyed. We are testing timing and reaction ideas with chunky feedback on every tap.</p>
+        </article>
+
+        <article class="card">
+          <div class="btn-row mb-4"><span class="badge badge--blue">In concept</span></div>
+          <span class="card__icon" aria-hidden="true">&#128200;</span>
+          <h3 class="card__title">Hybrid-casual</h3>
+          <p class="card__text">An arcade core wrapped in progression that gives you a reason to open the game tomorrow. We are working out how far a simple loop can stretch before it stops being simple.</p>
+        </article>
+
+        <article class="card">
+          <div class="btn-row mb-4"><span class="badge badge--blue">In concept</span></div>
+          <span class="card__icon" aria-hidden="true">&#127880;</span>
+          <h3 class="card__title">Kids &amp; Family</h3>
+          <p class="card__text">Bright, gentle games a small child can play without help and a parent can hand over without worrying. No pressure timers, no dark patterns, no shouting. Just something friendly to poke at.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       CTA BAND
+       =================================================================== -->
+  <section class="cta-band">
+    <div class="wrap">
+      <h2 class="h2">Want to publish with us?</h2>
+      <p class="lead">We are a new studio with a finished game loop and a full pipeline behind it. If you publish casual mobile titles, tell us what you are looking for and we will send a playable build and straight answers about where the game is.</p>
+      <div class="btn-row">
+        <a class="btn btn--gold btn--lg" href="contact.html">Start a conversation</a>
+        <a class="btn btn--light btn--lg btn--wrap" href="mailto:partners@bouncycomet.com">partners@bouncycomet.com</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <a class="nav__logo" href="index.html" aria-label="Bouncy Comet - home">
+        <svg class="nav__logo-mark" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path d="M6 58C6 40 18 20 40 10l12 12C42 44 24 56 6 58Z" fill="#FFC61A" opacity=".55"/>
+          <circle cx="45" cy="19" r="13" fill="#FFE9A8"/>
+        </svg>
+        <span class="nav__logo-text">Bouncy<span>Comet</span></span>
+      </a>
+      <p class="footer__tag">We make bright, bouncy games worth coming back to - puzzle, arcade, hypercasual, hybrid-casual, multiplayer and games for kids.</p>
+    </div>
+    <div class="footer__col">
+      <h2 class="footer__head">Studio</h2>
+      <ul class="footer__links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h2 class="footer__head">DiceBack</h2>
+      <ul class="footer__links">
+        <li><a href="diceback.html">Overview</a></li>
+        <li><a href="diceback.html#how-to-play">How to play</a></li>
+        <li><a href="diceback.html#screens">Screenshots</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h2 class="footer__head">Legal</h2>
+      <ul class="footer__links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="mailto:hello@bouncycomet.com">hello@bouncycomet.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <p>&copy; <span id="year">2026</span> Bouncy Comet. All rights reserved.</p>
+    <p>Made with dice, coffee and far too many test rolls.</p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

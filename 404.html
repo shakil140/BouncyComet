@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 - Page Not Found | Bouncy Comet</title>
+  <meta name="description" content="This page rolled off the board. Nothing lives at this address on bouncycomet.com, but the main menu and the DiceBack game page are one tap away.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#071A33">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bouncy Comet">
+  <meta property="og:title" content="404 - Page Not Found | Bouncy Comet">
+  <meta property="og:description" content="This page rolled off the board. Nothing lives at this address on bouncycomet.com, but the main menu and the DiceBack game page are one tap away.">
+  <meta property="og:image" content="https://bouncycomet.com/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="404 - Page Not Found | Bouncy Comet">
+  <meta name="twitter:description" content="This page rolled off the board. Nothing lives at this address on bouncycomet.com, but the main menu and the DiceBack game page are one tap away.">
+  <meta name="twitter:image" content="https://bouncycomet.com/assets/img/og-image.jpg">
+  <link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/icons/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap">
+  <!-- Set before first paint so .reveal blocks are only hidden when JS can reveal them. -->
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    /* Page-local only. style.css has no full-height hero variant, and the 404 page
+       is the one page with too little content to fill the viewport on its own.
+       Composed from existing tokens; nothing here overrides a shared class. */
+    .hero--404 {
+      display: flex;
+      align-items: center;
+      min-height: calc(100vh - var(--header-h));
+      min-height: calc(100svh - var(--header-h));
+    }
+    .hero--404 > .wrap { width: 100%; }
+  </style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="siteHeader">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="nav__logo" href="/index.html" aria-label="Bouncy Comet - home">
+      <svg class="nav__logo-mark" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="bcTail" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0" stop-color="#FFC61A" stop-opacity="0"/>
+            <stop offset="1" stop-color="#FFC61A" stop-opacity=".95"/>
+          </linearGradient>
+          <radialGradient id="bcHead" cx=".35" cy=".3" r=".75">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFC61A"/>
+          </radialGradient>
+        </defs>
+        <path d="M6 58C6 40 18 20 40 10l12 12C42 44 24 56 6 58Z" fill="url(#bcTail)"/>
+        <circle cx="45" cy="19" r="13" fill="url(#bcHead)"/>
+      </svg>
+      <span class="nav__logo-text">Bouncy<span>Comet</span></span>
+    </a>
+    <button class="nav__burger" id="navBurger" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__links" id="navLinks">
+      <a class="nav__link" href="/index.html">Home</a>
+      <a class="nav__link" href="/games.html">Games</a>
+      <a class="nav__link" href="/diceback.html">DiceBack</a>
+      <a class="nav__link" href="/about.html">About</a>
+      <a class="nav__cta btn btn--primary" href="/contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero hero--404">
+    <div class="wrap hero__inner reveal">
+      <div class="hero__copy">
+        <p class="eyebrow">Error 404</p>
+        <h1 class="h1 balance">404 - that roll missed the board</h1>
+        <p class="lead">Sorry about that. The page you asked for is not here, so either the link is out of date or a letter went astray on the way in. Nothing is broken on your end. Let's get you back to a screen that actually exists.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="/index.html">Back to the main menu</a>
+          <a class="btn btn--ghost btn--lg" href="/diceback.html">See DiceBack</a>
+        </div>
+        <div class="pill-row mt-5">
+          <span class="pill">Roll. Think. Bounce. Win!</span>
+        </div>
+      </div>
+
+      <div class="hero__art">
+        <div class="phone phone--tilt-r">
+          <picture>
+            <source type="image/webp" srcset="/assets/img/diceback-lose.webp 1x, /assets/img/diceback-lose@2x.webp 2x">
+            <img src="/assets/img/diceback-lose.jpg" srcset="/assets/img/diceback-lose.jpg 1x, /assets/img/diceback-lose@2x.jpg 2x" width="540" height="959" alt="DiceBack You Lose screen with a Retry button" loading="eager" fetchpriority="high" decoding="async">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <a class="nav__logo" href="/index.html" aria-label="Bouncy Comet - home">
+        <svg class="nav__logo-mark" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path d="M6 58C6 40 18 20 40 10l12 12C42 44 24 56 6 58Z" fill="#FFC61A" opacity=".55"/>
+          <circle cx="45" cy="19" r="13" fill="#FFE9A8"/>
+        </svg>
+        <span class="nav__logo-text">Bouncy<span>Comet</span></span>
+      </a>
+      <p class="footer__tag">We make bright, bouncy games worth coming back to - puzzle, arcade, hypercasual, hybrid-casual, multiplayer and games for kids.</p>
+    </div>
+    <div class="footer__col">
+      <h2 class="footer__head">Studio</h2>
+      <ul class="footer__links">
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/games.html">Games</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h2 class="footer__head">DiceBack</h2>
+      <ul class="footer__links">
+        <li><a href="/diceback.html">Overview</a></li>
+        <li><a href="/diceback.html#how-to-play">How to play</a></li>
+        <li><a href="/diceback.html#screens">Screenshots</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h2 class="footer__head">Legal</h2>
+      <ul class="footer__links">
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/terms.html">Terms of Service</a></li>
+        <li><a href="mailto:hello@bouncycomet.com">hello@bouncycomet.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <p>&copy; <span id="year">2026</span> Bouncy Comet. All rights reserved.</p>
+    <p>Made with dice, coffee and far too many test rolls.</p>
+  </div>
+</footer>
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>

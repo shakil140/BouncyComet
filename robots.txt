@@ -1,0 +1,5 @@
+# bouncycomet.com
+User-agent: *
+Allow: /
+
+Sitemap: https://bouncycomet.com/sitemap.xml

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DiceBack - 2 Player Dice Game | Bouncy Comet</title>
+  <meta name="description" content="DiceBack is a 2 player dice game in development at Bouncy Comet. Roll, send tokens, clear your side to win. VS Bot, 2 Players and Quick Match modes.">
+  <link rel="canonical" href="https://bouncycomet.com/diceback.html">
+  <meta name="theme-color" content="#071A33">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bouncy Comet">
+  <meta property="og:title" content="DiceBack - 2 Player Dice Game | Bouncy Comet">
+  <meta property="og:description" content="DiceBack is a 2 player dice game in development at Bouncy Comet. Roll, send tokens, clear your side to win. VS Bot, 2 Players and Quick Match modes.">
+  <meta property="og:url" content="https://bouncycomet.com/diceback.html">
+  <meta property="og:image" content="https://bouncycomet.com/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DiceBack - 2 Player Dice Game | Bouncy Comet">
+  <meta name="twitter:description" content="DiceBack is a 2 player dice game in development at Bouncy Comet. Roll, send tokens, clear your side to win. VS Bot, 2 Players and Quick Match modes.">
+  <meta name="twitter:image" content="https://bouncycomet.com/assets/img/og-image.jpg">
+  <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/icons/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap">
+  <!-- Set before first paint so .reveal blocks are only hidden when JS can reveal them. -->
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* The FAQ reuses <details class="card"> with .card__title on the <summary>.
+       Two things the shared card styles cannot express, so they live here
+       rather than in style.css. No new class names are introduced. */
+    /* The card's padding lives on .card, so the summary's own hit area was
+       just its line box (~24px). Give it a real 44px touch target. */
+    .card > summary {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: var(--s-3);
+      min-height: 44px;
+      padding-block: var(--s-3);
+      margin-block: calc(var(--s-3) * -1) 0;
+    }
+    .card[open] > summary { margin-bottom: var(--s-3); }
+  </style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="siteHeader">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="nav__logo" href="index.html" aria-label="Bouncy Comet - home">
+      <svg class="nav__logo-mark" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="bcTail" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0" stop-color="#FFC61A" stop-opacity="0"/>
+            <stop offset="1" stop-color="#FFC61A" stop-opacity=".95"/>
+          </linearGradient>
+          <radialGradient id="bcHead" cx=".35" cy=".3" r=".75">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFC61A"/>
+          </radialGradient>
+        </defs>
+        <path d="M6 58C6 40 18 20 40 10l12 12C42 44 24 56 6 58Z" fill="url(#bcTail)"/>
+        <circle cx="45" cy="19" r="13" fill="url(#bcHead)"/>
+      </svg>
+      <span class="nav__logo-text">Bouncy<span>Comet</span></span>
+    </a>
+    <button class="nav__burger" id="navBurger" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__links" id="navLinks">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="games.html">Games</a>
+      <a class="nav__link is-active" href="diceback.html" aria-current="page">DiceBack</a>
+      <a class="nav__link" href="about.html">About</a>
+      <a class="nav__cta btn btn--primary" href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ===================================================================
+       1  HERO
+       =================================================================== -->
+  <section class="hero section--dark">
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">In development</p>
+        <h1 class="h1 balance">DiceBack</h1>
+        <p class="h3">2 Player Dice Game</p>
+        <p class="h2 mt-4">Roll. Think. Bounce. Win!</p>
+        <p class="lead">One board, two sides, three rules. Roll the dice, send that many tokens across to your opponent, and race to clear your own side first. Easy to pick up in a single round, hard to put down after it. Small moves, big wins.</p>
+        <div class="btn-row">
+          <button class="btn btn--soon btn--lg" type="button" disabled>App Store - coming soon</button>
+          <button class="btn btn--soon btn--lg" type="button" disabled>Google Play - coming soon</button>
+        </div>
+        <p class="muted mt-4">Coming soon to iOS and Android. No release date announced yet.</p>
+        <div class="pill-row mt-5">
+          <span class="pill">3 rules</span>
+          <span class="pill">3 game modes</span>
+          <span class="pill">Guest play, no account needed</span>
+        </div>
+      </div>
+
+      <div class="hero__art">
+        <div class="phone phone--tilt-l">
+          <picture>
+            <source type="image/webp" srcset="assets/img/diceback-menu.webp 1x, assets/img/diceback-menu@2x.webp 2x">
+            <img src="assets/img/diceback-menu.jpg" srcset="assets/img/diceback-menu.jpg 1x, assets/img/diceback-menu@2x.jpg 2x" width="540" height="959" alt="DiceBack main menu screen with the Play button" loading="eager" fetchpriority="high" decoding="async">
+          </picture>
+        </div>
+        <div class="phone phone--tilt-r">
+          <picture>
+            <source type="image/webp" srcset="assets/img/diceback-gameplay.webp 1x, assets/img/diceback-gameplay@2x.webp 2x">
+            <img src="assets/img/diceback-gameplay.jpg" srcset="assets/img/diceback-gameplay.jpg 1x, assets/img/diceback-gameplay@2x.jpg 2x" width="540" height="959" alt="DiceBack board mid-match showing the Your Turn prompt" loading="lazy" decoding="async">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       2  HOW TO PLAY
+       =================================================================== -->
+  <section class="section" id="how-to-play">
+    <div class="wrap">
+      <div class="hero__inner reveal">
+        <div class="section__head">
+          <p class="eyebrow">How to play</p>
+          <h2 class="h2 balance">Three rules. That is the whole game.</h2>
+          <p class="lead">No tutorial to sit through and no glossary to memorize. The How To Play screen fits on one page because the game fits on one page. You will understand DiceBack before your first roll lands.</p>
+        </div>
+
+        <div class="hero__art">
+          <div class="phone phone--tilt-r">
+            <picture>
+              <source type="image/webp" srcset="assets/img/diceback-howtoplay.webp 1x, assets/img/diceback-howtoplay@2x.webp 2x">
+              <img src="assets/img/diceback-howtoplay.jpg" srcset="assets/img/diceback-howtoplay.jpg 1x, assets/img/diceback-howtoplay@2x.jpg 2x" width="540" height="959" alt="DiceBack How To Play screen listing the three rules of the game" loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <ol class="steps reveal">
+        <li class="step">
+          <span class="step__num" aria-hidden="true">1</span>
+          <div class="step__body">
+            <h3 class="h3">Roll the dice</h3>
+            <p>Tap to roll and get a number.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__num" aria-hidden="true">2</span>
+          <div class="step__body">
+            <h3 class="h3">Send that many tokens</h3>
+            <p>Move the same number of tokens to the other side.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__num" aria-hidden="true">3</span>
+          <div class="step__body">
+            <h3 class="h3">Clear your side to win</h3>
+            <p>First player with no tokens left wins!</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       3  GAME MODES
+       =================================================================== -->
+  <section class="section section--tint" id="modes">
+    <div class="wrap">
+      <div class="hero__inner reveal">
+        <div class="hero__art">
+          <div class="phone phone--tilt-l">
+            <picture>
+              <source type="image/webp" srcset="assets/img/diceback-modes.webp 1x, assets/img/diceback-modes@2x.webp 2x">
+              <img src="assets/img/diceback-modes.jpg" srcset="assets/img/diceback-modes.jpg 1x, assets/img/diceback-modes@2x.jpg 2x" width="540" height="959" alt="DiceBack Choose Mode screen offering VS Bot, 2 Players and Quick Match" loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </div>
+
+        <div class="section__head">
+          <p class="eyebrow">Game modes</p>
+          <h2 class="h2 balance">Three ways to start a match</h2>
+          <p class="lead">Practice against the bot, hand the phone to the person sitting next to you, or get matched with a stranger. Same three rules every time, completely different pressure.</p>
+        </div>
+      </div>
+
+      <div class="grid grid--3 reveal">
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">&#129302;</span>
+          <h3 class="card__title">VS Bot</h3>
+          <p class="card__text">Play against a smart bot. The best place to learn the rhythm of a roll, try a new token skin, or get a match in when nobody else is around.</p>
+        </article>
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">&#129309;</span>
+          <h3 class="card__title">2 Players</h3>
+          <p class="card__text">Play with a friend on one device. Pass the phone back and forth, one roll each. No second phone, no second account, nothing to set up.</p>
+        </article>
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">&#9889;</span>
+          <h3 class="card__title">Quick Match</h3>
+          <p class="card__text">Find a random opponent and play. One tap and you are on the board against someone else, with a weekly leaderboard spot on the line.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       4  FEATURES
+       =================================================================== -->
+  <section class="section" id="features">
+    <div class="wrap">
+      <div class="section__head section__head--center">
+        <p class="eyebrow">In the build</p>
+        <h2 class="h2 balance">Reasons to open it tomorrow</h2>
+        <p class="lead">A match takes a minute. Everything around it is built so that minute is worth coming back for.</p>
+      </div>
+
+      <div class="grid grid--4 reveal">
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">&#127873;</span>
+          <h3 class="card__title">Daily rewards</h3>
+          <p class="card__text">A seven day ladder of coins and tokens, with a Premium Die waiting on day three and a Legendary Chest on day seven.</p>
+        </article>
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">&#127912;</span>
+          <h3 class="card__title">Token and dice skins</h3>
+          <p class="card__text">Token skins in Classic, Ocean, Galaxy, Royal and Pets. Dice skins in Classic, Red, Blue, Gold and Galaxy. Looks only, never an advantage.</p>
+        </article>
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">&#127942;</span>
+          <h3 class="card__title">Achievements</h3>
+          <p class="card__text">First Win, Win Streak, Token Master and Dice Collector. Four goals that reward how you actually play, not how long you grind.</p>
+        </article>
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">&#128200;</span>
+          <h3 class="card__title">Weekly leaderboard</h3>
+          <p class="card__text">The board resets every week, so a cold start is never permanent and a hot streak always has something to climb.</p>
+        </article>
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">&#128100;</span>
+          <h3 class="card__title">Player profile and stats</h3>
+          <p class="card__text">Matches, Wins, Best Streak, Coins, Level and XP progress, all on one screen and updated the moment a match ends.</p>
+        </article>
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">&#128273;</span>
+          <h3 class="card__title">Guest play or sign in</h3>
+          <p class="card__text">Start playing as a guest in one tap. Sign in or create an account whenever you want your progress and coins saved.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       5  SCREENSHOTS
+       =================================================================== -->
+  <section class="section section--dark" id="screens">
+    <div class="wrap">
+      <div class="section__head section__head--center">
+        <p class="eyebrow">Screenshots</p>
+        <h2 class="h2 balance">Every screen, in player order</h2>
+        <p class="lead">Straight from the current build, from the loading screen to the settings menu. Tap any shot to see it full size.</p>
+      </div>
+
+      <div class="shots reveal">
+        <button class="shot" type="button">
+          <picture>
+            <source type="image/webp" srcset="assets/img/diceback-splash.webp 1x, assets/img/diceback-splash@2x.webp 2x">
+            <img src="assets/img/diceback-splash.jpg" srcset="assets/img/diceback-splash.jpg 1x, assets/img/diceback-splash@2x.jpg 2x" width="540" height="959" alt="DiceBack loading screen showing the game logo" loading="lazy" decoding="async">
+          </picture>
+          <span class="shot__cap">Loading screen</span>
+        </button>
+
+        <button class="shot" type="button">
+          <picture>
+            <source type="image/webp" srcset="assets/img/diceback-welcome.webp 1x, assets/img/diceback-welcome@2x.webp 2x">
+            <img src="assets/img/diceback-welcome.jpg" srcset="assets/img/diceback-welcome.jpg 1x, assets/img/diceback-welcome@2x.jpg 2x" width="540" height="959" alt="Welcome screen offering guest play or signing in to save progress" loading="lazy" decoding="async">
+          </picture>
+          <span class="shot__cap">Guest or sign in</span>
+        </button>
+
+        <button class="shot" type="button">
+          <picture>
+            <source type="image/webp" srcset="assets/img/diceback-menu.webp 1x, assets/img/diceback-menu@2x.webp 2x">
+            <img src="assets/img/diceback-menu.jpg" srcset="assets/img/diceback-menu.jpg 1x, assets/img/diceback-menu@2x.jpg 2x" width="540" height="959" alt="DiceBack main menu screen with the Play button" loading="lazy" decoding="async">
+          </picture>
+          <span class="shot__cap">Main menu</span>
+        </button>
+
+        <button class="shot" type="button">
+          <picture>
+            <source type="image/webp" srcset="assets/img/diceback-modes.webp 1x, assets/img/diceback-modes@2x.webp 2x">
+            <img src="assets/img/diceback-modes.jpg" srcset="assets/img/diceback-modes.jpg 1x, assets/img/diceback-modes@2x.jpg 2x" width="540" height="959" alt="Choose Mode screen with VS Bot, 2 Players and Quick Match" loading="lazy" decoding="async">
+          </picture>
+          <span class="shot__cap">Choose mode</span>
+        </button>
+
+        <button class="shot" type="button">
+          <picture>
+            <source type="image/webp" srcset="assets/img/diceback-howtoplay.webp 1x, assets/img/diceback-howtoplay@2x.webp 2x">
+            <img src="assets/img/diceback-howtoplay.jpg" srcset="assets/img/diceback-howtoplay.jpg 1x, assets/img/diceback-howtoplay@2x.jpg 2x" width="540" height="959" alt="How To Play screen listing the three rules of DiceBack" loading="lazy" decoding="async">
+          </picture>
+          <span class="shot__cap">How to play</span>
+        </button>
+
+        <button class="shot" type="button">
+          <picture>
+            <source type="image/webp" srcset="assets/img/diceback-gameplay.webp 1x, assets/img/diceback-gameplay@2x.webp 2x">
+            <img src="assets/img/diceback-gameplay.jpg" srcset="assets/img/diceback-gameplay.jpg 1x, assets/img/diceback-gameplay@2x.jpg 2x" width="540" height="959" alt="DiceBack board mid-match with the Your Turn prompt" loading="lazy" decoding="async">
+          </picture>
+          <span class="shot__cap">Your turn</span>
+        </button>
+
+        <button class="shot" type="button">
+          <picture>
+            <source type="image/webp" srcset="assets/img/diceback-paused.webp 1x, assets/img/diceback-paused@2x.webp 2x">
+            <img src="assets/img/diceback-paused.jpg" srcset="assets/img/diceback-paused.jpg 1x, assets/img/diceback-paused@2x.jpg 2x" width="540" height="959" alt="Pause dialog shown in the middle of a DiceBack match" loading="lazy" decoding="async">
+          </picture>
+          <span class="shot__cap">Paused</span>
+        </button>
+
+        <button class="shot" type="button">
+          <picture>
+            <source type="image/webp" srcset="assets/img/diceback-win.webp 1x, assets/img/diceback-win@2x.webp 2x">
+            <img src="assets/img/diceback-win.jpg" srcset="assets/img/diceback-win.jpg 1x, assets/img/diceback-win@2x.jpg 2x" width="540" height="959" alt="You Win screen awarding 50 coins after clearing the board" loading="lazy" decoding="async">
+          </picture>
+          <span class="shot__cap">You win</span>
+        </button>
+
+        <button class="shot" type="button">
+          <picture>
+            <source type="image/webp" srcset="assets/img/diceback-lose.webp 1x, assets/img/diceback-lose@2x.webp 2x">
+            <img src="assets/img/diceback-lose.jpg" srcset="assets/img/diceback-lose.jpg 1x, assets/img/diceback-lose@2x.jpg 2x" width="540" height="959" alt="You Lose screen offering a retry" loading="lazy" decoding="async">
+          </picture>
+          <span class="shot__cap">You lose</span>
+        </button>
+
+        <button class="shot" type="button">
+          <picture>
+            <source type="image/webp" srcset="assets/img/diceback-daily.webp 1x, assets/img/diceback-daily@2x.webp 2x">
+            <img src="assets/img/diceback-daily.jpg" srcset="assets/img/diceback-daily.jpg 1x, assets/img/diceback-daily@2x.jpg 2x" width="540" height="959" alt="Seven day daily reward ladder with coins, tokens and chests" loading="lazy" decoding="async">
+          </picture>
+          <span class="shot__cap">Daily rewards</span>
+        </button>
+
+        <button class="shot" type="button">
+          <picture>
+            <source type="image/webp" srcset="assets/img/diceback-store.webp 1x, assets/img/diceback-store@2x.webp 2x">
+            <img src="assets/img/diceback-store.jpg" srcset="assets/img/diceback-store.jpg 1x, assets/img/diceback-store@2x.jpg 2x" width="540" height="959" alt="Store screen with coin packs and bundles" loading="lazy" decoding="async">
+          </picture>
+          <span class="shot__cap">Store</span>
+        </button>
+
+        <button class="shot" type="button">
+          <picture>
+            <source type="image/webp" srcset="assets/img/diceback-skins.webp 1x, assets/img/diceback-skins@2x.webp 2x">
+            <img src="assets/img/diceback-skins.jpg" srcset="assets/img/diceback-skins.jpg 1x, assets/img/diceback-skins@2x.jpg 2x" width="540" height="959" alt="Skins screen showing the token and dice skin options" loading="lazy" decoding="async">
+          </picture>
+          <span class="shot__cap">Token and dice skins</span>
+        </button>
+
+        <button class="shot" type="button">
+          <picture>
+            <source type="image/webp" srcset="assets/img/diceback-profile.webp 1x, assets/img/diceback-profile@2x.webp 2x">
+            <img src="assets/img/diceback-profile.jpg" srcset="assets/img/diceback-profile.jpg 1x, assets/img/diceback-profile@2x.jpg 2x" width="540" height="959" alt="Player profile screen with match stats and level progress" loading="lazy" decoding="async">
+          </picture>
+          <span class="shot__cap">Player profile</span>
+        </button>
+
+        <button class="shot" type="button">
+          <picture>
+            <source type="image/webp" srcset="assets/img/diceback-achievements.webp 1x, assets/img/diceback-achievements@2x.webp 2x">
+            <img src="assets/img/diceback-achievements.jpg" srcset="assets/img/diceback-achievements.jpg 1x, assets/img/diceback-achievements@2x.jpg 2x" width="540" height="959" alt="Achievements screen alongside the weekly leaderboard" loading="lazy" decoding="async">
+          </picture>
+          <span class="shot__cap">Achievements and leaderboard</span>
+        </button>
+
+        <button class="shot" type="button">
+          <picture>
+            <source type="image/webp" srcset="assets/img/diceback-settings.webp 1x, assets/img/diceback-settings@2x.webp 2x">
+            <img src="assets/img/diceback-settings.jpg" srcset="assets/img/diceback-settings.jpg 1x, assets/img/diceback-settings@2x.jpg 2x" width="540" height="959" alt="Settings screen with music, sound, vibration and language options" loading="lazy" decoding="async">
+          </picture>
+          <span class="shot__cap">Settings</span>
+        </button>
+      </div>
+
+      <div class="btn-row mt-6">
+        <span class="badge">In development</span>
+        <button class="btn btn--soon" type="button" disabled>App Store - coming soon</button>
+        <button class="btn btn--soon" type="button" disabled>Google Play - coming soon</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       6  FAQ
+       =================================================================== -->
+  <section class="section section--tint" id="faq">
+    <div class="wrap">
+      <div class="section__head section__head--center">
+        <p class="eyebrow">Questions</p>
+        <h2 class="h2 balance">Straight answers about DiceBack</h2>
+        <p class="lead">The game is not out yet, so here is exactly where it stands today.</p>
+      </div>
+
+      <div class="grid reveal">
+        <details class="card">
+          <summary class="card__title">Will DiceBack be free?</summary>
+          <p class="card__text">Pricing is not final yet. The plan is a free download with optional cosmetic purchases only: token and dice skins, coin packs and bundles. Nothing in the store will change how a dice roll lands or how a match is won.</p>
+        </details>
+
+        <details class="card">
+          <summary class="card__title">Can I play with a friend on one device?</summary>
+          <p class="card__text">Yes. That is exactly what 2 Players mode is for. Two people share a single phone and pass it back and forth, one roll each. No second device, no second account, no lobby to join.</p>
+        </details>
+
+        <details class="card">
+          <summary class="card__title">Do I need an account to play?</summary>
+          <p class="card__text">No. You can play as a guest straight from the welcome screen. Signing in or creating an account is there so your matches, wins, streak, coins and level are saved instead of living only on that one device.</p>
+        </details>
+
+        <details class="card">
+          <summary class="card__title">Is DiceBack kid-friendly?</summary>
+          <p class="card__text">Yes. The rules take about ten seconds to learn and read fine to a child. There is no gambling and no real-money wagering anywhere in the game. Dice and coins are game pieces, never a bet.</p>
+        </details>
+
+        <details class="card">
+          <summary class="card__title">When does DiceBack launch?</summary>
+          <p class="card__text">It is still in development and we have not announced a release date. We would rather ship it when the matches feel right than name a date we have to walk back. Message us and we will tell you when it is live.</p>
+        </details>
+
+        <details class="card">
+          <summary class="card__title">What platforms will it be on?</summary>
+          <p class="card__text">iOS and Android are planned for the first release. The store buttons on this page stay switched off until the game is genuinely downloadable, so if they are still gray, it is not out yet.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       7  CTA BAND
+       =================================================================== -->
+  <section class="cta-band">
+    <div class="wrap">
+      <h2 class="h2 balance">Want to hear when DiceBack launches?</h2>
+      <p class="lead">No date is announced yet. Send us a line and we will email you the day it goes live on iOS and Android.</p>
+      <div class="btn-row">
+        <a class="btn btn--gold btn--lg" href="contact.html">Tell me when it launches</a>
+        <a class="btn btn--light btn--lg" href="games.html">See what else we build</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <a class="nav__logo" href="index.html" aria-label="Bouncy Comet - home">
+        <svg class="nav__logo-mark" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path d="M6 58C6 40 18 20 40 10l12 12C42 44 24 56 6 58Z" fill="#FFC61A" opacity=".55"/>
+          <circle cx="45" cy="19" r="13" fill="#FFE9A8"/>
+        </svg>
+        <span class="nav__logo-text">Bouncy<span>Comet</span></span>
+      </a>
+      <p class="footer__tag">We make bright, bouncy games worth coming back to - puzzle, arcade, hypercasual, hybrid-casual, multiplayer and games for kids.</p>
+    </div>
+    <div class="footer__col">
+      <h2 class="footer__head">Studio</h2>
+      <ul class="footer__links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h2 class="footer__head">DiceBack</h2>
+      <ul class="footer__links">
+        <li><a href="diceback.html">Overview</a></li>
+        <li><a href="diceback.html#how-to-play">How to play</a></li>
+        <li><a href="diceback.html#screens">Screenshots</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h2 class="footer__head">Legal</h2>
+      <ul class="footer__links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="mailto:hello@bouncycomet.com">hello@bouncycomet.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <p>&copy; <span id="year">2026</span> Bouncy Comet. All rights reserved.</p>
+    <p>Made with dice, coffee and far too many test rolls.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Will DiceBack be free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pricing is not final yet. The plan is a free download with optional cosmetic purchases only: token and dice skins, coin packs and bundles. Nothing in the store will change how a dice roll lands or how a match is won."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I play with a friend on one device?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. That is exactly what 2 Players mode is for. Two people share a single phone and pass it back and forth, one roll each. No second device, no second account, no lobby to join."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need an account to play?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You can play as a guest straight from the welcome screen. Signing in or creating an account is there so your matches, wins, streak, coins and level are saved instead of living only on that one device."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is DiceBack kid-friendly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The rules take about ten seconds to learn and read fine to a child. There is no gambling and no real-money wagering anywhere in the game. Dice and coins are game pieces, never a bet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does DiceBack launch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is still in development and we have not announced a release date. We would rather ship it when the matches feel right than name a date we have to walk back. Message us and we will tell you when it is live."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What platforms will it be on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "iOS and Android are planned for the first release. The store buttons on this page stay switched off until the game is genuinely downloadable, so if they are still gray, it is not out yet."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["VideoGame", "SoftwareApplication"],
+  "name": "DiceBack - 2 Player Dice Game",
+  "alternateName": "DiceBack",
+  "url": "https://bouncycomet.com/diceback.html",
+  "image": "https://bouncycomet.com/assets/img/og-image.jpg",
+  "description": "DiceBack is a 2 player dice game in development at Bouncy Comet. Roll the dice, send that many tokens to the other side, and clear your side first to win. Play VS Bot, 2 Players on one device, or Quick Match against a random opponent.",
+  "slogan": "Roll. Think. Bounce. Win!",
+  "applicationCategory": "GameApplication",
+  "applicationSubCategory": "Board Game",
+  "genre": ["Casual", "Board", "Multiplayer", "Puzzle"],
+  "operatingSystem": "iOS, Android",
+  "gamePlatform": ["iOS", "Android"],
+  "playMode": ["SinglePlayer", "MultiPlayer"],
+  "numberOfPlayers": {
+    "@type": "QuantitativeValue",
+    "minValue": 1,
+    "maxValue": 2
+  },
+  "inLanguage": "en",
+  "author": {
+    "@type": "Organization",
+    "name": "Bouncy Comet",
+    "url": "https://bouncycomet.com/",
+    "email": "hello@bouncycomet.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bouncy Comet",
+    "url": "https://bouncycomet.com/"
+  }
+}
+</script>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
