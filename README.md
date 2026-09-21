@@ -128,17 +128,27 @@ Everything is hand-written HTML — open the page and edit the copy. Shared piec
 
 ---
 
-## Email addresses used on the site
+## Email address used on the site
 
-These need to exist (mailbox or forwarding) before launch:
+Every contact route on the site points at one mailbox:
 
 | Address | Used for |
 | --- | --- |
-| `hello@bouncycomet.com` | General contact, footer |
-| `partners@bouncycomet.com` | Business and publishing enquiries |
-| `support@bouncycomet.com` | Player support |
-| `privacy@bouncycomet.com` | Privacy requests, referenced in the Privacy Policy |
-| `legal@bouncycomet.com` | Referenced in the Terms of Service |
+| `studio@bouncycomet.com` | Everything: general, business and publishing, player support, press, privacy requests and legal notices |
+
+This is the only mailbox that exists on the domain (Google Workspace). The contact form,
+the footer, the contact cards, the Privacy Policy and the Terms of Service all use it.
+
+If you later add branded aliases in Google Workspace (Users -> the studio user ->
+**Add Alternate Emails** - aliases are free, new users are not), the site can be switched
+back to `hello@` / `partners@` / `support@` / `privacy@` / `legal@` in a single commit.
+
+--- | --- |
+| `studio@bouncycomet.com` | General contact, footer |
+| `studio@bouncycomet.com` | Business and publishing enquiries |
+| `studio@bouncycomet.com` | Player support |
+| `studio@bouncycomet.com` | Privacy requests, referenced in the Privacy Policy |
+| `studio@bouncycomet.com` | Referenced in the Terms of Service |
 
 ---
 
