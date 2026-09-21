@@ -52,40 +52,33 @@ The server also serves `404.html` for missing paths, so the 404 page can be test
 
 ## Deploy
 
-Hosted on **GitHub Pages**, served from the `main` branch, root folder.
+**The site is live at <https://bouncycomet.com>.**
 
-- Repo: <https://github.com/shakil140/BouncyComet>
-- Preview URL: <https://shakil140.github.io/BouncyComet/>
-- Live URL: <https://bouncycomet.com>
+Hosted on GitHub Pages from the `main` branch, root folder. Everything below is already
+done; it is recorded here so the setup can be rebuilt or debugged later.
 
-### Step 0 - make the repo public
+| Piece | Value |
+| --- | --- |
+| Repo | <https://github.com/shakil140/BouncyComet> (public - Pages needs this on the free plan) |
+| Source | `main` branch, `/ (root)` |
+| Custom domain | `bouncycomet.com`, set automatically from the `CNAME` file |
+| Certificate | Let's Encrypt, issued 21 Sep 2026, auto-renews |
+| Registrar / DNS | Squarespace (migrated from Google Domains) |
 
-GitHub Pages only serves **public** repos on the free plan. This repo is currently private,
-so Pages cannot be turned on yet.
-
-**Settings -> General -> scroll to Danger Zone -> Change repository visibility -> Make public.**
-
-(Nothing secret is in here: it is a marketing site. If you would rather keep it private you
-need GitHub Pro, or deploy to Cloudflare Pages / Netlify instead, which serve private repos
-on their free tiers.)
-
-### First push
+### Updating the site
 
 ```bash
 git add -A
-git commit -m "Launch Bouncy Comet website"
-git push -u origin main
+git commit -m "Update site"
+git push
 ```
 
-Then in the repo: **Settings -> Pages -> Build and deployment -> Source: Deploy from a branch**,
-branch `main`, folder `/ (root)`. The `CNAME` file already in the repo sets the custom domain
-to `bouncycomet.com` automatically. Tick **Enforce HTTPS** once the certificate is issued
-(takes a few minutes after DNS resolves).
+Live in roughly 60 seconds. That is the whole workflow.
 
-### DNS at Squarespace
+### DNS records at Squarespace
 
-`bouncycomet.com` uses Squarespace nameservers. Add these records in
-**Squarespace -> Domains -> bouncycomet.com -> DNS Settings**:
+Set under **Domains -> bouncycomet.com -> DNS -> DNS Settings**. The four A records are
+GitHub's load-balanced Pages edge; all four are required.
 
 | Type | Host | Value |
 | --- | --- | --- |
@@ -95,18 +88,8 @@ to `bouncycomet.com` automatically. Tick **Enforce HTTPS** once the certificate 
 | A | `@` | `185.199.111.153` |
 | CNAME | `www` | `shakil140.github.io` |
 
-Remove any existing A or CNAME record on `@` or `www` that points at Squarespace's own
-site builder, or it will fight these.
-
-### Every later update
-
-```bash
-git add -A
-git commit -m "Update site"
-git push
-```
-
-Live in roughly 60 seconds.
+Do **not** touch the `MX`, `TXT` (SPF) or `google._domainkey` (DKIM) records - those run
+Google Workspace email on this domain. Deleting them breaks mail.
 
 ### Path convention — important
 
@@ -161,8 +144,7 @@ These need to exist (mailbox or forwarding) before launch:
 
 ## Before you call it done
 
-- [ ] Set up the five email addresses above (forwarding is fine)
-- [ ] Fill in the governing-law jurisdiction placeholder in `terms.html`
+- [ ] Create the six aliases above in Google Workspace (admin.google.com -> Users -> Aliases)
 - [ ] Add real App Store / Google Play links to `diceback.html` and `games.html` at launch,
       replacing the disabled "Coming Soon" buttons
 - [ ] Update the "Last updated" dates in `privacy.html` and `terms.html` when you change them
