@@ -381,7 +381,7 @@
               })
               .then(function (r) { return r.ok ? r.json() : Promise.reject(r); })
               .then(function () { showNote('Thanks - your message is on its way.'); form.reset(); })
-              .catch(function () { showNote('Something went wrong. Email studio@bouncycomet.com instead.', true); });
+              .catch(function () { showNote('Something went wrong. Email hello@bouncycomet.com instead.', true); });
 
           Keep the validation block above it; delete the mailto: builder.
      ====================================================================== */
@@ -391,7 +391,7 @@
     if (!form) { return; }
 
     var note = $('.form__note', form) || $('#formNote');
-    var TO = 'studio@bouncycomet.com';
+    var TO = 'hello@bouncycomet.com';
 
     function showNote(message, isError) {
       if (!note) { window.alert(message); return; }
