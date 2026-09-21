@@ -142,9 +142,20 @@ These need to exist (mailbox or forwarding) before launch:
 
 ---
 
-## Before you call it done
+## Outstanding
 
-- [ ] Create the six aliases above in Google Workspace (admin.google.com -> Users -> Aliases)
+- [ ] **Tick "Enforce HTTPS"** in Settings -> Pages. As of 21 Sep 2026 GitHub refuses it
+      because its own DNS check is stuck on "in progress" - the DNS itself is correct and the
+      Let's Encrypt certificate was issued, so `https://` already works. The check normally
+      clears within a day; the box can then simply be ticked. Forcing it by removing and
+      re-adding the custom domain also works but takes the site offline for about a minute.
+      Until it is on, `http://` is served directly instead of redirecting to `https://`.
 - [ ] Add real App Store / Google Play links to `diceback.html` and `games.html` at launch,
       replacing the disabled "Coming Soon" buttons
 - [ ] Update the "Last updated" dates in `privacy.html` and `terms.html` when you change them
+
+## Done
+
+- [x] Site live at <https://bouncycomet.com> with a Let's Encrypt certificate
+- [x] `hello@`, `partners@`, `support@`, `privacy@` and `legal@` created as free Workspace
+      aliases on `studio@bouncycomet.com` - every address the site publishes now resolves
