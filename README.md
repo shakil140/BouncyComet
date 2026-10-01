@@ -20,6 +20,7 @@ about.html        Studio story, how we work, principles
 contact.html      Contact routes + form
 privacy.html      Privacy Policy (app-store ready)
 terms.html        Terms of Service
+account-deletion.html  Dice Duo account/data deletion request and retention information
 404.html          Not-found page (uses root-absolute paths — see note below)
 
 css/style.css     Full design system: tokens, components, responsive, reduced-motion
@@ -143,6 +144,16 @@ These need to exist (mailbox or forwarding) before launch:
 ---
 
 ## Outstanding
+
+- Dice Duo's public account-deletion resource is
+  <https://bouncycomet.com/account-deletion.html>. Its prominent request button opens
+  an email to `privacy@bouncycomet.com`; it is support-assisted, not an automated form.
+  Keep that inbox monitored, verify account ownership, and use the game server's
+  existing admin deletion action. Do not ask for passwords or substitute direct SQL.
+  The page describes the current retained match IDs, moderation records, logs and
+  backups; disclosure alone does not resolve their retention-policy gaps.
+- The studio privacy/terms body still needs alignment with Dice Duo's current
+  features, ad SDKs and audience before it is used as the game's final disclosure.
 
 - [ ] Add real App Store / Google Play links to `diceback.html` and `games.html` at launch,
       replacing the disabled "Coming Soon" buttons
