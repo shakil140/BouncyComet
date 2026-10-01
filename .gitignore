@@ -14,3 +14,25 @@ _reference.html
 
 # Local tooling
 .claude/
+
+# Local secrets and private keys; public site files and environment templates stay shareable.
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+!.env.*.example
+!.env.*.sample
+!.env.*.template
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+/keys/
+/secrets/
