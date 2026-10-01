@@ -152,8 +152,14 @@ These need to exist (mailbox or forwarding) before launch:
   existing admin deletion action. Do not ask for passwords or substitute direct SQL.
   The page describes the current retained match IDs, moderation records, logs and
   backups; disclosure alone does not resolve their retention-policy gaps.
-- The studio privacy/terms body still needs alignment with Dice Duo's current
-  features, ad SDKs and audience before it is used as the game's final disclosure.
+- Privacy and terms were aligned on 1 October 2026 with the current Dice Duo
+  account/gameplay flows, advertising SDKs, 13+ audience and verified deletion
+  behaviour. Retention exceptions are disclosed truthfully. Finish bounded
+  retention review, age/consent and user-content runtime controls before release;
+  published words alone do not implement those controls.
+- The in-game policy entry must remain available independently of ad/CMP state.
+  Use `https://bouncycomet.com/privacy.html` in the server's audited config workflow
+  and include the reliable fallback/menu fix in the final Android build.
 
 - [ ] Add real App Store / Google Play links to `diceback.html` and `games.html` at launch,
       replacing the disabled "Coming Soon" buttons
