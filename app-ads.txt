@@ -68,6 +68,7 @@ sharethrough.com, 5294, RESELLER, d53b998a7bd4ecd2
 sharethrough.com, SniqCOMC, RESELLER, d53b998a7bd4ecd2
 smaato.com, 1100047589, RESELLER, 07bcf65f187117b4
 smaato.com, 1100055750, RESELLER, 07bcf65f187117b4
+smaato.com, 1100059345, RESELLER, 07bcf65f187117b4
 smaato.com, 1100059563, RESELLER, 07bcf65f187117b4
 smartadserver.com, 4578, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 4610, RESELLER, 060d053dcf45cbf3
