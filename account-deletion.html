@@ -1,41 +1,72 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="sysfont">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Request deletion of your Dice Duo account and associated account data, with or without the game installed.">
-  <meta name="theme-color" content="#102c43">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; script-src 'self' 'sha256-pAR0LnMZjpE1+f7iP7953Tvjy/r+pDd9m1fazJ3mFmE='; manifest-src 'self'; base-uri 'none'; form-action 'none'">
   <title>Delete your Dice Duo account | Bouncy Comet</title>
+  <meta name="description" content="Request deletion of your Dice Duo account and associated account data, with or without the game installed.">
   <link rel="canonical" href="https://bouncycomet.com/account-deletion.html">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
-  <style>
-    :root{color-scheme:light;--ink:#183245;--muted:#4e6473;--line:#d8e5e9;--blue:#09667c;--paper:#fffdf6}
-    *{box-sizing:border-box}body{margin:0;background:#edf6f7;color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
-    a{color:var(--blue);text-underline-offset:3px;overflow-wrap:anywhere}a:focus-visible{outline:3px solid #dba328;outline-offset:5px}
-    .masthead{background:#102c43;color:white;padding:18px max(20px,calc((100vw - 900px)/2));font-weight:700;letter-spacing:.03em}
-    .masthead small{display:block;font-weight:400;letter-spacing:0;color:#d0e5ed;font-size:14px}main{max-width:900px;margin:32px auto;padding:0 20px}
-    .hero,.section{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:30px;margin-bottom:20px}
-    .eyebrow{color:var(--blue);font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 8px}
-    h1{font-size:clamp(28px,5vw,42px);line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}h2{font-size:23px;line-height:1.3;margin:0 0 12px}h3{font-size:18px;margin:22px 0 8px}
-    p{margin:10px 0}.muted{color:var(--muted)}.button{display:inline-block;background:#09667c;color:white;font-weight:700;border-radius:10px;padding:13px 20px;text-decoration:none;margin:10px 0}
-    .notice{border-left:4px solid #cc9126;background:#fff4d9;padding:14px 17px;margin:20px 0}.email{font-size:19px;font-weight:650}
-    ol,ul{padding-left:24px;margin:12px 0}li{margin:8px 0}.small{font-size:14px}footer{padding:8px 5px 30px;color:var(--muted);font-size:14px}
-    @media(max-width:560px){main{margin:18px auto;padding:0 12px}.hero,.section{padding:22px 18px;border-radius:13px}.button{display:block;text-align:center}}
-  </style>
+  <meta name="theme-color" content="#0A1436">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bouncy Comet">
+  <meta property="og:title" content="Delete your Dice Duo account | Bouncy Comet">
+  <meta property="og:description" content="Request deletion of your Dice Duo account and associated account data, with or without the game installed.">
+  <meta property="og:url" content="https://bouncycomet.com/account-deletion.html">
+  <meta property="og:image" content="https://bouncycomet.com/assets/img/og-image.jpg?v=16e1dc48">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Bouncy Comet, an independent mobile game studio.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Delete your Dice Duo account | Bouncy Comet">
+  <meta name="twitter:description" content="Request deletion of your Dice Duo account and associated account data, with or without the game installed.">
+  <meta name="twitter:image" content="https://bouncycomet.com/assets/img/og-image.jpg?v=16e1dc48">
+  <meta name="twitter:image:alt" content="Bouncy Comet, an independent mobile game studio.">
+  <link rel="icon" href="assets/icons/favicon.ico?v=2050a3d2" sizes="any">
+  <link rel="icon" href="assets/icons/favicon-32.png?v=d00324c3" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png?v=4e0e32cf">
+  <link rel="manifest" href="site.webmanifest?v=643073f1">
+  <!-- Set before first paint so .reveal blocks and the mobile menu are only hidden when JS can show them;
+       taken away again if js/main.js never arrives. -->
+  <script>document.documentElement.classList.add('js');addEventListener('load',function(){window.__bc||document.documentElement.classList.remove('js')});</script>
+  <link rel="stylesheet" href="css/style.css?v=34b49416">
 </head>
 <body>
-  <div class="masthead"><a href="/" style="color:inherit;text-decoration:none">Bouncy Comet</a><small>Dice Duo: 2 Player Dice Games</small></div>
-  <main id="main">
-    <header class="hero">
+
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="siteHeader">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="nav__logo" href="index.html" aria-label="Bouncy Comet - home">
+      <img class="nav__logo-mark" src="assets/icons/logo-mark.png?v=7af52c43" srcset="assets/icons/logo-mark.png?v=7af52c43 1x, assets/icons/logo-mark@2x.png?v=5d838990 2x, assets/icons/logo-mark@3x.png?v=66e2e5da 3x" width="44" height="44" alt="">
+      <span class="nav__logo-text">Bouncy<span>Comet</span></span>
+    </a>
+    <button class="nav__burger" id="navBurger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__links" id="navLinks">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="games.html">Games</a>
+      <a class="nav__link" href="diceback.html">Dice Duo</a>
+      <a class="nav__link" href="about.html">About</a>
+      <a class="nav__cta btn btn--comet btn--sm" href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="section section--dark">
+    <div class="wrap">
+      <div class="doc">
+    <header class="doc__card">
       <p class="eyebrow">Account and data deletion</p>
       <h1>Delete your Dice Duo account</h1>
       <p>You can request deletion here even if you have uninstalled Dice Duo. You do not need to reinstall the game or sign in to this webpage.</p>
-      <a class="button" href="mailto:privacy@bouncycomet.com?subject=Dice%20Duo%20account%20deletion&amp;body=Please%20delete%20my%20Dice%20Duo%20account%20and%20associated%20account%20data.%0A%0AMy%20game%20account%20email%3A%20%0APlayer%20ID%20%28optional%29%3A%20%0A">Request account deletion by email</a>
-      <p class="email"><a href="mailto:privacy@bouncycomet.com">privacy@bouncycomet.com</a></p>
-      <p class="small muted">The button opens your email app. It does not send a message automatically. If it does not open, copy the address into your usual email service and send your request there.</p>
-      <div class="notice"><strong>Deletion is permanent.</strong> You lose this account's online progress, coins and cosmetic items. Deleting Dice Duo does not delete your Google account. Signing out or uninstalling the game alone does not delete the server account.</div>
+      <a class="btn btn--comet btn--wrap" href="mailto:privacy@bouncycomet.com?subject=Dice%20Duo%20account%20deletion&amp;body=Please%20delete%20my%20Dice%20Duo%20account%20and%20associated%20account%20data.%0A%0AMy%20game%20account%20email%3A%20%0APlayer%20ID%20%28optional%29%3A%20%0A">Request account deletion by email</a>
+      <p class="doc__email"><a href="mailto:privacy@bouncycomet.com">privacy@bouncycomet.com</a></p>
+      <p class="doc__small muted">The button opens your email app. It does not send a message automatically. If it does not open, copy the address into your usual email service and send your request there.</p>
+      <div class="doc__notice"><strong>Deletion is permanent.</strong> You lose this account's online progress, coins and cosmetic items. Deleting Dice Duo does not delete your Google account. Signing out or uninstalling the game alone does not delete the server account.</div>
     </header>
-    <section class="section" aria-labelledby="request-steps">
+    <section class="doc__card" aria-labelledby="request-steps">
       <h2 id="request-steps">Request deletion without the app</h2>
       <ol>
         <li>Email <strong>privacy@bouncycomet.com</strong> with the subject <strong>Dice Duo account deletion</strong>.</li>
@@ -46,7 +77,7 @@
       <p><strong>Never send your game password, inbox password, access token or identity document in your initial email.</strong> If you no longer have access to your account email, explain that in your request so we can discuss a proportionate ownership check.</p>
       <p>This is a support-assisted request, not an instant web deletion. We handle verified requests as promptly as possible and tell you the expected completion time in our reply. Applicable legal deadlines still apply.</p>
     </section>
-    <section class="section" aria-labelledby="in-game">
+    <section class="doc__card" aria-labelledby="in-game">
       <h2 id="in-game">Delete inside Dice Duo</h2>
       <ol>
         <li>Connect to the internet and sign in to the account you want to delete.</li>
@@ -56,7 +87,7 @@
       </ol>
       <p>Offline play can still be used after the online account is deleted.</p>
     </section>
-    <section class="section" aria-labelledby="deleted-data">
+    <section class="doc__card" aria-labelledby="deleted-data">
       <h2 id="deleted-data">What the server deletes</h2>
       <ul>
         <li>The account and its linked login information, password hash and Google sign-in link, where present.</li>
@@ -66,7 +97,7 @@
       </ul>
       <p>Active matches are ended and matchmaking or private-room participation is stopped. Old queued account emails are removed; a deletion-confirmation email may be sent to a verified address.</p>
     </section>
-    <section class="section" aria-labelledby="retained-data">
+    <section class="doc__card" aria-labelledby="retained-data">
       <h2 id="retained-data">What can remain</h2>
       <p>Account deletion does not erase every technical record immediately. The following limits describe the current server behaviour:</p>
       <ul>
@@ -80,7 +111,56 @@
       </ul>
       <p>Contact <a href="mailto:privacy@bouncycomet.com">privacy@bouncycomet.com</a> about retained information or other privacy requests. We review whether continued retention is necessary, explain any justified exception and address requests involving service-provider data.</p>
     </section>
-    <footer>Dice Duo: 2 Player Dice Games · Bouncy Comet · Android package com.bouncycomet.diceduo<br>Updated 2 October 2026 · <a href="mailto:privacy@bouncycomet.com">Privacy and account support</a> · <a href="/">Studio website</a></footer>
-  </main>
+    <p class="doc__foot">Dice Duo: 2 Player Dice Games · Bouncy Comet · Android package com.bouncycomet.diceduo<br>Updated 2 October 2026 · <a href="mailto:privacy@bouncycomet.com">Privacy and account support</a> · <a href="index.html">Studio website</a></p>
+  
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <a class="nav__logo" href="index.html" aria-label="Bouncy Comet - home">
+        <img class="nav__logo-mark" src="assets/icons/logo-mark.png?v=7af52c43" srcset="assets/icons/logo-mark.png?v=7af52c43 1x, assets/icons/logo-mark@2x.png?v=5d838990 2x, assets/icons/logo-mark@3x.png?v=66e2e5da 3x" width="44" height="44" alt="">
+        <span class="nav__logo-text">Bouncy<span>Comet</span></span>
+      </a>
+      <picture class="footer__mascot"><source type="image/webp" srcset="assets/art/mascot-wave-sm.webp?v=4ca5598c 1x, assets/art/mascot-wave-sm@2x.webp?v=2ddb4091 2x"><img src="assets/art/mascot-wave-sm.png?v=08e10111" width="120" height="120" alt="Comet, the Bouncy Comet mascot: a purple rock comet with glowing red cracks and a sparkle of stars" loading="lazy"></picture>
+      <p class="footer__tag">We make bright, bouncy games worth coming back to. First out of the toybox: Dice Duo, five two-player dice games in one app.</p>
+    </div>
+    <div class="footer__col">
+      <h2 class="footer__head">Studio</h2>
+      <ul class="footer__links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h2 class="footer__head">Dice Duo</h2>
+      <ul class="footer__links">
+        <li><a href="diceback.html">Overview</a></li>
+        <li><a href="diceback.html#how-to-play">The five games</a></li>
+        <li><a href="diceback.html#modes">Ways to play</a></li>
+        <li><a href="diceback.html#screens">Screenshots</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h2 class="footer__head">Legal</h2>
+      <ul class="footer__links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="account-deletion.html">Delete Dice Duo account</a></li>
+        <li><a href="mailto:hello@bouncycomet.com">hello@bouncycomet.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <p>&copy; <span id="year">2026</span> Bouncy Comet. All rights reserved.</p>
+    <p>Made with dice, coffee and far too many test rolls.</p>
+  </div>
+</footer>
+
+<script src="js/main.js?v=8120d787" defer></script>
 </body>
 </html>

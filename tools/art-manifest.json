@@ -1,0 +1,1417 @@
+{
+  "note": "Written by tools/import_art.py. Do not edit by hand. A source that is not 'real' must not be published: run  python tools/import_art.py --check  before every push.",
+  "complete": true,
+  "placeholders": 0,
+  "seal": "517a44f5bb18da6c4efb30b18fb3531a53301954",
+  "sources": [
+    {
+      "file": "mascot_hero.png",
+      "group": "art",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/mascot-hero-200.webp",
+          "width": 200,
+          "height": 200,
+          "sha1": "5a182c8003f6077c1cbd15b823c51689a565eee4"
+        },
+        {
+          "path": "assets/art/mascot-hero-400.webp",
+          "width": 400,
+          "height": 400,
+          "sha1": "4823a43cb1ebe027ee57c004112a1bd95e799a19"
+        },
+        {
+          "path": "assets/art/mascot-hero-800.webp",
+          "width": 800,
+          "height": 800,
+          "sha1": "de3af2d64681013e403f95d44f57739233516d0b"
+        },
+        {
+          "path": "assets/art/mascot-hero.png",
+          "width": 400,
+          "height": 400,
+          "sha1": "40ed311d7814f5a84b197103fa9959f565fbe537"
+        }
+      ]
+    },
+    {
+      "file": "mascot_wave.png",
+      "group": "art",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/mascot-wave-sm.webp",
+          "width": 120,
+          "height": 120,
+          "sha1": "4ca5598c8625b5dfdb9267b823ebe58c3d5a890d"
+        },
+        {
+          "path": "assets/art/mascot-wave-sm@2x.webp",
+          "width": 240,
+          "height": 240,
+          "sha1": "2ddb4091f67fe02feb189829dd657a1834cfdd75"
+        },
+        {
+          "path": "assets/art/mascot-wave-sm.png",
+          "width": 120,
+          "height": 120,
+          "sha1": "08e101111b049c114441a6a294867af333ab2f3f"
+        },
+        {
+          "path": "assets/art/mascot-wave-200.webp",
+          "width": 200,
+          "height": 200,
+          "sha1": "1d72e22d5aafd218d915ad234db35f7b19d762ee"
+        },
+        {
+          "path": "assets/art/mascot-wave-400.webp",
+          "width": 400,
+          "height": 400,
+          "sha1": "2b37345b9ec10b3e55d25432e48de19720aef4c9"
+        },
+        {
+          "path": "assets/art/mascot-wave-800.webp",
+          "width": 800,
+          "height": 800,
+          "sha1": "2fdc3e1529d08d6c799d5bc07dfa226431e44ed7"
+        },
+        {
+          "path": "assets/art/mascot-wave.png",
+          "width": 400,
+          "height": 400,
+          "sha1": "1d40170803cedf309ca9bccbe24e84a8d9846e80"
+        }
+      ]
+    },
+    {
+      "file": "mascot_lost.png",
+      "group": "art",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/mascot-lost-200.webp",
+          "width": 200,
+          "height": 200,
+          "sha1": "28f6dc1f997d0f63de81a06070558274d37c6d96"
+        },
+        {
+          "path": "assets/art/mascot-lost-400.webp",
+          "width": 400,
+          "height": 400,
+          "sha1": "7eada91c3f11b5fe641e728045e17cecbcb263e3"
+        },
+        {
+          "path": "assets/art/mascot-lost-800.webp",
+          "width": 800,
+          "height": 800,
+          "sha1": "86ff1c7347da12697dba8ade38f20cb85d64c302"
+        },
+        {
+          "path": "assets/art/mascot-lost.png",
+          "width": 400,
+          "height": 400,
+          "sha1": "703d3bccd5ac69e5df417e3b1c804ade4519c388"
+        }
+      ]
+    },
+    {
+      "file": "hero_desktop.png",
+      "group": "art",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/hero-desktop-1280.webp",
+          "width": 1280,
+          "height": 720,
+          "sha1": "0022393af676c008e35249b0776f13f13aaa9086"
+        },
+        {
+          "path": "assets/art/hero-desktop-1280.jpg",
+          "width": 1280,
+          "height": 720,
+          "sha1": "7d7a0c0aa6906ac15c6bf43e734af4aef007fce3"
+        },
+        {
+          "path": "assets/art/hero-desktop-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "sha1": "0063237da4538b5196f2dcb8a7918039d8eedd84"
+        },
+        {
+          "path": "assets/art/hero-desktop-1920.jpg",
+          "width": 1920,
+          "height": 1080,
+          "sha1": "acbcf592ccb084b2c1431ade6b70bb8f423918ea"
+        }
+      ]
+    },
+    {
+      "file": "hero_phone.png",
+      "group": "art",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/hero-phone-720.webp",
+          "width": 720,
+          "height": 1080,
+          "sha1": "27e9a743f916948c4d6a12ea8292ca6182095066"
+        },
+        {
+          "path": "assets/art/hero-phone-720.jpg",
+          "width": 720,
+          "height": 1080,
+          "sha1": "f677b780a1285aa70134304c3e8260c48edc9dda"
+        },
+        {
+          "path": "assets/art/hero-phone-1080.webp",
+          "width": 1080,
+          "height": 1620,
+          "sha1": "a951fc10af66f38170d64841d30478b93aaee69f"
+        },
+        {
+          "path": "assets/art/hero-phone-1080.jpg",
+          "width": 1080,
+          "height": 1620,
+          "sha1": "22f061ba1546ef8eb8e5a25986dabf4ce4a0379f"
+        }
+      ]
+    },
+    {
+      "file": "bg_night-sky.png",
+      "group": "art",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/bg-night-sky-1280.webp",
+          "width": 1280,
+          "height": 720,
+          "sha1": "f0efc9bde8a7ece8fe8cdc6926c6066e6c62b682"
+        },
+        {
+          "path": "assets/art/bg-night-sky-1280.jpg",
+          "width": 1280,
+          "height": 720,
+          "sha1": "e23fa50f162b7e5824df906da33367de54a69091"
+        },
+        {
+          "path": "assets/art/bg-night-sky-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "sha1": "024bfe110297df7cc832e63f0bcd4512621c4c96"
+        },
+        {
+          "path": "assets/art/bg-night-sky-1920.jpg",
+          "width": 1920,
+          "height": 1080,
+          "sha1": "3c714ba94ff73e8349de70028f5220f62c5330bb"
+        }
+      ]
+    },
+    {
+      "file": "game_grid-war.png",
+      "group": "art",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/game-grid-war-300.webp",
+          "width": 300,
+          "height": 400,
+          "sha1": "94c4340599d1a291342b130546b1e41e032ab6c8"
+        },
+        {
+          "path": "assets/art/game-grid-war-300.jpg",
+          "width": 300,
+          "height": 400,
+          "sha1": "d8c0dc1cacb366e269c3b3ff538fbf36e3f9df6a"
+        },
+        {
+          "path": "assets/art/game-grid-war-480.webp",
+          "width": 480,
+          "height": 640,
+          "sha1": "95213a60d8b9177fc8ad9e3cd075a3a03bb0397b"
+        },
+        {
+          "path": "assets/art/game-grid-war-480.jpg",
+          "width": 480,
+          "height": 640,
+          "sha1": "fe23c1c730944037851cd48d9445746a4abd69aa"
+        },
+        {
+          "path": "assets/art/game-grid-war-768.webp",
+          "width": 768,
+          "height": 1024,
+          "sha1": "54b0614130a32f33f62c191adc199dcc757d2e0f"
+        },
+        {
+          "path": "assets/art/game-grid-war-768.jpg",
+          "width": 768,
+          "height": 1024,
+          "sha1": "d6d96f4afe90516ddaa814adb2897dcf263c6c55"
+        }
+      ]
+    },
+    {
+      "file": "game_diceback.png",
+      "group": "art",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/game-diceback-300.webp",
+          "width": 300,
+          "height": 400,
+          "sha1": "6148b44672d90e5d68fde6498db98a9b17ac193e"
+        },
+        {
+          "path": "assets/art/game-diceback-300.jpg",
+          "width": 300,
+          "height": 400,
+          "sha1": "5b0358f331b8d64a3c54603f20ebe37d06b334ab"
+        },
+        {
+          "path": "assets/art/game-diceback-480.webp",
+          "width": 480,
+          "height": 640,
+          "sha1": "c2e4b069ce4a63f621cae28132ea22933790afb1"
+        },
+        {
+          "path": "assets/art/game-diceback-480.jpg",
+          "width": 480,
+          "height": 640,
+          "sha1": "91a585981367ab044f970531af11cc21e2e43141"
+        },
+        {
+          "path": "assets/art/game-diceback-768.webp",
+          "width": 768,
+          "height": 1024,
+          "sha1": "612faff27028516a29275920c9d44293c3a48139"
+        },
+        {
+          "path": "assets/art/game-diceback-768.jpg",
+          "width": 768,
+          "height": 1024,
+          "sha1": "ae50051299c578a8fadeff03e9efb4efa303b05b"
+        }
+      ]
+    },
+    {
+      "file": "game_roll-race.png",
+      "group": "art",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/game-roll-race-300.webp",
+          "width": 300,
+          "height": 400,
+          "sha1": "27f1a7674eaf91aefd41e3fddcb83555f9bca3b8"
+        },
+        {
+          "path": "assets/art/game-roll-race-300.jpg",
+          "width": 300,
+          "height": 400,
+          "sha1": "97a1077786ef6bd6152edacb03f68bcbc59ded67"
+        },
+        {
+          "path": "assets/art/game-roll-race-480.webp",
+          "width": 480,
+          "height": 640,
+          "sha1": "9b030f7bc2d040454d1a8a28b075bf95dfaef2f3"
+        },
+        {
+          "path": "assets/art/game-roll-race-480.jpg",
+          "width": 480,
+          "height": 640,
+          "sha1": "e8000dd36650b1d2c6d8f4ab5a8feb4bffa138f4"
+        },
+        {
+          "path": "assets/art/game-roll-race-768.webp",
+          "width": 768,
+          "height": 1024,
+          "sha1": "6f22f0f5742305d3a7876dbb66495a61d0243045"
+        },
+        {
+          "path": "assets/art/game-roll-race-768.jpg",
+          "width": 768,
+          "height": 1024,
+          "sha1": "0e80acf4521cf085022b8d5a2905ee3cb4735edb"
+        }
+      ]
+    },
+    {
+      "file": "game_six-spots.png",
+      "group": "art",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/game-six-spots-300.webp",
+          "width": 300,
+          "height": 400,
+          "sha1": "7e190232d4c806c5cc866ea75960a408c25f7e0a"
+        },
+        {
+          "path": "assets/art/game-six-spots-300.jpg",
+          "width": 300,
+          "height": 400,
+          "sha1": "127360109696ee62294294a9e5fbf04522b3bb75"
+        },
+        {
+          "path": "assets/art/game-six-spots-480.webp",
+          "width": 480,
+          "height": 640,
+          "sha1": "5fa597e7f63d2235860ad342fbac464a7096fd5b"
+        },
+        {
+          "path": "assets/art/game-six-spots-480.jpg",
+          "width": 480,
+          "height": 640,
+          "sha1": "c71b2f411b9b7d8b270c1f6a946a5a66669738f2"
+        },
+        {
+          "path": "assets/art/game-six-spots-768.webp",
+          "width": 768,
+          "height": 1024,
+          "sha1": "af1bbf0e1ee96c8edf188455ef1f87f8654315d0"
+        },
+        {
+          "path": "assets/art/game-six-spots-768.jpg",
+          "width": 768,
+          "height": 1024,
+          "sha1": "78630b20d0d33c080e7179ba36d957c1a4d270a9"
+        }
+      ]
+    },
+    {
+      "file": "game_scoop-stack.png",
+      "group": "art",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/game-scoop-stack-300.webp",
+          "width": 300,
+          "height": 400,
+          "sha1": "06049c68f90ee875a48a4b515602dc786363b137"
+        },
+        {
+          "path": "assets/art/game-scoop-stack-300.jpg",
+          "width": 300,
+          "height": 400,
+          "sha1": "73ecd7c02267686202709de3da5c0e257f74f00b"
+        },
+        {
+          "path": "assets/art/game-scoop-stack-480.webp",
+          "width": 480,
+          "height": 640,
+          "sha1": "48f1059b3baac953417979b810613ad90977fedf"
+        },
+        {
+          "path": "assets/art/game-scoop-stack-480.jpg",
+          "width": 480,
+          "height": 640,
+          "sha1": "2bd0a2c6fe603cbce5fce25a93f20dc5112953e8"
+        },
+        {
+          "path": "assets/art/game-scoop-stack-768.webp",
+          "width": 768,
+          "height": 1024,
+          "sha1": "793428b0dd101d1affdc567d8f516cc1c311bcda"
+        },
+        {
+          "path": "assets/art/game-scoop-stack-768.jpg",
+          "width": 768,
+          "height": 1024,
+          "sha1": "30b3ed757cc405a41a26151f5c5878a96335ad4d"
+        }
+      ]
+    },
+    {
+      "file": "sheet_toys.png",
+      "group": "art",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/toy-die-five.webp",
+          "width": 160,
+          "height": 160,
+          "sha1": "b8c0f000becce7d240db2ec13ed78162efde6ae0"
+        },
+        {
+          "path": "assets/art/toy-die-five@2x.webp",
+          "width": 320,
+          "height": 320,
+          "sha1": "ac6cd15de1d8c8f2a12ded931fdd5aed369df1ba"
+        },
+        {
+          "path": "assets/art/toy-die-five.png",
+          "width": 160,
+          "height": 160,
+          "sha1": "e9ca6fb8be185ee20e27be3d1ec87e35492afa1a"
+        },
+        {
+          "path": "assets/art/toy-die-two.webp",
+          "width": 160,
+          "height": 160,
+          "sha1": "61d66f4fc215a97b11c703965d2e96379c85e5c5"
+        },
+        {
+          "path": "assets/art/toy-die-two@2x.webp",
+          "width": 320,
+          "height": 320,
+          "sha1": "c788257e8a3ab463b378e619e59e52a6e355adff"
+        },
+        {
+          "path": "assets/art/toy-die-two.png",
+          "width": 160,
+          "height": 160,
+          "sha1": "d67dd0e7addafbccbc0dfc1404bcde2458a0b3a5"
+        },
+        {
+          "path": "assets/art/toy-token-red.webp",
+          "width": 160,
+          "height": 160,
+          "sha1": "4d50e112df892884c7499dda414db6a184d6be74"
+        },
+        {
+          "path": "assets/art/toy-token-red@2x.webp",
+          "width": 320,
+          "height": 320,
+          "sha1": "43be09a8f205194989feab13b8bf9cb18efe83fc"
+        },
+        {
+          "path": "assets/art/toy-token-red.png",
+          "width": 160,
+          "height": 160,
+          "sha1": "a894674c9fc8619c8299010c03206bdee4d58146"
+        },
+        {
+          "path": "assets/art/toy-token-yellow.webp",
+          "width": 160,
+          "height": 160,
+          "sha1": "2189850fc4099f19e3615ed0c9cf9b4ba88c163c"
+        },
+        {
+          "path": "assets/art/toy-token-yellow@2x.webp",
+          "width": 320,
+          "height": 320,
+          "sha1": "341486fcd2befd5f3da1da18bf0988ef3830e2fe"
+        },
+        {
+          "path": "assets/art/toy-token-yellow.png",
+          "width": 160,
+          "height": 160,
+          "sha1": "38c78e964090c3dc3fc7022f7df2e1f26b6cafe9"
+        },
+        {
+          "path": "assets/art/toy-cone.webp",
+          "width": 160,
+          "height": 160,
+          "sha1": "f39dc585efca36a28dacf0b50ac67f171fa869a7"
+        },
+        {
+          "path": "assets/art/toy-cone@2x.webp",
+          "width": 320,
+          "height": 320,
+          "sha1": "3998e43e3a1b6c655c00cd8d2a07a4646cceca72"
+        },
+        {
+          "path": "assets/art/toy-cone.png",
+          "width": 160,
+          "height": 160,
+          "sha1": "923b28d3e4b30ab4d7e8228e73d0607593dbb297"
+        },
+        {
+          "path": "assets/art/toy-x-yellow.webp",
+          "width": 160,
+          "height": 160,
+          "sha1": "a19684760abc0753b04bfb0a4551bf93a241f453"
+        },
+        {
+          "path": "assets/art/toy-x-yellow@2x.webp",
+          "width": 320,
+          "height": 320,
+          "sha1": "344324750cebc02dd545d16e9aefaad35a46842d"
+        },
+        {
+          "path": "assets/art/toy-x-yellow.png",
+          "width": 160,
+          "height": 160,
+          "sha1": "2541a63e5b2f6799f34eee350c669be005b5e351"
+        },
+        {
+          "path": "assets/art/toy-line-red.webp",
+          "width": 160,
+          "height": 160,
+          "sha1": "8f1492f51bba80caf923c05903c75ba95f3f34a4"
+        },
+        {
+          "path": "assets/art/toy-line-red@2x.webp",
+          "width": 320,
+          "height": 320,
+          "sha1": "c7b9f6d66263c96fd5fcda996cb7fa114a0d88d4"
+        },
+        {
+          "path": "assets/art/toy-line-red.png",
+          "width": 160,
+          "height": 160,
+          "sha1": "450d2bab7bc5f177d43150f5de31e49e0a9a2db2"
+        },
+        {
+          "path": "assets/art/toy-star.webp",
+          "width": 160,
+          "height": 160,
+          "sha1": "210b7ae7570ba262faac385b181c455221872d91"
+        },
+        {
+          "path": "assets/art/toy-star@2x.webp",
+          "width": 320,
+          "height": 320,
+          "sha1": "ae93a5212719f5e527d1f91de27c65459546162a"
+        },
+        {
+          "path": "assets/art/toy-star.png",
+          "width": 160,
+          "height": 160,
+          "sha1": "64d28e29926a83efe82f41e3e10d5ef8d2545721"
+        },
+        {
+          "path": "assets/art/toy-star-sm.webp",
+          "width": 40,
+          "height": 40,
+          "sha1": "fa6637398bfaac98b94275a5f39e0941d6aa9892"
+        },
+        {
+          "path": "assets/art/toy-star-sm@2x.webp",
+          "width": 80,
+          "height": 80,
+          "sha1": "407c1c1f9094b868a27b33a2d35f2e8954bc2668"
+        },
+        {
+          "path": "assets/art/toy-star-sm.png",
+          "width": 40,
+          "height": 40,
+          "sha1": "ee75786f6b235d2546ec1fb56d05fb17221c98d2"
+        }
+      ]
+    },
+    {
+      "file": "sheet_modes.png",
+      "group": "art",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/mode-computer.webp",
+          "width": 168,
+          "height": 168,
+          "sha1": "0b3035dff0efb44558dbd8f59605306dcae0070c"
+        },
+        {
+          "path": "assets/art/mode-computer@2x.webp",
+          "width": 336,
+          "height": 336,
+          "sha1": "5a42a2c3f8675a44146192c1afb5b3ce703c4295"
+        },
+        {
+          "path": "assets/art/mode-computer.png",
+          "width": 168,
+          "height": 168,
+          "sha1": "dcb52613037068d384e270ab30e29208f87f32d4"
+        },
+        {
+          "path": "assets/art/mode-same-phone.webp",
+          "width": 168,
+          "height": 168,
+          "sha1": "5d5d3c56a8be03a7ab0a49c2d59f5644e54e7783"
+        },
+        {
+          "path": "assets/art/mode-same-phone@2x.webp",
+          "width": 336,
+          "height": 336,
+          "sha1": "0195aac9446c426c3ed6ea96c20e24e92354dc5e"
+        },
+        {
+          "path": "assets/art/mode-same-phone.png",
+          "width": 168,
+          "height": 168,
+          "sha1": "e558ecff2bec73bb8314dcab8197a8e37dc4c4b3"
+        },
+        {
+          "path": "assets/art/mode-online.webp",
+          "width": 168,
+          "height": 168,
+          "sha1": "94144bb484529f0edbb2bea471620adde2e1caa0"
+        },
+        {
+          "path": "assets/art/mode-online@2x.webp",
+          "width": 336,
+          "height": 336,
+          "sha1": "0db0cc8e9496711f5ff4a7cdbc73a2b552964833"
+        },
+        {
+          "path": "assets/art/mode-online.png",
+          "width": 168,
+          "height": 168,
+          "sha1": "276d7daa12ebdc1133043dbc6123c01a090768ed"
+        },
+        {
+          "path": "assets/art/mode-private-room.webp",
+          "width": 168,
+          "height": 168,
+          "sha1": "b621b8663eb4f20c6f7d4b29312810de4b1105d8"
+        },
+        {
+          "path": "assets/art/mode-private-room@2x.webp",
+          "width": 336,
+          "height": 336,
+          "sha1": "d5f3425d773f342cb9ac14478860c91e2fbb2e25"
+        },
+        {
+          "path": "assets/art/mode-private-room.png",
+          "width": 168,
+          "height": 168,
+          "sha1": "438fbc78fe5456c55bef52bcfe4ce9637815cda9"
+        }
+      ]
+    },
+    {
+      "file": "sheet_features.png",
+      "group": "art",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/feature-skins.webp",
+          "width": 96,
+          "height": 96,
+          "sha1": "5c564e21e9f96fe5027d55e82a106e20fc7d9750"
+        },
+        {
+          "path": "assets/art/feature-skins@2x.webp",
+          "width": 192,
+          "height": 192,
+          "sha1": "8d34395526bfcb053b645b1aadf7c17d94c7a22a"
+        },
+        {
+          "path": "assets/art/feature-skins.png",
+          "width": 96,
+          "height": 96,
+          "sha1": "365341916ea52f72f1f6f2aacbed84bcd6b417f7"
+        },
+        {
+          "path": "assets/art/feature-daily-reward.webp",
+          "width": 96,
+          "height": 96,
+          "sha1": "5da9d9a6c470231bb682fe804d36679dcf82963a"
+        },
+        {
+          "path": "assets/art/feature-daily-reward@2x.webp",
+          "width": 192,
+          "height": 192,
+          "sha1": "e97149483f1942da9599831f01be2b2b8e2d03d7"
+        },
+        {
+          "path": "assets/art/feature-daily-reward.png",
+          "width": 96,
+          "height": 96,
+          "sha1": "ca1d3a7734312fb91d75ce984ab5957fc303c77b"
+        },
+        {
+          "path": "assets/art/feature-leaderboard.webp",
+          "width": 96,
+          "height": 96,
+          "sha1": "25089bfd12cc7dbbea5b0394f6cd0149a58f4ad0"
+        },
+        {
+          "path": "assets/art/feature-leaderboard@2x.webp",
+          "width": 192,
+          "height": 192,
+          "sha1": "98a12eb90cc3723e0883a094ebe7d45388f70850"
+        },
+        {
+          "path": "assets/art/feature-leaderboard.png",
+          "width": 96,
+          "height": 96,
+          "sha1": "b39a0b0cb0ea6279473d058da7d78c44930d1dd3"
+        },
+        {
+          "path": "assets/art/feature-fair-play.webp",
+          "width": 96,
+          "height": 96,
+          "sha1": "170fa4d6ae6540e2527a8880f6b10a031b4049c7"
+        },
+        {
+          "path": "assets/art/feature-fair-play@2x.webp",
+          "width": 192,
+          "height": 192,
+          "sha1": "c209449e998be6a28aa3be6563c4c6498a74e4a5"
+        },
+        {
+          "path": "assets/art/feature-fair-play.png",
+          "width": 96,
+          "height": 96,
+          "sha1": "46a0297c255a7c62474ae17495b6b548ae5cc95c"
+        },
+        {
+          "path": "assets/art/feature-fast-matches.webp",
+          "width": 96,
+          "height": 96,
+          "sha1": "e5ac977ad2c47ded2ed515680cbf89e25fe67f08"
+        },
+        {
+          "path": "assets/art/feature-fast-matches@2x.webp",
+          "width": 192,
+          "height": 192,
+          "sha1": "2c5c917edcc187dc823d4e956f1b7458a5ded4d6"
+        },
+        {
+          "path": "assets/art/feature-fast-matches.png",
+          "width": 96,
+          "height": 96,
+          "sha1": "e150cef21c366b478f34db528f09fdcb51ebaa7a"
+        },
+        {
+          "path": "assets/art/feature-offline.webp",
+          "width": 96,
+          "height": 96,
+          "sha1": "e52ad20261d76e5f38a21a41ec802e87015d0329"
+        },
+        {
+          "path": "assets/art/feature-offline@2x.webp",
+          "width": 192,
+          "height": 192,
+          "sha1": "c5f4a23e1250dcd49baee078a3f7ed4614275532"
+        },
+        {
+          "path": "assets/art/feature-offline.png",
+          "width": 96,
+          "height": 96,
+          "sha1": "82854f94da9754401bb4af6cf96ab9a500ac3105"
+        }
+      ]
+    },
+    {
+      "file": "sheet_genres.png",
+      "group": "art",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/genre-puzzle.webp",
+          "width": 96,
+          "height": 96,
+          "sha1": "c2bc49cf346c8a4b38bb3ffa542d54b70063b753"
+        },
+        {
+          "path": "assets/art/genre-puzzle@2x.webp",
+          "width": 192,
+          "height": 192,
+          "sha1": "a0f8738a02f812c7e64cca3369b1b44c49c6017f"
+        },
+        {
+          "path": "assets/art/genre-puzzle.png",
+          "width": 96,
+          "height": 96,
+          "sha1": "2a6b5d1447cad85af54127235969a008ae78d309"
+        },
+        {
+          "path": "assets/art/genre-hypercasual.webp",
+          "width": 96,
+          "height": 96,
+          "sha1": "caada0a082f63e87d6578e5f1357681b6eeec3fb"
+        },
+        {
+          "path": "assets/art/genre-hypercasual@2x.webp",
+          "width": 192,
+          "height": 192,
+          "sha1": "d58e4733706306b9a07762a6a709289a3e11f9fc"
+        },
+        {
+          "path": "assets/art/genre-hypercasual.png",
+          "width": 96,
+          "height": 96,
+          "sha1": "8786fcea567507daa1002276432e956dcda13254"
+        },
+        {
+          "path": "assets/art/genre-arcade.webp",
+          "width": 96,
+          "height": 96,
+          "sha1": "1c83c59e35bd1cebf56962409987caa362f74ca9"
+        },
+        {
+          "path": "assets/art/genre-arcade@2x.webp",
+          "width": 192,
+          "height": 192,
+          "sha1": "776536ab22048a4c802fd9b29cbdf2df5ff0ca8d"
+        },
+        {
+          "path": "assets/art/genre-arcade.png",
+          "width": 96,
+          "height": 96,
+          "sha1": "e92b894e59a3e8c16c0bd0ea51ad193028dad9bc"
+        },
+        {
+          "path": "assets/art/genre-hybrid-casual.webp",
+          "width": 96,
+          "height": 96,
+          "sha1": "8a49d9c819ac7bf4b9db860bacdaa09c86b65660"
+        },
+        {
+          "path": "assets/art/genre-hybrid-casual@2x.webp",
+          "width": 192,
+          "height": 192,
+          "sha1": "910259d06d5e4be0c9f8feac8d6905506b76f9b1"
+        },
+        {
+          "path": "assets/art/genre-hybrid-casual.png",
+          "width": 96,
+          "height": 96,
+          "sha1": "9cf14df6884dc67ab7859ef8dbbbc19146095942"
+        },
+        {
+          "path": "assets/art/genre-multiplayer.webp",
+          "width": 96,
+          "height": 96,
+          "sha1": "9215a7aed8d382c4f2a9b65e4ee44ffb5e2b26b1"
+        },
+        {
+          "path": "assets/art/genre-multiplayer@2x.webp",
+          "width": 192,
+          "height": 192,
+          "sha1": "86e0454ff14b6a4fc751fd92743b9a285f5c0c82"
+        },
+        {
+          "path": "assets/art/genre-multiplayer.png",
+          "width": 96,
+          "height": 96,
+          "sha1": "205fdb0f958c22f2b6056481746e25ce2175e924"
+        },
+        {
+          "path": "assets/art/genre-kids-family.webp",
+          "width": 96,
+          "height": 96,
+          "sha1": "079f20c2cd0397f86f2b441c8729abb797bd87f9"
+        },
+        {
+          "path": "assets/art/genre-kids-family@2x.webp",
+          "width": 192,
+          "height": 192,
+          "sha1": "192de9663a90b0ed2deb6a5928a3607951181338"
+        },
+        {
+          "path": "assets/art/genre-kids-family.png",
+          "width": 96,
+          "height": 96,
+          "sha1": "9e4029597dc5066183e256fbe0ea2afa1c053f7d"
+        }
+      ]
+    },
+    {
+      "file": "studio_workshop.png",
+      "group": "art",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/studio-workshop-960.webp",
+          "width": 960,
+          "height": 540,
+          "sha1": "7f2a200f356dc754d79a99bc656278457091903f"
+        },
+        {
+          "path": "assets/art/studio-workshop-960.jpg",
+          "width": 960,
+          "height": 540,
+          "sha1": "85318329fd41bb53e62dd7fc668a91d342aeb04f"
+        },
+        {
+          "path": "assets/art/studio-workshop-1440.webp",
+          "width": 1440,
+          "height": 810,
+          "sha1": "f29d36133e084124d5bc672152b62a6fb8d9b4d0"
+        },
+        {
+          "path": "assets/art/studio-workshop-1440.jpg",
+          "width": 1440,
+          "height": 810,
+          "sha1": "1638b6390e1359169f5289487ca4dfc61aef1f97"
+        },
+        {
+          "path": "assets/art/studio-workshop-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "sha1": "3845a3b3974add185c851f7803044e9f85c80783"
+        },
+        {
+          "path": "assets/art/studio-workshop-1920.jpg",
+          "width": 1920,
+          "height": 1080,
+          "sha1": "fa9059511fd4b0d3636c59862a47deae4529e396"
+        }
+      ]
+    },
+    {
+      "file": "trail_divider.png",
+      "group": "art",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/trail-divider-600.webp",
+          "width": 600,
+          "height": 200,
+          "sha1": "a92bcd1f4d05caed1967e4cc03f02a0d2893eaf9"
+        },
+        {
+          "path": "assets/art/trail-divider-1200.webp",
+          "width": 1200,
+          "height": 400,
+          "sha1": "68a7f754459cb488f413a4fd7bfc1344c163d0c6"
+        },
+        {
+          "path": "assets/art/trail-divider-2400.webp",
+          "width": 2400,
+          "height": 800,
+          "sha1": "70c3a5f7c46192a5ca16ea0bce5643c8d3d09ac4"
+        },
+        {
+          "path": "assets/art/trail-divider.png",
+          "width": 600,
+          "height": 200,
+          "sha1": "36e8bb78428e1326d513530a79b32ff2db6e0aac"
+        }
+      ]
+    },
+    {
+      "file": "game_01_home.png",
+      "group": "shots",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/shots/home.webp",
+          "width": 360,
+          "height": 640,
+          "sha1": "e1c0ebad3ebdae732897d842d3efaf0643ddac19"
+        },
+        {
+          "path": "assets/shots/home@2x.webp",
+          "width": 720,
+          "height": 1280,
+          "sha1": "270e08db98148f922aa413c831392bed0a807845"
+        },
+        {
+          "path": "assets/shots/home.jpg",
+          "width": 360,
+          "height": 640,
+          "sha1": "33d70ccd650142dc249cfdf8c52bb65274007222"
+        }
+      ]
+    },
+    {
+      "file": "game_02_grid-war.png",
+      "group": "shots",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/shots/grid-war.webp",
+          "width": 360,
+          "height": 640,
+          "sha1": "97f2fcff18c34243747978837c6cb4f186fc1f14"
+        },
+        {
+          "path": "assets/shots/grid-war@2x.webp",
+          "width": 720,
+          "height": 1280,
+          "sha1": "1199dca904f8c571dcac001dd683e5da4481ba88"
+        },
+        {
+          "path": "assets/shots/grid-war.jpg",
+          "width": 360,
+          "height": 640,
+          "sha1": "d77f765e16b8d35dc5b042d3e0f98d6ef4b1c49a"
+        }
+      ]
+    },
+    {
+      "file": "game_03_diceback.png",
+      "group": "shots",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/shots/diceback.webp",
+          "width": 360,
+          "height": 640,
+          "sha1": "9a8582ea4a02fa3fc5a2f5e63e9c728a8e6a2355"
+        },
+        {
+          "path": "assets/shots/diceback@2x.webp",
+          "width": 720,
+          "height": 1280,
+          "sha1": "3e03503683513fdcebb65128774cfaabc5f00a48"
+        },
+        {
+          "path": "assets/shots/diceback.jpg",
+          "width": 360,
+          "height": 640,
+          "sha1": "fed5bffd4880c1c68d7bdd3fb5b4ae232b8c67bd"
+        }
+      ]
+    },
+    {
+      "file": "game_04_roll-race.png",
+      "group": "shots",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/shots/roll-race.webp",
+          "width": 360,
+          "height": 640,
+          "sha1": "741390eb31f10ee4d39e81040ef425e39953166f"
+        },
+        {
+          "path": "assets/shots/roll-race@2x.webp",
+          "width": 720,
+          "height": 1280,
+          "sha1": "cb803185250bfd63a15906a3a32521ac98850d17"
+        },
+        {
+          "path": "assets/shots/roll-race.jpg",
+          "width": 360,
+          "height": 640,
+          "sha1": "f48d5ceec7c266102904a132d656286c7a86af1b"
+        }
+      ]
+    },
+    {
+      "file": "game_05_six-spots.png",
+      "group": "shots",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/shots/six-spots.webp",
+          "width": 360,
+          "height": 640,
+          "sha1": "ec20e0bee2c941ddb3cea86f463b09daf358ce8e"
+        },
+        {
+          "path": "assets/shots/six-spots@2x.webp",
+          "width": 720,
+          "height": 1280,
+          "sha1": "aa33962f417227e29036d199fd441e242806a765"
+        },
+        {
+          "path": "assets/shots/six-spots.jpg",
+          "width": 360,
+          "height": 640,
+          "sha1": "d83d96a75754f9ce9f4d2cfc7481db6f685de259"
+        }
+      ]
+    },
+    {
+      "file": "game_06_scoop-stack.png",
+      "group": "shots",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/shots/scoop-stack.webp",
+          "width": 360,
+          "height": 640,
+          "sha1": "24c564f505647c905cfa1a78d6adde8be9a686c4"
+        },
+        {
+          "path": "assets/shots/scoop-stack@2x.webp",
+          "width": 720,
+          "height": 1280,
+          "sha1": "a52612af663ee2f1a089c7ea6a98fc15567090d0"
+        },
+        {
+          "path": "assets/shots/scoop-stack.jpg",
+          "width": 360,
+          "height": 640,
+          "sha1": "1e13535ba46169025b3af0f62ae20d65ed764657"
+        }
+      ]
+    },
+    {
+      "file": "game_07_win.png",
+      "group": "shots",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/shots/win.webp",
+          "width": 360,
+          "height": 640,
+          "sha1": "7e80fcb4410ce778ae1aa10c456d3c4760d1e7fe"
+        },
+        {
+          "path": "assets/shots/win@2x.webp",
+          "width": 720,
+          "height": 1280,
+          "sha1": "74fefcd09bc447aaf6620eb83545a16d1b6c50ff"
+        },
+        {
+          "path": "assets/shots/win.jpg",
+          "width": 360,
+          "height": 640,
+          "sha1": "b017197e8148c72a4b37e06356a8876bba07bf66"
+        }
+      ]
+    },
+    {
+      "file": "game_08_store.png",
+      "group": "shots",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/shots/store.webp",
+          "width": 360,
+          "height": 640,
+          "sha1": "e79bebc7fa9bc2f0a702ac099a6929223a25f1a0"
+        },
+        {
+          "path": "assets/shots/store@2x.webp",
+          "width": 720,
+          "height": 1280,
+          "sha1": "a317af4e7adbf1e7d305cf62858e7371d740d9df"
+        },
+        {
+          "path": "assets/shots/store.jpg",
+          "width": 360,
+          "height": 640,
+          "sha1": "61cc30e35eeefa2fae8b9f7cb1aa05ab37aa8fcf"
+        }
+      ]
+    },
+    {
+      "file": "game_09_skins.png",
+      "group": "shots",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/shots/skins.webp",
+          "width": 360,
+          "height": 640,
+          "sha1": "e90135023bf4913a096fa51b4ccd184fb2e28464"
+        },
+        {
+          "path": "assets/shots/skins@2x.webp",
+          "width": 720,
+          "height": 1280,
+          "sha1": "2c6d300175d815b4b3c02d26ef42c8585eef9c44"
+        },
+        {
+          "path": "assets/shots/skins.jpg",
+          "width": 360,
+          "height": 640,
+          "sha1": "3a8e675ae6163ed7f653d68d6e4e8c09d9deae75"
+        }
+      ]
+    },
+    {
+      "file": "game_10_setup.png",
+      "group": "shots",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/shots/setup.webp",
+          "width": 360,
+          "height": 640,
+          "sha1": "51ee435b9b540a3e098d50c464120ae91ab6fae4"
+        },
+        {
+          "path": "assets/shots/setup@2x.webp",
+          "width": 720,
+          "height": 1280,
+          "sha1": "9605e682293ed8d57974501447acb7e873c43bc4"
+        },
+        {
+          "path": "assets/shots/setup.jpg",
+          "width": 360,
+          "height": 640,
+          "sha1": "9c874bf373424ba57a0cc8b04b276db67064edfc"
+        }
+      ]
+    },
+    {
+      "file": "game_11_loading.png",
+      "group": "shots",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/shots/loading.webp",
+          "width": 360,
+          "height": 640,
+          "sha1": "5a885150b3bb3874c3f5c55214acca98c8c217ee"
+        },
+        {
+          "path": "assets/shots/loading@2x.webp",
+          "width": 720,
+          "height": 1280,
+          "sha1": "47865bed45d5a20530c818d47866c1221cb01687"
+        },
+        {
+          "path": "assets/shots/loading.jpg",
+          "width": 360,
+          "height": 640,
+          "sha1": "758bb7212f707fe786ebde6026e5e55e4ec4ccb4"
+        }
+      ]
+    },
+    {
+      "file": "dice-duo_logo.png",
+      "group": "brand",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/dice-duo-logo.webp",
+          "width": 600,
+          "height": 300,
+          "sha1": "8ca54c96682f0aa87f374ccab2b2101e4e44dd55"
+        },
+        {
+          "path": "assets/art/dice-duo-logo@2x.webp",
+          "width": 1200,
+          "height": 600,
+          "sha1": "e64622bbc74ba81e21e391f6ca851f11f34c83f7"
+        },
+        {
+          "path": "assets/art/dice-duo-logo.png",
+          "width": 600,
+          "height": 300,
+          "sha1": "6b7e9f2b49c77ca95aa67303833a5765fe553fb0"
+        }
+      ]
+    },
+    {
+      "file": "game-icon_grid-war.png",
+      "group": "brand",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/icon-grid-war.webp",
+          "width": 128,
+          "height": 128,
+          "sha1": "b132b23d330f2a91bfad09363ab830590e7571dd"
+        },
+        {
+          "path": "assets/art/icon-grid-war@2x.webp",
+          "width": 256,
+          "height": 256,
+          "sha1": "385704b09f22b501fdd700f82ae4e680f54717a1"
+        },
+        {
+          "path": "assets/art/icon-grid-war.png",
+          "width": 128,
+          "height": 128,
+          "sha1": "806e00072e28ad19345410dda71fc6f7b05c41d1"
+        }
+      ]
+    },
+    {
+      "file": "game-icon_diceback.png",
+      "group": "brand",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/icon-diceback.webp",
+          "width": 128,
+          "height": 128,
+          "sha1": "5f20e92c81e6b0a902596bcb4f1277ab953dc121"
+        },
+        {
+          "path": "assets/art/icon-diceback@2x.webp",
+          "width": 256,
+          "height": 256,
+          "sha1": "8440da6e246660b3d3c6e6509e00ce845aba5dc3"
+        },
+        {
+          "path": "assets/art/icon-diceback.png",
+          "width": 128,
+          "height": 128,
+          "sha1": "1dcffdc28988cd4d4bea6b8a88f1e30ff173e3fa"
+        }
+      ]
+    },
+    {
+      "file": "game-icon_roll-race.png",
+      "group": "brand",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/icon-roll-race.webp",
+          "width": 128,
+          "height": 128,
+          "sha1": "2dbfee570d32fde71f163f965aa6e152d3123329"
+        },
+        {
+          "path": "assets/art/icon-roll-race@2x.webp",
+          "width": 256,
+          "height": 256,
+          "sha1": "b351c77d8224f04fd9a0be5e45f6c5ec58b0da62"
+        },
+        {
+          "path": "assets/art/icon-roll-race.png",
+          "width": 128,
+          "height": 128,
+          "sha1": "1e8a5301767a73896357b46e55485c22f7cca4d6"
+        }
+      ]
+    },
+    {
+      "file": "game-icon_six-spots.png",
+      "group": "brand",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/icon-six-spots.webp",
+          "width": 128,
+          "height": 128,
+          "sha1": "83ed67f444c2d01c2d2fb3f9fa7a9bbbeb44c74f"
+        },
+        {
+          "path": "assets/art/icon-six-spots@2x.webp",
+          "width": 256,
+          "height": 256,
+          "sha1": "ab9fff859a7c1765da29c37912cf47ec837751f8"
+        },
+        {
+          "path": "assets/art/icon-six-spots.png",
+          "width": 128,
+          "height": 128,
+          "sha1": "2061e0411fb3ac8366625af4ac5f2865af021c27"
+        }
+      ]
+    },
+    {
+      "file": "game-icon_scoop-stack.png",
+      "group": "brand",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/art/icon-scoop-stack.webp",
+          "width": 128,
+          "height": 128,
+          "sha1": "1c8696c50cf17a88dc93a291782218ad6f7589de"
+        },
+        {
+          "path": "assets/art/icon-scoop-stack@2x.webp",
+          "width": 256,
+          "height": 256,
+          "sha1": "959b705211fdaca2cde87c2fe7aeaab98f774f1d"
+        },
+        {
+          "path": "assets/art/icon-scoop-stack.png",
+          "width": 128,
+          "height": 128,
+          "sha1": "9a84295732082e704b744175ffacc6f294d79d90"
+        }
+      ]
+    },
+    {
+      "file": "og-image.jpg",
+      "group": "share",
+      "status": "real",
+      "outputs": [
+        {
+          "path": "assets/img/og-image.jpg",
+          "width": 1200,
+          "height": 630,
+          "sha1": "16e1dc486769a23906e7ce61302536a75bb75ec1"
+        }
+      ]
+    }
+  ]
+}

@@ -4,44 +4,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>404 - Page Not Found | Bouncy Comet</title>
-  <meta name="description" content="This page rolled off the board. Nothing lives at this address on bouncycomet.com, but the main menu and the DiceBack game page are one tap away.">
+  <meta name="description" content="This page rolled off the board. Nothing lives at this address on bouncycomet.com, but the home page and the Dice Duo page are one tap away.">
   <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#071A33">
+  <meta name="theme-color" content="#0A1436">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Bouncy Comet">
   <meta property="og:title" content="404 - Page Not Found | Bouncy Comet">
-  <meta property="og:description" content="This page rolled off the board. Nothing lives at this address on bouncycomet.com, but the main menu and the DiceBack game page are one tap away.">
-  <meta property="og:image" content="https://bouncycomet.com/assets/img/og-image.jpg">
+  <meta property="og:description" content="This page rolled off the board. Nothing lives at this address on bouncycomet.com, but the home page and the Dice Duo page are one tap away.">
+  <meta property="og:image" content="https://bouncycomet.com/assets/img/og-image.jpg?v=16e1dc48">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="A Bouncy Comet banner showing three phones running DiceBack, the studio's two-player dice game.">
+  <meta property="og:image:alt" content="Bouncy Comet, an independent mobile game studio.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="404 - Page Not Found | Bouncy Comet">
-  <meta name="twitter:description" content="This page rolled off the board. Nothing lives at this address on bouncycomet.com, but the main menu and the DiceBack game page are one tap away.">
-  <meta name="twitter:image" content="https://bouncycomet.com/assets/img/og-image.jpg">
-  <meta name="twitter:image:alt" content="A Bouncy Comet banner showing three phones running DiceBack, the studio's two-player dice game.">
-  <link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
-  <link rel="icon" href="/assets/icons/favicon-32.png" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap">
-  <!-- Set before first paint so .reveal blocks are only hidden when JS can reveal them. -->
-  <script>document.documentElement.classList.add('js');</script>
-  <link rel="stylesheet" href="/css/style.css">
-  <style>
-    /* Page-local only. style.css has no full-height hero variant, and the 404 page
-       is the one page with too little content to fill the viewport on its own.
-       Composed from existing tokens; nothing here overrides a shared class. */
-    .hero--404 {
-      display: flex;
-      align-items: center;
-      min-height: calc(100vh - var(--header-h));
-      min-height: calc(100svh - var(--header-h));
-    }
-    .hero--404 > .wrap { width: 100%; }
-  </style>
+  <meta name="twitter:description" content="This page rolled off the board. Nothing lives at this address on bouncycomet.com, but the home page and the Dice Duo page are one tap away.">
+  <meta name="twitter:image" content="https://bouncycomet.com/assets/img/og-image.jpg?v=16e1dc48">
+  <meta name="twitter:image:alt" content="Bouncy Comet, an independent mobile game studio.">
+  <link rel="icon" href="/assets/icons/favicon.ico?v=2050a3d2" sizes="any">
+  <link rel="icon" href="/assets/icons/favicon-32.png?v=d00324c3" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png?v=4e0e32cf">
+  <link rel="manifest" href="/site.webmanifest?v=643073f1">
+  <link rel="preload" href="/assets/fonts/LilitaOne-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/assets/fonts/Nunito-Bold.woff" as="font" type="font/woff" crossorigin>
+  <!-- Set before first paint so .reveal blocks and the mobile menu are only hidden when JS can show them;
+       taken away again if js/main.js never arrives. -->
+  <script>document.documentElement.classList.add('js');addEventListener('load',function(){window.__bc||document.documentElement.classList.remove('js')});</script>
+  <link rel="stylesheet" href="/css/style.css?v=34b49416">
 </head>
 <body>
 
@@ -49,75 +37,57 @@
 <header class="site-header" id="siteHeader">
   <nav class="wrap nav" aria-label="Main">
     <a class="nav__logo" href="/index.html" aria-label="Bouncy Comet - home">
-      <svg class="nav__logo-mark" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-        <defs>
-          <linearGradient id="bcTail" x1="0" y1="1" x2="1" y2="0">
-            <stop offset="0" stop-color="#FFC61A" stop-opacity="0"/>
-            <stop offset="1" stop-color="#FFC61A" stop-opacity=".95"/>
-          </linearGradient>
-          <radialGradient id="bcHead" cx=".35" cy=".3" r=".75">
-            <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFC61A"/>
-          </radialGradient>
-        </defs>
-        <path d="M6 58C6 40 18 20 40 10l12 12C42 44 24 56 6 58Z" fill="url(#bcTail)"/>
-        <circle cx="45" cy="19" r="13" fill="url(#bcHead)"/>
-      </svg>
+      <img class="nav__logo-mark" src="/assets/icons/logo-mark.png?v=7af52c43" srcset="/assets/icons/logo-mark.png?v=7af52c43 1x, /assets/icons/logo-mark@2x.png?v=5d838990 2x, /assets/icons/logo-mark@3x.png?v=66e2e5da 3x" width="44" height="44" alt="">
       <span class="nav__logo-text">Bouncy<span>Comet</span></span>
     </a>
-    <button class="nav__burger" id="navBurger" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+    <button class="nav__burger" id="navBurger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
     <div class="nav__links" id="navLinks">
       <a class="nav__link" href="/index.html">Home</a>
       <a class="nav__link" href="/games.html">Games</a>
-      <a class="nav__link" href="/diceback.html">DiceBack</a>
+      <a class="nav__link" href="/diceback.html">Dice Duo</a>
       <a class="nav__link" href="/about.html">About</a>
-      <a class="nav__cta btn btn--primary" href="/contact.html">Contact</a>
+      <a class="nav__cta btn btn--comet btn--sm" href="/contact.html">Contact</a>
     </div>
   </nav>
 </header>
 
 <main id="main">
-
-  <section class="hero hero--404">
-    <div class="wrap hero__inner reveal">
-      <div class="hero__copy">
+  <section class="banner banner--split banner--404">
+    <picture class="backdrop"><source type="image/webp" srcset="/assets/art/bg-night-sky-1280.webp?v=f0efc9bd 1280w, /assets/art/bg-night-sky-1920.webp?v=024bfe11 1920w" sizes="100vw"><img src="/assets/art/bg-night-sky-1280.jpg?v=e23fa50f" srcset="/assets/art/bg-night-sky-1280.jpg?v=e23fa50f 1280w, /assets/art/bg-night-sky-1920.jpg?v=3c714ba9 1920w" sizes="100vw" width="1920" height="1080" alt="" loading="eager" fetchpriority="high"></picture>
+    <div class="banner__shade"></div>
+    <div class="floaters" aria-hidden="true">
+      <picture class="floater floater--wide" style="--size:104px; right:6%; top:16%; --depth:.4; --tilt:16deg; --bob:7s"><source type="image/webp" srcset="/assets/art/toy-die-two.webp?v=61d66f4f 1x, /assets/art/toy-die-two@2x.webp?v=c788257e 2x"><img src="/assets/art/toy-die-two.png?v=d67dd0e7" width="160" height="160" alt="" loading="lazy"></picture>
+      <picture class="floater floater--wide" style="--size:76px; left:46%; top:76%; --depth:-.3; --tilt:-8deg; --bob:8s; --delay:-2s"><source type="image/webp" srcset="/assets/art/toy-token-red.webp?v=4d50e112 1x, /assets/art/toy-token-red@2x.webp?v=43be09a8 2x"><img src="/assets/art/toy-token-red.png?v=a894674c" width="160" height="160" alt="" loading="lazy"></picture>
+      <picture class="floater floater--wide" style="--size:70px; left:52%; top:14%; --depth:.7; --tilt:10deg; --bob:6s; --delay:-1s"><source type="image/webp" srcset="/assets/art/toy-x-yellow.webp?v=a1968476 1x, /assets/art/toy-x-yellow@2x.webp?v=34432475 2x"><img src="/assets/art/toy-x-yellow.png?v=2541a63e" width="160" height="160" alt="" loading="lazy"></picture>
+    </div>
+    <div class="wrap banner__inner">
+      <div class="banner__copy">
         <p class="eyebrow">Error 404</p>
-        <h1 class="h1 balance">404 - that roll missed the board</h1>
+        <h1 class="h1 balance">404 - that roll <span class="pop">missed the board</span></h1>
         <p class="lead">Sorry about that. The page you asked for is not here, so either the link is out of date or a letter went astray on the way in. Nothing is broken on your end. Let's get you back to a screen that actually exists.</p>
         <div class="btn-row">
-          <a class="btn btn--primary btn--lg" href="/index.html">Back to the main menu</a>
-          <a class="btn btn--ghost btn--lg" href="/diceback.html">See DiceBack</a>
-        </div>
-        <div class="pill-row mt-5">
-          <span class="pill">Roll. Think. Bounce. Win!</span>
+          <a class="btn btn--primary btn--lg" href="/index.html">Back to the home page</a>
+          <a class="btn btn--ghost btn--lg" href="/diceback.html">See Dice Duo</a>
         </div>
       </div>
-
-      <div class="hero__art">
-        <div class="phone phone--tilt-r">
-          <picture>
-            <source type="image/webp" srcset="/assets/img/diceback-lose.webp 1x, /assets/img/diceback-lose@2x.webp 2x">
-            <img src="/assets/img/diceback-lose.jpg" srcset="/assets/img/diceback-lose.jpg 1x, /assets/img/diceback-lose@2x.jpg 2x" width="540" height="959" alt="DiceBack You Lose screen with a Retry button" loading="eager" fetchpriority="high" decoding="async">
-          </picture>
-        </div>
+      <div class="banner__art float-slow">
+        <picture><source type="image/webp" srcset="/assets/art/mascot-lost-200.webp?v=28f6dc1f 200w, /assets/art/mascot-lost-400.webp?v=7eada91c 400w, /assets/art/mascot-lost-800.webp?v=86ff1c73 800w" sizes="(max-width: 899px) 240px, 400px"><img src="/assets/art/mascot-lost.png?v=703d3bcc" width="400" height="400" alt="Comet, the Bouncy Comet mascot, a purple rock comet, curled round on its own trail as if it took a wrong turn" loading="eager"></picture>
       </div>
     </div>
   </section>
-
 </main>
 
 <footer class="site-footer">
   <div class="wrap footer__grid">
     <div class="footer__brand">
       <a class="nav__logo" href="/index.html" aria-label="Bouncy Comet - home">
-        <svg class="nav__logo-mark" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-          <path d="M6 58C6 40 18 20 40 10l12 12C42 44 24 56 6 58Z" fill="#FFC61A" opacity=".55"/>
-          <circle cx="45" cy="19" r="13" fill="#FFE9A8"/>
-        </svg>
+        <img class="nav__logo-mark" src="/assets/icons/logo-mark.png?v=7af52c43" srcset="/assets/icons/logo-mark.png?v=7af52c43 1x, /assets/icons/logo-mark@2x.png?v=5d838990 2x, /assets/icons/logo-mark@3x.png?v=66e2e5da 3x" width="44" height="44" alt="">
         <span class="nav__logo-text">Bouncy<span>Comet</span></span>
       </a>
-      <p class="footer__tag">We make bright, bouncy games worth coming back to - puzzle, arcade, hypercasual, hybrid-casual, multiplayer and games for kids.</p>
+      <picture class="footer__mascot"><source type="image/webp" srcset="/assets/art/mascot-wave-sm.webp?v=4ca5598c 1x, /assets/art/mascot-wave-sm@2x.webp?v=2ddb4091 2x"><img src="/assets/art/mascot-wave-sm.png?v=08e10111" width="120" height="120" alt="Comet, the Bouncy Comet mascot: a purple rock comet with glowing red cracks and a sparkle of stars" loading="lazy"></picture>
+      <p class="footer__tag">We make bright, bouncy games worth coming back to. First out of the toybox: Dice Duo, five two-player dice games in one app.</p>
     </div>
     <div class="footer__col">
       <h2 class="footer__head">Studio</h2>
@@ -128,10 +98,11 @@
       </ul>
     </div>
     <div class="footer__col">
-      <h2 class="footer__head">DiceBack</h2>
+      <h2 class="footer__head">Dice Duo</h2>
       <ul class="footer__links">
         <li><a href="/diceback.html">Overview</a></li>
-        <li><a href="/diceback.html#how-to-play">How to play</a></li>
+        <li><a href="/diceback.html#how-to-play">The five games</a></li>
+        <li><a href="/diceback.html#modes">Ways to play</a></li>
         <li><a href="/diceback.html#screens">Screenshots</a></li>
       </ul>
     </div>
@@ -151,6 +122,6 @@
   </div>
 </footer>
 
-<script src="/js/main.js" defer></script>
+<script src="/js/main.js?v=8120d787" defer></script>
 </body>
 </html>

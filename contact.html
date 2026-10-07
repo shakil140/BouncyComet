@@ -4,49 +4,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | Bouncy Comet</title>
-  <meta name="description" content="Contact Bouncy Comet: publishing and partnership inquiries, player support for DiceBack, press kit requests, or just say hello to the studio.">
+  <meta name="description" content="Contact Bouncy Comet: publishing and partnerships, player support for Dice Duo, press, privacy and general enquiries. We read every message ourselves.">
   <link rel="canonical" href="https://bouncycomet.com/contact.html">
-  <meta name="theme-color" content="#071A33">
+  <meta name="theme-color" content="#0A1436">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Bouncy Comet">
   <meta property="og:title" content="Contact | Bouncy Comet">
-  <meta property="og:description" content="Contact Bouncy Comet: publishing and partnership inquiries, player support for DiceBack, press kit requests, or just say hello to the studio.">
+  <meta property="og:description" content="Contact Bouncy Comet: publishing and partnerships, player support for Dice Duo, press, privacy and general enquiries. We read every message ourselves.">
   <meta property="og:url" content="https://bouncycomet.com/contact.html">
-  <meta property="og:image" content="https://bouncycomet.com/assets/img/og-image.jpg">
+  <meta property="og:image" content="https://bouncycomet.com/assets/img/og-image.jpg?v=16e1dc48">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="A Bouncy Comet banner showing three phones running DiceBack, the studio's two-player dice game.">
+  <meta property="og:image:alt" content="Bouncy Comet, an independent mobile game studio.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Contact | Bouncy Comet">
-  <meta name="twitter:description" content="Contact Bouncy Comet: publishing and partnership inquiries, player support for DiceBack, press kit requests, or just say hello to the studio.">
-  <meta name="twitter:image" content="https://bouncycomet.com/assets/img/og-image.jpg">
-  <meta name="twitter:image:alt" content="A Bouncy Comet banner showing three phones running DiceBack, the studio's two-player dice game.">
-  <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
-  <link rel="icon" href="assets/icons/favicon-32.png" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap">
-  <!-- Set before first paint so .reveal blocks are only hidden when JS can reveal them. -->
-  <script>document.documentElement.classList.add('js');</script>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* Page-local only. style.css ships .grid, .grid--3 and .grid--4 but no
-       two-column split, and this page needs form-left / routes-right.
-       Composes on top of .grid, so gap and flow still come from the system.
-       Collapses to one column at the same 899px breakpoint the rest of the
-       site uses. Nothing else on the page needs a new class. */
-    .contact-grid {
-      grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
-      align-items: start;
-      gap: clamp(var(--s-6), 4vw, var(--s-8));
-    }
-
-    @media (max-width: 899px) {
-      .contact-grid { grid-template-columns: 1fr; }
-    }
-  </style>
+  <meta name="twitter:description" content="Contact Bouncy Comet: publishing and partnerships, player support for Dice Duo, press, privacy and general enquiries. We read every message ourselves.">
+  <meta name="twitter:image" content="https://bouncycomet.com/assets/img/og-image.jpg?v=16e1dc48">
+  <meta name="twitter:image:alt" content="Bouncy Comet, an independent mobile game studio.">
+  <link rel="icon" href="assets/icons/favicon.ico?v=2050a3d2" sizes="any">
+  <link rel="icon" href="assets/icons/favicon-32.png?v=d00324c3" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png?v=4e0e32cf">
+  <link rel="manifest" href="site.webmanifest?v=643073f1">
+  <link rel="preload" href="assets/fonts/LilitaOne-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/Nunito-Bold.woff" as="font" type="font/woff" crossorigin>
+  <!-- Set before first paint so .reveal blocks and the mobile menu are only hidden when JS can show them;
+       taken away again if js/main.js never arrives. -->
+  <script>document.documentElement.classList.add('js');addEventListener('load',function(){window.__bc||document.documentElement.classList.remove('js')});</script>
+  <link rel="stylesheet" href="css/style.css?v=34b49416">
 </head>
 <body>
 
@@ -54,45 +38,37 @@
 <header class="site-header" id="siteHeader">
   <nav class="wrap nav" aria-label="Main">
     <a class="nav__logo" href="index.html" aria-label="Bouncy Comet - home">
-      <svg class="nav__logo-mark" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-        <defs>
-          <linearGradient id="bcTail" x1="0" y1="1" x2="1" y2="0">
-            <stop offset="0" stop-color="#FFC61A" stop-opacity="0"/>
-            <stop offset="1" stop-color="#FFC61A" stop-opacity=".95"/>
-          </linearGradient>
-          <radialGradient id="bcHead" cx=".35" cy=".3" r=".75">
-            <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFC61A"/>
-          </radialGradient>
-        </defs>
-        <path d="M6 58C6 40 18 20 40 10l12 12C42 44 24 56 6 58Z" fill="url(#bcTail)"/>
-        <circle cx="45" cy="19" r="13" fill="url(#bcHead)"/>
-      </svg>
+      <img class="nav__logo-mark" src="assets/icons/logo-mark.png?v=7af52c43" srcset="assets/icons/logo-mark.png?v=7af52c43 1x, assets/icons/logo-mark@2x.png?v=5d838990 2x, assets/icons/logo-mark@3x.png?v=66e2e5da 3x" width="44" height="44" alt="">
       <span class="nav__logo-text">Bouncy<span>Comet</span></span>
     </a>
-    <button class="nav__burger" id="navBurger" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+    <button class="nav__burger" id="navBurger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
     <div class="nav__links" id="navLinks">
       <a class="nav__link" href="index.html">Home</a>
       <a class="nav__link" href="games.html">Games</a>
-      <a class="nav__link" href="diceback.html">DiceBack</a>
+      <a class="nav__link" href="diceback.html">Dice Duo</a>
       <a class="nav__link" href="about.html">About</a>
-      <a class="nav__cta btn btn--primary" href="contact.html" aria-current="page">Contact</a>
+      <a class="nav__cta btn btn--comet btn--sm" href="contact.html" aria-current="page">Contact</a>
     </div>
   </nav>
 </header>
 
 <main id="main">
-
   <!-- ===================================================================
-       PAGE HEADER
+       PAGE BANNER
        =================================================================== -->
-  <section class="section section--dark section--tight">
-    <div class="wrap">
-      <div class="section__head">
+  <section class="banner banner--split">
+    <picture class="backdrop"><source type="image/webp" srcset="assets/art/bg-night-sky-1280.webp?v=f0efc9bd 1280w, assets/art/bg-night-sky-1920.webp?v=024bfe11 1920w" sizes="100vw"><img src="assets/art/bg-night-sky-1280.jpg?v=e23fa50f" srcset="assets/art/bg-night-sky-1280.jpg?v=e23fa50f 1280w, assets/art/bg-night-sky-1920.jpg?v=3c714ba9 1920w" sizes="100vw" width="1920" height="1080" alt="" loading="eager" fetchpriority="high"></picture>
+    <div class="banner__shade"></div>
+    <div class="wrap banner__inner">
+      <div class="banner__copy">
         <p class="eyebrow">Contact</p>
-        <h1 class="h1 balance">Get in touch</h1>
-        <p class="lead">Publisher sizing up DiceBack, player who hit a snag, or someone with an idea worth a conversation? Pick the mailbox that fits and we will read it ourselves. No ticket queue, no bot in the middle.</p>
+        <h1 class="h1 balance">Get in <span class="pop">touch</span></h1>
+        <p class="lead">Publisher sizing up Dice Duo, player who hit a snag, or someone with an idea worth a conversation? Pick the mailbox that fits and we will read it ourselves. No ticket queue, no bot in the middle.</p>
+      </div>
+      <div class="banner__art float-slow">
+        <picture><source type="image/webp" srcset="assets/art/mascot-wave-200.webp?v=1d72e22d 200w, assets/art/mascot-wave-400.webp?v=2b37345b 400w, assets/art/mascot-wave-800.webp?v=2fdc3e15 800w" sizes="(max-width: 899px) 240px, 400px"><img src="assets/art/mascot-wave.png?v=1d401708" width="400" height="400" alt="Comet, the Bouncy Comet mascot: a purple rock comet with glowing red cracks and a sparkle of stars" loading="eager"></picture>
       </div>
     </div>
   </section>
@@ -100,13 +76,13 @@
   <!-- ===================================================================
        CONTACT GRID - form on the left, direct routes on the right
        =================================================================== -->
-  <section class="section" id="contact">
+  <section class="section section--tight" id="contact">
     <div class="wrap">
-      <div class="grid contact-grid reveal">
+      <div class="contact-grid reveal">
 
         <div>
           <h2 class="h2 balance">Send a message</h2>
-          <p class="lead mb-6">Tell us who you are and what you need. The more context you give, the faster the reply comes back.</p>
+          <p class="lead mt-4 mb-6">Tell us who you are and what you need. The more context you give, the faster the reply comes back.</p>
 
           <form class="form" id="contactForm" method="post" action="mailto:hello@bouncycomet.com" novalidate>
             <p class="form__note" id="formNote" role="status" aria-live="polite" hidden></p>
@@ -157,49 +133,38 @@
 
         <div>
           <h2 class="h2 balance">Reach us directly</h2>
-          <p class="lead mb-6">Six ways in, so your message lands with the right person the first time.</p>
+          <p class="lead mt-4 mb-6">Six ways in, so your message lands with the right person the first time.</p>
 
-          <div class="grid">
-            <article class="card">
-              <span class="card__icon" aria-hidden="true">&#129309;</span>
-              <h3 class="card__title">Business &amp; publishing</h3>
-              <p class="card__text">Publishing offers, UA partnerships, ad and monetization deals, or co-development. Send the deal shape and the terms you work with and we will come back with build access.</p>
-              <p class="card__text"><a href="mailto:partners@bouncycomet.com">partners@bouncycomet.com</a></p>
+          <div class="routes">
+            <article class="route">
+              <h3 class="h3">Business &amp; publishing</h3>
+              <p>Publishing offers, UA partnerships, ad and monetization deals, or co-development. Send the deal shape and the terms you work with and we will come back with build access.</p>
+              <p><a href="mailto:partners@bouncycomet.com">partners@bouncycomet.com</a></p>
             </article>
-
-            <article class="card">
-              <span class="card__icon" aria-hidden="true">&#128172;</span>
-              <h3 class="card__title">Player support</h3>
-              <p class="card__text">Something broken, a match that went sideways, an account question, or a stuck daily reward. Players get answered by the people who built the thing.</p>
-              <p class="card__text"><a href="mailto:support@bouncycomet.com">support@bouncycomet.com</a></p>
+            <article class="route">
+              <h3 class="h3">Player support</h3>
+              <p>Something broken, a match that went sideways, an account question, or a stuck daily reward. Players get answered by the people who built the thing.</p>
+              <p><a href="mailto:support@bouncycomet.com">support@bouncycomet.com</a></p>
             </article>
-
-            <article class="card">
-              <span class="card__icon" aria-hidden="true">&#128075;</span>
-              <h3 class="card__title">General</h3>
-              <p class="card__text">Everything else. Questions about the studio, a genre you think we should try, a collaboration idea, or a plain hello. This one reaches all of us.</p>
-              <p class="card__text"><a href="mailto:hello@bouncycomet.com">hello@bouncycomet.com</a></p>
+            <article class="route">
+              <h3 class="h3">General</h3>
+              <p>Everything else. Questions about the studio, a genre you think we should try, a collaboration idea, or a plain hello. This one reaches all of us.</p>
+              <p><a href="mailto:hello@bouncycomet.com">hello@bouncycomet.com</a></p>
             </article>
-
-            <article class="card">
-              <span class="card__icon" aria-hidden="true">&#128274;</span>
-              <h3 class="card__title">Privacy &amp; your data</h3>
-              <p class="card__text">Access, correction, deletion or portability requests, and parent or guardian requests about a child's data. This is the address named in our Privacy Policy.</p>
-              <p class="card__text"><a href="mailto:privacy@bouncycomet.com">privacy@bouncycomet.com</a></p>
+            <article class="route">
+              <h3 class="h3">Privacy &amp; your data</h3>
+              <p>Access, correction, deletion or portability requests, and parent or guardian requests about a child's data. This is the address named in our Privacy Policy.</p>
+              <p><a href="mailto:privacy@bouncycomet.com">privacy@bouncycomet.com</a></p>
             </article>
-
-            <article class="card">
-              <span class="card__icon" aria-hidden="true">&#9878;&#65039;</span>
-              <h3 class="card__title">Legal</h3>
-              <p class="card__text">Legal notices, intellectual property questions and anything relating to our Terms of Service. This is the address named in those Terms.</p>
-              <p class="card__text"><a href="mailto:legal@bouncycomet.com">legal@bouncycomet.com</a></p>
+            <article class="route">
+              <h3 class="h3">Legal</h3>
+              <p>Legal notices, intellectual property questions and anything relating to our Terms of Service. This is the address named in those Terms.</p>
+              <p><a href="mailto:legal@bouncycomet.com">legal@bouncycomet.com</a></p>
             </article>
-
-            <article class="card">
-              <span class="card__icon" aria-hidden="true">&#128240;</span>
-              <h3 class="card__title">Press kit</h3>
-              <p class="card__text">Press kit available on request. Ask and we will send logos, key art, DiceBack screenshots and a short studio fact sheet, along with anything specific your piece needs.</p>
-              <p class="card__text"><a href="mailto:hello@bouncycomet.com">hello@bouncycomet.com</a></p>
+            <article class="route">
+              <h3 class="h3">Press kit</h3>
+              <p>Press kit available on request. Ask and we will send logos, key art, Dice Duo screenshots and a short studio fact sheet, along with anything specific your piece needs.</p>
+              <p><a href="mailto:hello@bouncycomet.com">hello@bouncycomet.com</a></p>
             </article>
           </div>
         </div>
@@ -213,7 +178,7 @@
        =================================================================== -->
   <section class="section section--tint">
     <div class="wrap">
-      <div class="section__head section__head--center">
+      <div class="section__head section__head--center reveal">
         <p class="eyebrow">Before you write</p>
         <h2 class="h2 balance">Three things worth knowing</h2>
         <p class="lead">A small studio answers its own mail. Here is what that means for you.</p>
@@ -221,42 +186,37 @@
 
       <div class="grid grid--3 reveal">
         <article class="card">
-          <span class="card__icon" aria-hidden="true">&#8987;</span>
+          <span class="die die--1 card__icon" aria-hidden="true"></span>
           <h3 class="card__title">When you will hear back</h3>
-          <p class="card__text">Usually within a few business days. We are a small team with a game in development, so we will not pretend to a same-day guarantee we cannot keep.</p>
+          <p class="card__text">Usually within a few business days. We are a small team with a game in closed testing, so we will not pretend to a same-day guarantee we cannot keep.</p>
           <p class="card__text">If a week goes by with nothing, send it again. Mail does get lost, and a nudge is never rude.</p>
         </article>
-
         <article class="card">
-          <span class="card__icon" aria-hidden="true">&#128196;</span>
+          <span class="die die--2 card__icon" aria-hidden="true"></span>
           <h3 class="card__title">What to put in a publishing note</h3>
           <p class="card__text">Tell us which titles you have published, the genres and regions you are strongest in, how you split revenue, and what you expect from a studio during soft launch.</p>
-          <p class="card__text">Say whether you want to look at DiceBack or at something new. That one line saves a whole round of email.</p>
+          <p class="card__text">Say whether you want to look at Dice Duo or at something new. That one line saves a whole round of email.</p>
         </article>
-
         <article class="card">
-          <span class="card__icon" aria-hidden="true">&#128030;</span>
-          <h3 class="card__title">How to report a DiceBack bug</h3>
-          <p class="card__text">Mail <a href="mailto:support@bouncycomet.com">support@bouncycomet.com</a> with your device and OS version, the game mode you were in, and what you expected to happen instead.</p>
+          <span class="die die--3 card__icon" aria-hidden="true"></span>
+          <h3 class="card__title">How to report a Dice Duo bug</h3>
+          <p class="card__text">Mail <a href="mailto:support@bouncycomet.com">support@bouncycomet.com</a> with your device and Android version, the game and mode you were in, and what you expected to happen instead.</p>
           <p class="card__text">A screenshot or short screen recording of the moment it went wrong is worth more than any description. Send it and we can usually reproduce it the same day.</p>
         </article>
       </div>
     </div>
   </section>
-
 </main>
 
 <footer class="site-footer">
   <div class="wrap footer__grid">
     <div class="footer__brand">
       <a class="nav__logo" href="index.html" aria-label="Bouncy Comet - home">
-        <svg class="nav__logo-mark" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-          <path d="M6 58C6 40 18 20 40 10l12 12C42 44 24 56 6 58Z" fill="#FFC61A" opacity=".55"/>
-          <circle cx="45" cy="19" r="13" fill="#FFE9A8"/>
-        </svg>
+        <img class="nav__logo-mark" src="assets/icons/logo-mark.png?v=7af52c43" srcset="assets/icons/logo-mark.png?v=7af52c43 1x, assets/icons/logo-mark@2x.png?v=5d838990 2x, assets/icons/logo-mark@3x.png?v=66e2e5da 3x" width="44" height="44" alt="">
         <span class="nav__logo-text">Bouncy<span>Comet</span></span>
       </a>
-      <p class="footer__tag">We make bright, bouncy games worth coming back to - puzzle, arcade, hypercasual, hybrid-casual, multiplayer and games for kids.</p>
+      <picture class="footer__mascot"><source type="image/webp" srcset="assets/art/mascot-wave-sm.webp?v=4ca5598c 1x, assets/art/mascot-wave-sm@2x.webp?v=2ddb4091 2x"><img src="assets/art/mascot-wave-sm.png?v=08e10111" width="120" height="120" alt="Comet, the Bouncy Comet mascot: a purple rock comet with glowing red cracks and a sparkle of stars" loading="lazy"></picture>
+      <p class="footer__tag">We make bright, bouncy games worth coming back to. First out of the toybox: Dice Duo, five two-player dice games in one app.</p>
     </div>
     <div class="footer__col">
       <h2 class="footer__head">Studio</h2>
@@ -267,10 +227,11 @@
       </ul>
     </div>
     <div class="footer__col">
-      <h2 class="footer__head">DiceBack</h2>
+      <h2 class="footer__head">Dice Duo</h2>
       <ul class="footer__links">
         <li><a href="diceback.html">Overview</a></li>
-        <li><a href="diceback.html#how-to-play">How to play</a></li>
+        <li><a href="diceback.html#how-to-play">The five games</a></li>
+        <li><a href="diceback.html#modes">Ways to play</a></li>
         <li><a href="diceback.html#screens">Screenshots</a></li>
       </ul>
     </div>
@@ -290,6 +251,6 @@
   </div>
 </footer>
 
-<script src="js/main.js" defer></script>
+<script src="js/main.js?v=8120d787" defer></script>
 </body>
 </html>

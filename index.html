@@ -3,34 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bouncy Comet | Puzzle, Arcade and Multiplayer Mobile Games</title>
-  <meta name="description" content="Bouncy Comet is an independent mobile game studio making puzzle, hypercasual, arcade, hybrid-casual, multiplayer and kids games. DiceBack is in development.">
+  <title>Bouncy Comet | Independent Mobile Game Studio, Makers of Dice Duo</title>
+  <meta name="description" content="Bouncy Comet is an independent mobile game studio. First title: Dice Duo, five two-player dice games in one app, in closed testing on Android.">
   <link rel="canonical" href="https://bouncycomet.com/">
-  <meta name="theme-color" content="#071A33">
+  <meta name="theme-color" content="#0A1436">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Bouncy Comet">
-  <meta property="og:title" content="Bouncy Comet | Puzzle, Arcade and Multiplayer Mobile Games">
-  <meta property="og:description" content="Bouncy Comet is an independent mobile game studio making puzzle, hypercasual, arcade, hybrid-casual, multiplayer and kids games. DiceBack is in development.">
+  <meta property="og:title" content="Bouncy Comet | Independent Mobile Game Studio, Makers of Dice Duo">
+  <meta property="og:description" content="Bouncy Comet is an independent mobile game studio. First title: Dice Duo, five two-player dice games in one app, in closed testing on Android.">
   <meta property="og:url" content="https://bouncycomet.com/">
-  <meta property="og:image" content="https://bouncycomet.com/assets/img/og-image.jpg">
+  <meta property="og:image" content="https://bouncycomet.com/assets/img/og-image.jpg?v=16e1dc48">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="A Bouncy Comet banner showing three phones running DiceBack, the studio's two-player dice game.">
+  <meta property="og:image:alt" content="Bouncy Comet, an independent mobile game studio.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Bouncy Comet | Puzzle, Arcade and Multiplayer Mobile Games">
-  <meta name="twitter:description" content="Bouncy Comet is an independent mobile game studio making puzzle, hypercasual, arcade, hybrid-casual, multiplayer and kids games. DiceBack is in development.">
-  <meta name="twitter:image" content="https://bouncycomet.com/assets/img/og-image.jpg">
-  <meta name="twitter:image:alt" content="A Bouncy Comet banner showing three phones running DiceBack, the studio's two-player dice game.">
-  <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
-  <link rel="icon" href="assets/icons/favicon-32.png" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap">
-  <!-- Set before first paint so .reveal blocks are only hidden when JS can reveal them. -->
-  <script>document.documentElement.classList.add('js');</script>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="twitter:title" content="Bouncy Comet | Independent Mobile Game Studio, Makers of Dice Duo">
+  <meta name="twitter:description" content="Bouncy Comet is an independent mobile game studio. First title: Dice Duo, five two-player dice games in one app, in closed testing on Android.">
+  <meta name="twitter:image" content="https://bouncycomet.com/assets/img/og-image.jpg?v=16e1dc48">
+  <meta name="twitter:image:alt" content="Bouncy Comet, an independent mobile game studio.">
+  <link rel="icon" href="assets/icons/favicon.ico?v=2050a3d2" sizes="any">
+  <link rel="icon" href="assets/icons/favicon-32.png?v=d00324c3" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png?v=4e0e32cf">
+  <link rel="manifest" href="site.webmanifest?v=643073f1">
+  <link rel="preload" href="assets/fonts/LilitaOne-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/Nunito-Bold.woff" as="font" type="font/woff" crossorigin>
+  <!-- Set before first paint so .reveal blocks and the mobile menu are only hidden when JS can show them;
+       taken away again if js/main.js never arrives. -->
+  <script>document.documentElement.classList.add('js');addEventListener('load',function(){window.__bc||document.documentElement.classList.remove('js')});</script>
+  <link rel="stylesheet" href="css/style.css?v=34b49416">
 </head>
 <body>
 
@@ -38,223 +38,292 @@
 <header class="site-header" id="siteHeader">
   <nav class="wrap nav" aria-label="Main">
     <a class="nav__logo" href="index.html" aria-label="Bouncy Comet - home">
-      <svg class="nav__logo-mark" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-        <defs>
-          <linearGradient id="bcTail" x1="0" y1="1" x2="1" y2="0">
-            <stop offset="0" stop-color="#FFC61A" stop-opacity="0"/>
-            <stop offset="1" stop-color="#FFC61A" stop-opacity=".95"/>
-          </linearGradient>
-          <radialGradient id="bcHead" cx=".35" cy=".3" r=".75">
-            <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFC61A"/>
-          </radialGradient>
-        </defs>
-        <path d="M6 58C6 40 18 20 40 10l12 12C42 44 24 56 6 58Z" fill="url(#bcTail)"/>
-        <circle cx="45" cy="19" r="13" fill="url(#bcHead)"/>
-      </svg>
+      <img class="nav__logo-mark" src="assets/icons/logo-mark.png?v=7af52c43" srcset="assets/icons/logo-mark.png?v=7af52c43 1x, assets/icons/logo-mark@2x.png?v=5d838990 2x, assets/icons/logo-mark@3x.png?v=66e2e5da 3x" width="44" height="44" alt="">
       <span class="nav__logo-text">Bouncy<span>Comet</span></span>
     </a>
-    <button class="nav__burger" id="navBurger" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+    <button class="nav__burger" id="navBurger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
     <div class="nav__links" id="navLinks">
       <a class="nav__link is-active" href="index.html" aria-current="page">Home</a>
       <a class="nav__link" href="games.html">Games</a>
-      <a class="nav__link" href="diceback.html">DiceBack</a>
+      <a class="nav__link" href="diceback.html">Dice Duo</a>
       <a class="nav__link" href="about.html">About</a>
-      <a class="nav__cta btn btn--primary" href="contact.html">Contact</a>
+      <a class="nav__cta btn btn--comet btn--sm" href="contact.html">Contact</a>
     </div>
   </nav>
 </header>
 
 <main id="main">
-
   <!-- ===================================================================
-       1. HERO
+       1. HERO - from 1024px the headline sits on the calm left side of the hero art;
+          below that the words come first and the phone picture follows as its own block
+          (css/style.css, section 10)
        =================================================================== -->
-  <section class="hero section--dark">
+  <section class="hero">
+    <picture class="backdrop">
+      <source media="(max-width: 1023px)" type="image/webp" srcset="assets/art/hero-phone-720.webp?v=27e9a743 720w, assets/art/hero-phone-1080.webp?v=a951fc10 1080w" sizes="(max-width: 640px) 100vw, 620px" width="1080" height="1620">
+      <source media="(max-width: 1023px)" srcset="assets/art/hero-phone-720.jpg?v=f677b780 720w, assets/art/hero-phone-1080.jpg?v=22f061ba 1080w" sizes="(max-width: 640px) 100vw, 620px" width="1080" height="1620">
+      <source type="image/webp" srcset="assets/art/hero-desktop-1280.webp?v=0022393a 1280w, assets/art/hero-desktop-1920.webp?v=0063237d 1920w" sizes="100vw" width="1920" height="1080">
+      <img src="assets/art/hero-desktop-1280.jpg?v=7d7a0c0a" srcset="assets/art/hero-desktop-1280.jpg?v=7d7a0c0a 1280w, assets/art/hero-desktop-1920.jpg?v=acbcf592 1920w" sizes="100vw" width="1920" height="1080" alt="The five Dice Duo games bursting out of the night sky on swirls of light: boards, tokens, ice-cream cones and red dice, led by Comet, a purple rock comet with glowing red cracks." loading="eager" fetchpriority="high">
+    </picture>
+    <div class="hero__shade"></div>
+    <!-- Two small loose toys on the edge of the calm side: never above 16%, never on the words. -->
+    <div class="floaters" aria-hidden="true">
+      <picture class="floater floater--wide" style="--size:64px; left:47%; bottom:10%; --depth:-.35; --tilt:8deg; --bob:8.5s; --delay:-2s"><source type="image/webp" srcset="assets/art/toy-token-yellow.webp?v=2189850f 1x, assets/art/toy-token-yellow@2x.webp?v=341486fc 2x"><img src="assets/art/toy-token-yellow.png?v=38c78e96" width="160" height="160" alt="" loading="lazy"></picture>
+      <picture class="floater floater--wide" style="--size:46px; left:49%; top:18%; --depth:.8; --bob:5.5s; --delay:-1s"><source type="image/webp" srcset="assets/art/toy-star.webp?v=210b7ae7 1x, assets/art/toy-star@2x.webp?v=ae93a521 2x"><img src="assets/art/toy-star.png?v=64d28e29" width="160" height="160" alt="" loading="lazy"></picture>
+    </div>
     <div class="wrap hero__inner">
       <div class="hero__copy">
         <p class="eyebrow">Independent game studio</p>
-        <h1 class="h1 balance">We make games that bounce back</h1>
-        <p class="lead">Bouncy Comet builds bright, quick-to-learn mobile games across puzzle, hypercasual, arcade, hybrid-casual, multiplayer and kids and family. Small rules, big moments, and a rematch button you keep pressing.</p>
+        <h1 class="h1 balance">We make games that <span class="pop">bounce back</span></h1>
+        <p class="lead">Bouncy Comet builds bright, quick-to-learn mobile games<span class="hide-sm">: small rules, big moments, and a rematch button you keep pressing</span>. First out of the toybox is Dice Duo, five two-player dice games in one app.</p>
         <div class="btn-row">
-          <a class="btn btn--primary btn--lg" href="diceback.html">Meet DiceBack</a>
+          <a class="btn btn--primary btn--lg" href="diceback.html">Meet Dice Duo</a>
           <a class="btn btn--ghost btn--lg" href="games.html">See our games</a>
         </div>
-        <div class="btn-row mt-5">
-          <span class="badge">First title in development</span>
-        </div>
-      </div>
-
-      <div class="hero__art">
-        <div class="phone phone--tilt-l">
-          <picture>
-            <source type="image/webp" srcset="assets/img/diceback-menu.webp 1x, assets/img/diceback-menu@2x.webp 2x">
-            <img src="assets/img/diceback-menu.jpg" srcset="assets/img/diceback-menu.jpg 1x, assets/img/diceback-menu@2x.jpg 2x" width="540" height="959" alt="DiceBack main menu screen with the Play button" loading="eager" fetchpriority="high" decoding="async">
-          </picture>
-        </div>
-        <div class="phone phone--sm phone--tilt-r">
-          <picture>
-            <source type="image/webp" srcset="assets/img/diceback-modes.webp 1x, assets/img/diceback-modes@2x.webp 2x">
-            <img src="assets/img/diceback-modes.jpg" srcset="assets/img/diceback-modes.jpg 1x, assets/img/diceback-modes@2x.jpg 2x" width="540" height="959" alt="DiceBack Choose Mode screen offering VS Bot, 2 Players and Quick Match" loading="lazy" decoding="async">
-          </picture>
-        </div>
+        <p><span class="status">Dice Duo is in closed testing on Android</span></p>
       </div>
     </div>
   </section>
 
+  <div class="trail" aria-hidden="true"><picture><source type="image/webp" srcset="assets/art/trail-divider-600.webp?v=a92bcd1f 600w, assets/art/trail-divider-1200.webp?v=68a7f754 1200w, assets/art/trail-divider-2400.webp?v=70c3a5f7 2400w" sizes="(max-width: 1280px) 100vw, 1280px"><img src="assets/art/trail-divider.png?v=36e8bb78" width="1200" height="400" alt="" loading="lazy"></picture></div>
+
   <!-- ===================================================================
-       2. GENRES
+       2. FIVE GAMES IN ONE APP
        =================================================================== -->
-  <section class="section" id="genres">
+  <section class="section" id="games">
     <div class="wrap">
-      <div class="section__head section__head--center">
-        <p class="eyebrow">What we build</p>
-        <h2 class="h2 balance">Six genres, one studio voice</h2>
-        <p class="lead">Different shelves in the store, the same promise on every one of them: pick it up in seconds, feel good about the next round, never get squeezed for it.</p>
+      <div class="section__head section__head--center reveal">
+        <p class="eyebrow">Dice Duo, our first game</p>
+        <h2 class="h2 balance">Five games in <span class="pop">one app</span></h2>
+        <p class="lead">One die, two players, five different boards. Every game takes a round to learn, and each one asks something different of the roll.</p>
       </div>
 
-      <div class="grid grid--3 reveal">
-        <article class="genre-card">
-          <span class="genre-card__emoji" aria-hidden="true">&#129513;</span>
-          <h3 class="h3">Puzzle</h3>
-          <p>We build puzzles you solve with a thumb and remember with your head. Honest logic, no hidden rules, and a board small enough to read at a glance.</p>
-        </article>
+      <div class="rail reveal" data-label="games">
+        <div class="rail__track" role="group" aria-label="The five games in Dice Duo">
+          <a class="gcard gcard--grid-war" href="diceback.html#grid-war">
+            <span class="gcard__art">
+              <picture><source type="image/webp" srcset="assets/art/game-grid-war-300.webp?v=94c43405 300w, assets/art/game-grid-war-480.webp?v=95213a60 480w, assets/art/game-grid-war-768.webp?v=54b06141 768w" sizes="(max-width: 1100px) 60vw, 230px"><img src="assets/art/game-grid-war-300.jpg?v=d8c0dc1c" srcset="assets/art/game-grid-war-300.jpg?v=d8c0dc1c 300w, assets/art/game-grid-war-480.jpg?v=fe23c1c7 480w, assets/art/game-grid-war-768.jpg?v=d6d96f4a 768w" sizes="(max-width: 1100px) 60vw, 230px" width="768" height="1024" alt="" loading="lazy"></picture>
+              <span class="gcard__name">Grid War</span>
+            </span>
+            <span class="gcard__body">
+              <span class="gcard__pitch">Roll for lines, close boxes, own the grid.</span>
+              <span class="gcard__go">How it plays <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13M12 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </span>
+          </a>
+          <a class="gcard gcard--diceback" href="diceback.html#diceback">
+            <span class="gcard__art">
+              <picture><source type="image/webp" srcset="assets/art/game-diceback-300.webp?v=6148b446 300w, assets/art/game-diceback-480.webp?v=c2e4b069 480w, assets/art/game-diceback-768.webp?v=612faff2 768w" sizes="(max-width: 1100px) 60vw, 230px"><img src="assets/art/game-diceback-300.jpg?v=5b0358f3" srcset="assets/art/game-diceback-300.jpg?v=5b0358f3 300w, assets/art/game-diceback-480.jpg?v=91a58598 480w, assets/art/game-diceback-768.jpg?v=ae500512 768w" sizes="(max-width: 1100px) 60vw, 230px" width="768" height="1024" alt="" loading="lazy"></picture>
+              <span class="gcard__name">DiceBack</span>
+            </span>
+            <span class="gcard__body">
+              <span class="gcard__pitch">Roll, send your tokens across, empty your side first.</span>
+              <span class="gcard__go">How it plays <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13M12 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </span>
+          </a>
+          <a class="gcard gcard--roll-race" href="diceback.html#roll-race">
+            <span class="gcard__art">
+              <picture><source type="image/webp" srcset="assets/art/game-roll-race-300.webp?v=27f1a767 300w, assets/art/game-roll-race-480.webp?v=9b030f7b 480w, assets/art/game-roll-race-768.webp?v=6f22f0f5 768w" sizes="(max-width: 1100px) 60vw, 230px"><img src="assets/art/game-roll-race-300.jpg?v=97a10777" srcset="assets/art/game-roll-race-300.jpg?v=97a10777 300w, assets/art/game-roll-race-480.jpg?v=e8000dd3 480w, assets/art/game-roll-race-768.jpg?v=0e80acf4 768w" sizes="(max-width: 1100px) 60vw, 230px" width="768" height="1024" alt="" loading="lazy"></picture>
+              <span class="gcard__name">Roll Race</span>
+            </span>
+            <span class="gcard__body">
+              <span class="gcard__pitch">Mark the number you roll. First full card wins.</span>
+              <span class="gcard__go">How it plays <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13M12 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </span>
+          </a>
+          <a class="gcard gcard--six-spots" href="diceback.html#six-spots">
+            <span class="gcard__art">
+              <picture><source type="image/webp" srcset="assets/art/game-six-spots-300.webp?v=7e190232 300w, assets/art/game-six-spots-480.webp?v=5fa597e7 480w, assets/art/game-six-spots-768.webp?v=af1bbf0e 768w" sizes="(max-width: 1100px) 60vw, 230px"><img src="assets/art/game-six-spots-300.jpg?v=12736010" srcset="assets/art/game-six-spots-300.jpg?v=12736010 300w, assets/art/game-six-spots-480.jpg?v=c71b2f41 480w, assets/art/game-six-spots-768.jpg?v=78630b20 768w" sizes="(max-width: 1100px) 60vw, 230px" width="768" height="1024" alt="" loading="lazy"></picture>
+              <span class="gcard__name">Six Spots</span>
+            </span>
+            <span class="gcard__body">
+              <span class="gcard__pitch">Cover all six spots before your rival does.</span>
+              <span class="gcard__go">How it plays <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13M12 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </span>
+          </a>
+          <a class="gcard gcard--scoop-stack" href="diceback.html#scoop-stack">
+            <span class="gcard__art">
+              <picture><source type="image/webp" srcset="assets/art/game-scoop-stack-300.webp?v=06049c68 300w, assets/art/game-scoop-stack-480.webp?v=48f1059b 480w, assets/art/game-scoop-stack-768.webp?v=793428b0 768w" sizes="(max-width: 1100px) 60vw, 230px"><img src="assets/art/game-scoop-stack-300.jpg?v=73ecd7c0" srcset="assets/art/game-scoop-stack-300.jpg?v=73ecd7c0 300w, assets/art/game-scoop-stack-480.jpg?v=2bd0a2c6 480w, assets/art/game-scoop-stack-768.jpg?v=30b3ed75 768w" sizes="(max-width: 1100px) 60vw, 230px" width="768" height="1024" alt="" loading="lazy"></picture>
+              <span class="gcard__name">Scoop Stack</span>
+            </span>
+            <span class="gcard__body">
+              <span class="gcard__pitch">Eight rolls, eight scoops. The higher total wins.</span>
+              <span class="gcard__go">How it plays <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13M12 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </span>
+          </a>
+        </div>
+      </div>
 
-        <article class="genre-card">
-          <span class="genre-card__emoji" aria-hidden="true">&#9889;</span>
-          <h3 class="h3">Hypercasual</h3>
-          <p>One input, one goal, understood before the first round ends. We prototype fast and keep only the loops that still feel good on the hundredth try.</p>
-        </article>
-
-        <article class="genre-card">
-          <span class="genre-card__emoji" aria-hidden="true">&#128377;</span>
-          <h3 class="h3">Arcade</h3>
-          <p>Short runs, rising tension, a score that dares you to beat it. Restart sits one tap away, because the next run is the whole point.</p>
-        </article>
-
-        <article class="genre-card">
-          <span class="genre-card__emoji" aria-hidden="true">&#128256;</span>
-          <h3 class="h3">Hybrid-casual</h3>
-          <p>Hypercasual feel with progression worth coming back for. Skins, streaks and daily goals layered onto a core loop that already stands on its own.</p>
-        </article>
-
-        <article class="genre-card">
-          <span class="genre-card__emoji" aria-hidden="true">&#129309;</span>
-          <h3 class="h3">Multiplayer</h3>
-          <p>Two players on one device, or a quick match against a stranger. Matches short enough for a bus ride and fair enough to ask for a rematch.</p>
-        </article>
-
-        <article class="genre-card">
-          <span class="genre-card__emoji" aria-hidden="true">&#129528;</span>
-          <h3 class="h3">Kids &amp; Family</h3>
-          <p>Bright art, gentle pacing and readable buttons made for small hands. Games a parent can hand over without standing behind the screen.</p>
-        </article>
+      <div class="btn-row btn-row--center mt-5 reveal">
+        <a class="btn btn--primary" href="diceback.html">Explore Dice Duo</a>
+        <span class="pill">Coming soon to Google Play</span>
       </div>
     </div>
   </section>
 
   <!-- ===================================================================
-       3. FEATURED GAME - DiceBack
-       Composes the shared .hero__inner / .hero__copy / .hero__art layout
-       inside a light section, so no new layout classes are needed.
+       3. WAYS TO PLAY - four toys on a shelf; the cards with the details are on diceback.html#modes
        =================================================================== -->
-  <section class="section section--tint" id="featured">
-    <div class="wrap hero__inner reveal">
-      <div class="hero__copy">
-        <p class="eyebrow">Featured game</p>
-        <p class="mb-4"><span class="badge">In development</span></p>
-        <h2 class="h2 balance">Dice Duo — a two player dice game</h2>
-        <p class="h3">Roll. Think. Bounce. Win!</p>
-        <p class="muted">Roll the dice, send that many tokens to the other side, and clear your own side before your opponent clears theirs. Three rules, ten seconds to learn, and a board that turns on a single lucky roll. Small moves, big wins.</p>
-        <p class="muted">Dice Duo is in development and coming soon to iOS and Android.</p>
-        <div class="btn-row mt-5">
-          <span class="pill">VS Bot</span>
-          <span class="pill">2 Players</span>
-          <span class="pill">Quick Match</span>
-        </div>
-        <div class="btn-row mt-5">
-          <a class="btn btn--primary btn--lg" href="diceback.html">Explore DiceBack</a>
-        </div>
-      </div>
-
-      <div class="hero__art">
-        <div class="phone">
-          <picture>
-            <source type="image/webp" srcset="assets/img/diceback-gameplay.webp 1x, assets/img/diceback-gameplay@2x.webp 2x">
-            <img src="assets/img/diceback-gameplay.jpg" srcset="assets/img/diceback-gameplay.jpg 1x, assets/img/diceback-gameplay@2x.jpg 2x" width="540" height="959" alt="DiceBack board mid-match showing the Your Turn prompt and tokens on both sides" loading="lazy" decoding="async">
-          </picture>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       4. HOW WE BUILD
-       =================================================================== -->
-  <section class="section" id="how-we-build">
+  <section class="section section--tint" id="ways-to-play">
     <div class="wrap">
-      <div class="section__head section__head--center">
+      <div class="section__head section__head--center reveal">
+        <p class="eyebrow">Ways to play</p>
+        <h2 class="h2 balance">Four ways to start a match</h2>
+        <p class="lead">Practise alone, pass the phone across the table, or play someone far away. Same games, same rules, every time.</p>
+      </div>
+
+      <ul class="shelf reveal">
+        <li class="shelf__item">
+          <picture class="shelf__art"><source type="image/webp" srcset="assets/art/mode-computer.webp?v=0b3035df 1x, assets/art/mode-computer@2x.webp?v=5a42a2c3 2x"><img src="assets/art/mode-computer.png?v=dcb52613" width="168" height="168" alt="" loading="lazy"></picture>
+          <h3 class="h3">Vs computer</h3>
+          <p class="mode__note">No account needed</p>
+        </li>
+        <li class="shelf__item">
+          <picture class="shelf__art"><source type="image/webp" srcset="assets/art/mode-same-phone.webp?v=5d5d3c56 1x, assets/art/mode-same-phone@2x.webp?v=0195aac9 2x"><img src="assets/art/mode-same-phone.png?v=e558ecff" width="168" height="168" alt="" loading="lazy"></picture>
+          <h3 class="h3">Two on one phone</h3>
+          <p class="mode__note">No account needed</p>
+        </li>
+        <li class="shelf__item">
+          <picture class="shelf__art"><source type="image/webp" srcset="assets/art/mode-online.webp?v=94144bb4 1x, assets/art/mode-online@2x.webp?v=0db0cc8e 2x"><img src="assets/art/mode-online.png?v=276d7daa" width="168" height="168" alt="" loading="lazy"></picture>
+          <h3 class="h3">Online quick match</h3>
+          <p class="mode__note">Free account needed</p>
+        </li>
+        <li class="shelf__item">
+          <picture class="shelf__art"><source type="image/webp" srcset="assets/art/mode-private-room.webp?v=b621b866 1x, assets/art/mode-private-room@2x.webp?v=d5f3425d 2x"><img src="assets/art/mode-private-room.png?v=438fbc78" width="168" height="168" alt="" loading="lazy"></picture>
+          <h3 class="h3">Private room</h3>
+          <p class="mode__note">Free account needed</p>
+        </li>
+      </ul>
+
+      <div class="btn-row btn-row--center mt-7 reveal">
+        <a class="btn btn--ghost" href="diceback.html#modes">How each one works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       4. SHOWCASE - real screenshots in CSS phone frames
+       =================================================================== -->
+  <section class="section section--dark" id="showcase">
+    <div class="floaters" aria-hidden="true">
+      <picture class="floater floater--wide" style="--size:110px; right:5%; top:9%; --depth:.5; --tilt:10deg; --bob:8s"><source type="image/webp" srcset="assets/art/toy-cone.webp?v=f39dc585 1x, assets/art/toy-cone@2x.webp?v=3998e43e 2x"><img src="assets/art/toy-cone.png?v=923b28d3" width="160" height="160" alt="" loading="lazy"></picture>
+      <picture class="floater floater--wide" style="--size:70px; right:19%; top:21%; --depth:-.4; --tilt:-8deg; --bob:6.5s; --delay:-3s"><source type="image/webp" srcset="assets/art/toy-x-yellow.webp?v=a1968476 1x, assets/art/toy-x-yellow@2x.webp?v=34432475 2x"><img src="assets/art/toy-x-yellow.png?v=2541a63e" width="160" height="160" alt="" loading="lazy"></picture>
+    </div>
+    <div class="wrap">
+      <div class="section__head reveal">
+        <p class="eyebrow">Straight from the game</p>
+        <h2 class="h2 balance">Real screens, <span class="pop">no mock-ups</span></h2>
+        <p class="lead">Every picture in these phones is a capture of Dice Duo as it runs today, in the closed-test build.</p>
+      </div>
+
+      <div class="rail showcase reveal" data-label="screenshots">
+        <div class="rail__track" role="group" aria-label="Screens from Dice Duo">
+          <figure class="showcase__item">
+            <div class="phone"><picture><source type="image/webp" srcset="assets/shots/home.webp?v=e1c0ebad 1x, assets/shots/home@2x.webp?v=270e08db 2x"><img src="assets/shots/home.jpg?v=33d70ccd" width="360" height="640" alt="Dice Duo home screen: a shelf of game cards showing Grid War, DiceBack and Roll Race, with Offline and Online buttons below." loading="lazy"></picture></div>
+            <figcaption class="showcase__cap">Choose your game <span>Five games on one shelf</span></figcaption>
+          </figure>
+          <figure class="showcase__item">
+            <div class="phone"><picture><source type="image/webp" srcset="assets/shots/grid-war.webp?v=97f2fcff 1x, assets/shots/grid-war@2x.webp?v=1199dca9 2x"><img src="assets/shots/grid-war.jpg?v=d77f765e" width="360" height="640" alt="Grid War mid-match: yellow and red lines between dots, several boxes marked with an X, a red die and the green Roll button." loading="lazy"></picture></div>
+            <figcaption class="showcase__cap">Grid War <span>Join the dots, claim the boxes</span></figcaption>
+          </figure>
+          <figure class="showcase__item">
+            <div class="phone"><picture><source type="image/webp" srcset="assets/shots/diceback.webp?v=9a8582ea 1x, assets/shots/diceback@2x.webp?v=3e035036 2x"><img src="assets/shots/diceback.jpg?v=fed5bffd" width="360" height="640" alt="DiceBack mid-match: a blue tray split diagonally, with red and yellow tokens on both sides and a red die below." loading="lazy"></picture></div>
+            <figcaption class="showcase__cap">DiceBack <span>Send your tokens across</span></figcaption>
+          </figure>
+          <figure class="showcase__item">
+            <div class="phone"><picture><source type="image/webp" srcset="assets/shots/roll-race.webp?v=741390eb 1x, assets/shots/roll-race@2x.webp?v=cb803185 2x"><img src="assets/shots/roll-race.jpg?v=f48d5cee" width="360" height="640" alt="Roll Race mid-match: two cards with rows 1 to 6, yellow X marks on the left card and red X marks on the right." loading="lazy"></picture></div>
+            <figcaption class="showcase__cap">Roll Race <span>Fill your card first</span></figcaption>
+          </figure>
+          <figure class="showcase__item">
+            <div class="phone"><picture><source type="image/webp" srcset="assets/shots/six-spots.webp?v=ec20e0be 1x, assets/shots/six-spots@2x.webp?v=aa33962f 2x"><img src="assets/shots/six-spots.jpg?v=d83d96a7" width="360" height="640" alt="Six Spots mid-match: a board divided by a big X, with red and yellow tokens covering numbered spots." loading="lazy"></picture></div>
+            <figcaption class="showcase__cap">Six Spots <span>Cover all six</span></figcaption>
+          </figure>
+          <figure class="showcase__item">
+            <div class="phone"><picture><source type="image/webp" srcset="assets/shots/scoop-stack.webp?v=24c564f5 1x, assets/shots/scoop-stack@2x.webp?v=a52612af 2x"><img src="assets/shots/scoop-stack.jpg?v=1e13535b" width="360" height="640" alt="Scoop Stack mid-match: two ice-cream cones with numbered scoops stacking up, the totals at 20 and 19." loading="lazy"></picture></div>
+            <figcaption class="showcase__cap">Scoop Stack <span>Stack the highest total</span></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="btn-row mt-4 reveal">
+        <a class="btn btn--ghost" href="diceback.html#screens">See every screen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       5. HOW WE BUILD - four rules, no boxes
+       =================================================================== -->
+  <section class="section section--tint" id="how-we-build">
+    <div class="wrap">
+      <div class="section__head section__head--center reveal">
         <p class="eyebrow">How we build</p>
         <h2 class="h2 balance">Four rules we do not break</h2>
         <p class="lead">Every idea that leaves the prototype folder has to clear the same four tests. If it fails one, it goes back or it goes away.</p>
       </div>
 
-      <div class="grid grid--4 reveal">
-        <article class="card">
-          <span class="card__icon" aria-hidden="true">&#128077;</span>
-          <h3 class="card__title">One-thumb playable</h3>
-          <p class="card__text">Every core action sits under a resting thumb on a phone held in one hand. If it needs two hands or a stretch to the far corner, we move it.</p>
+      <div class="features features--plain reveal">
+        <article class="feature">
+          <picture class="feature__icon"><source type="image/webp" srcset="assets/art/feature-fast-matches.webp?v=e5ac977a 1x, assets/art/feature-fast-matches@2x.webp?v=2c5c917e 2x"><img src="assets/art/feature-fast-matches.png?v=e150cef2" width="96" height="96" alt="" loading="lazy"></picture>
+          <div>
+            <h3 class="h3">Learn it in ten seconds</h3>
+            <p>Rules you can say out loud in one breath, and every action under a resting thumb. Each Dice Duo game explains itself in three short steps.</p>
+          </div>
         </article>
-
-        <article class="card">
-          <span class="card__icon" aria-hidden="true">&#9201;</span>
-          <h3 class="card__title">Learn it in ten seconds</h3>
-          <p class="card__text">Rules you can say out loud in one breath. DiceBack has exactly three, and the whole how to play screen fits on a single page with room to spare.</p>
+        <article class="feature">
+          <picture class="feature__icon"><source type="image/webp" srcset="assets/art/feature-fair-play.webp?v=170fa4d6 1x, assets/art/feature-fair-play@2x.webp?v=c209449e 2x"><img src="assets/art/feature-fair-play.png?v=46a0297c" width="96" height="96" alt="" loading="lazy"></picture>
+          <div>
+            <h3 class="h3">Fair by design</h3>
+            <p>Both players sit down to the same rules and roll the same die. Every roll lands on the table where both of you can see it, and no match is ever played for real money.</p>
+          </div>
         </article>
-
-        <article class="card">
-          <span class="card__icon" aria-hidden="true">&#128737;</span>
-          <h3 class="card__title">Fair by design</h3>
-          <p class="card__text">No pay to win and no traps in the store. Coins buy token skins, dice skins and style, never an advantage over the player sitting across from you.</p>
+        <article class="feature">
+          <picture class="feature__icon"><source type="image/webp" srcset="assets/art/feature-daily-reward.webp?v=5da9d9a6 1x, assets/art/feature-daily-reward@2x.webp?v=e9714948 2x"><img src="assets/art/feature-daily-reward.png?v=ca1d3a77" width="96" height="96" alt="" loading="lazy"></picture>
+          <div>
+            <h3 class="h3">Built to be replayed</h3>
+            <p>Short matches, instant rematches and a daily reward for showing up. We tune for your tenth session, not your first minute.</p>
+          </div>
         </article>
-
-        <article class="card">
-          <span class="card__icon" aria-hidden="true">&#128257;</span>
-          <h3 class="card__title">Built to be replayed</h3>
-          <p class="card__text">Short matches, instant rematches, daily rewards and streaks that reward showing up. We tune for your tenth session, not your first minute.</p>
+        <article class="feature">
+          <picture class="feature__icon"><source type="image/webp" srcset="assets/art/feature-offline.webp?v=e52ad202 1x, assets/art/feature-offline@2x.webp?v=c5f4a23e 2x"><img src="assets/art/feature-offline.png?v=82854f94" width="96" height="96" alt="" loading="lazy"></picture>
+          <div>
+            <h3 class="h3">Play first, sign in later</h3>
+            <p>Open the app and play: against the computer or with a friend on the same phone, with no account and no connection. Sign in only when you want online matches.</p>
+          </div>
         </article>
       </div>
+
+      <p class="note mt-7 reveal">Dice Duo is the first off the bench. <a href="games.html#lab">See what we are prototyping next</a>.</p>
     </div>
   </section>
 
-  <!-- ===================================================================
-       5. CTA BAND
-       =================================================================== -->
+  <div class="trail trail--down" aria-hidden="true"><picture><source type="image/webp" srcset="assets/art/trail-divider-600.webp?v=a92bcd1f 600w, assets/art/trail-divider-1200.webp?v=68a7f754 1200w, assets/art/trail-divider-2400.webp?v=70c3a5f7 2400w" sizes="(max-width: 1280px) 100vw, 1280px"><img src="assets/art/trail-divider.png?v=36e8bb78" width="1200" height="400" alt="" loading="lazy"></picture></div>
+
   <section class="cta-band">
-    <div class="wrap">
-      <h2 class="h2 balance">Publishing or partnership?</h2>
-      <p class="lead">We are an independent studio looking for the right partners for DiceBack and for the titles lining up behind it. Players, press and curious developers are just as welcome.</p>
-      <div class="btn-row">
-        <a class="btn btn--gold btn--lg" href="mailto:partners@bouncycomet.com">Talk publishing</a>
-        <a class="btn btn--light btn--lg" href="contact.html">Contact the studio</a>
+    <div class="wrap reveal">
+      <div class="cta cta--with-art">
+        <h2 class="h2 balance">Publishing or partnership?</h2>
+        <p class="lead">We are an independent studio looking for the right partners for Dice Duo and for the titles lining up behind it. Players, press and curious developers are just as welcome.</p>
+        <div class="btn-row">
+          <a class="btn btn--comet btn--lg" href="mailto:partners@bouncycomet.com">Talk publishing</a>
+          <a class="btn btn--ghost btn--lg" href="contact.html">Contact the studio</a>
+        </div>
       </div>
+      <picture class="cta__art"><source type="image/webp" srcset="assets/art/mascot-hero-200.webp?v=5a182c80 200w, assets/art/mascot-hero-400.webp?v=4823a43c 400w, assets/art/mascot-hero-800.webp?v=de3af2d6 800w" sizes="(max-width: 760px) 150px, (max-width: 1270px) 26vw, 330px"><img src="assets/art/mascot-hero.png?v=40ed311d" width="400" height="400" alt="Comet, the Bouncy Comet mascot: a purple rock comet with glowing red lava cracks, flying on a green-yellow trail of rock chunks" loading="lazy"></picture>
     </div>
   </section>
-
 </main>
 
 <footer class="site-footer">
   <div class="wrap footer__grid">
     <div class="footer__brand">
       <a class="nav__logo" href="index.html" aria-label="Bouncy Comet - home">
-        <svg class="nav__logo-mark" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-          <path d="M6 58C6 40 18 20 40 10l12 12C42 44 24 56 6 58Z" fill="#FFC61A" opacity=".55"/>
-          <circle cx="45" cy="19" r="13" fill="#FFE9A8"/>
-        </svg>
+        <img class="nav__logo-mark" src="assets/icons/logo-mark.png?v=7af52c43" srcset="assets/icons/logo-mark.png?v=7af52c43 1x, assets/icons/logo-mark@2x.png?v=5d838990 2x, assets/icons/logo-mark@3x.png?v=66e2e5da 3x" width="44" height="44" alt="">
         <span class="nav__logo-text">Bouncy<span>Comet</span></span>
       </a>
-      <p class="footer__tag">We make bright, bouncy games worth coming back to - puzzle, arcade, hypercasual, hybrid-casual, multiplayer and games for kids.</p>
+      <picture class="footer__mascot"><source type="image/webp" srcset="assets/art/mascot-wave-sm.webp?v=4ca5598c 1x, assets/art/mascot-wave-sm@2x.webp?v=2ddb4091 2x"><img src="assets/art/mascot-wave-sm.png?v=08e10111" width="120" height="120" alt="Comet, the Bouncy Comet mascot: a purple rock comet with glowing red cracks and a sparkle of stars" loading="lazy"></picture>
+      <p class="footer__tag">We make bright, bouncy games worth coming back to. First out of the toybox: Dice Duo, five two-player dice games in one app.</p>
     </div>
     <div class="footer__col">
       <h2 class="footer__head">Studio</h2>
@@ -265,10 +334,11 @@
       </ul>
     </div>
     <div class="footer__col">
-      <h2 class="footer__head">DiceBack</h2>
+      <h2 class="footer__head">Dice Duo</h2>
       <ul class="footer__links">
         <li><a href="diceback.html">Overview</a></li>
-        <li><a href="diceback.html#how-to-play">How to play</a></li>
+        <li><a href="diceback.html#how-to-play">The five games</a></li>
+        <li><a href="diceback.html#modes">Ways to play</a></li>
         <li><a href="diceback.html#screens">Screenshots</a></li>
       </ul>
     </div>
@@ -294,15 +364,24 @@
   "@type": "Organization",
   "name": "Bouncy Comet",
   "url": "https://bouncycomet.com/",
-  "logo": "https://bouncycomet.com/assets/icons/icon-512.png",
+  "logo": "https://bouncycomet.com/assets/icons/icon-512.png?v=2ea63758",
   "email": "hello@bouncycomet.com",
-  "description": "Independent mobile game studio making puzzle, hypercasual, arcade, hybrid-casual, multiplayer and kids games.",
+  "description": "Independent mobile game studio. First title: Dice Duo, five two-player dice games in one app.",
   "contactPoint": [
-    { "@type": "ContactPoint", "contactType": "business partnerships", "email": "partners@bouncycomet.com" },
-    { "@type": "ContactPoint", "contactType": "customer support", "email": "support@bouncycomet.com" }
+    {
+      "@type": "ContactPoint",
+      "contactType": "business partnerships",
+      "email": "partners@bouncycomet.com"
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "support@bouncycomet.com"
+    }
   ]
 }
 </script>
-<script src="js/main.js" defer></script>
+
+<script src="js/main.js?v=8120d787" defer></script>
 </body>
 </html>

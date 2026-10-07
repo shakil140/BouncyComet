@@ -36,3 +36,9 @@ id_ecdsa
 id_ed25519
 /keys/
 /secrets/
+
+# Art from GPT waiting to be processed, and reference screenshots (never published)
+/ArtDrop/
+
+# Left behind only if tools/import_art.py is killed while it writes its manifest
+/tools/*.tmp

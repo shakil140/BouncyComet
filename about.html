@@ -4,33 +4,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About the Studio | Bouncy Comet</title>
-  <meta name="description" content="Bouncy Comet is a small independent mobile game studio building puzzle, arcade, hypercasual, hybrid-casual, multiplayer and kids games. Meet the studio.">
+  <meta name="description" content="Bouncy Comet is a small independent mobile game studio. Meet the studio behind Dice Duo: how we work, what we build, and the lines we will not cross.">
   <link rel="canonical" href="https://bouncycomet.com/about.html">
-  <meta name="theme-color" content="#071A33">
+  <meta name="theme-color" content="#0A1436">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Bouncy Comet">
   <meta property="og:title" content="About the Studio | Bouncy Comet">
-  <meta property="og:description" content="Bouncy Comet is a small independent mobile game studio building puzzle, arcade, hypercasual, hybrid-casual, multiplayer and kids games. Meet the studio.">
+  <meta property="og:description" content="Bouncy Comet is a small independent mobile game studio. Meet the studio behind Dice Duo: how we work, what we build, and the lines we will not cross.">
   <meta property="og:url" content="https://bouncycomet.com/about.html">
-  <meta property="og:image" content="https://bouncycomet.com/assets/img/og-image.jpg">
+  <meta property="og:image" content="https://bouncycomet.com/assets/img/og-image.jpg?v=16e1dc48">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="A Bouncy Comet banner showing three phones running DiceBack, the studio's two-player dice game.">
+  <meta property="og:image:alt" content="Bouncy Comet, an independent mobile game studio.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="About the Studio | Bouncy Comet">
-  <meta name="twitter:description" content="Bouncy Comet is a small independent mobile game studio building puzzle, arcade, hypercasual, hybrid-casual, multiplayer and kids games. Meet the studio.">
-  <meta name="twitter:image" content="https://bouncycomet.com/assets/img/og-image.jpg">
-  <meta name="twitter:image:alt" content="A Bouncy Comet banner showing three phones running DiceBack, the studio's two-player dice game.">
-  <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
-  <link rel="icon" href="assets/icons/favicon-32.png" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap">
-  <!-- Set before first paint so .reveal blocks are only hidden when JS can reveal them. -->
-  <script>document.documentElement.classList.add('js');</script>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="twitter:description" content="Bouncy Comet is a small independent mobile game studio. Meet the studio behind Dice Duo: how we work, what we build, and the lines we will not cross.">
+  <meta name="twitter:image" content="https://bouncycomet.com/assets/img/og-image.jpg?v=16e1dc48">
+  <meta name="twitter:image:alt" content="Bouncy Comet, an independent mobile game studio.">
+  <link rel="icon" href="assets/icons/favicon.ico?v=2050a3d2" sizes="any">
+  <link rel="icon" href="assets/icons/favicon-32.png?v=d00324c3" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png?v=4e0e32cf">
+  <link rel="manifest" href="site.webmanifest?v=643073f1">
+  <link rel="preload" href="assets/fonts/LilitaOne-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/Nunito-Bold.woff" as="font" type="font/woff" crossorigin>
+  <!-- Set before first paint so .reveal blocks and the mobile menu are only hidden when JS can show them;
+       taken away again if js/main.js never arrives. -->
+  <script>document.documentElement.classList.add('js');addEventListener('load',function(){window.__bc||document.documentElement.classList.remove('js')});</script>
+  <link rel="stylesheet" href="css/style.css?v=34b49416">
 </head>
 <body>
 
@@ -38,78 +38,59 @@
 <header class="site-header" id="siteHeader">
   <nav class="wrap nav" aria-label="Main">
     <a class="nav__logo" href="index.html" aria-label="Bouncy Comet - home">
-      <svg class="nav__logo-mark" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-        <defs>
-          <linearGradient id="bcTail" x1="0" y1="1" x2="1" y2="0">
-            <stop offset="0" stop-color="#FFC61A" stop-opacity="0"/>
-            <stop offset="1" stop-color="#FFC61A" stop-opacity=".95"/>
-          </linearGradient>
-          <radialGradient id="bcHead" cx=".35" cy=".3" r=".75">
-            <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFC61A"/>
-          </radialGradient>
-        </defs>
-        <path d="M6 58C6 40 18 20 40 10l12 12C42 44 24 56 6 58Z" fill="url(#bcTail)"/>
-        <circle cx="45" cy="19" r="13" fill="url(#bcHead)"/>
-      </svg>
+      <img class="nav__logo-mark" src="assets/icons/logo-mark.png?v=7af52c43" srcset="assets/icons/logo-mark.png?v=7af52c43 1x, assets/icons/logo-mark@2x.png?v=5d838990 2x, assets/icons/logo-mark@3x.png?v=66e2e5da 3x" width="44" height="44" alt="">
       <span class="nav__logo-text">Bouncy<span>Comet</span></span>
     </a>
-    <button class="nav__burger" id="navBurger" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+    <button class="nav__burger" id="navBurger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
     <div class="nav__links" id="navLinks">
       <a class="nav__link" href="index.html">Home</a>
       <a class="nav__link" href="games.html">Games</a>
-      <a class="nav__link" href="diceback.html">DiceBack</a>
+      <a class="nav__link" href="diceback.html">Dice Duo</a>
       <a class="nav__link is-active" href="about.html" aria-current="page">About</a>
-      <a class="nav__cta btn btn--primary" href="contact.html">Contact</a>
+      <a class="nav__cta btn btn--comet btn--sm" href="contact.html">Contact</a>
     </div>
   </nav>
 </header>
 
 <main id="main">
-
   <!-- ===================================================================
-       PAGE HEADER
+       PAGE BANNER - the workshop illustration, words on its quiet right side
        =================================================================== -->
-  <section class="section section--dark">
-    <div class="wrap">
-      <div class="section__head">
+  <section class="banner banner--scene">
+    <picture class="backdrop"><source type="image/webp" srcset="assets/art/studio-workshop-960.webp?v=7f2a200f 960w, assets/art/studio-workshop-1440.webp?v=f29d3613 1440w, assets/art/studio-workshop-1920.webp?v=3845a3b3 1920w" sizes="100vw"><img src="assets/art/studio-workshop-960.jpg?v=85318329" srcset="assets/art/studio-workshop-960.jpg?v=85318329 960w, assets/art/studio-workshop-1440.jpg?v=1638b639 1440w, assets/art/studio-workshop-1920.jpg?v=fa905951 1920w" sizes="100vw" width="1920" height="1080" alt="A toy-maker's workbench at night: half-built game boards, dice and tokens under a warm lamp, and Comet the mascot peeking in through a round window." loading="eager" fetchpriority="high"></picture>
+    <div class="banner__shade"></div>
+    <div class="wrap banner__inner">
+      <div class="banner__copy">
         <p class="eyebrow">About the studio</p>
         <h1 class="h1 balance">About Bouncy Comet</h1>
-        <p class="lead">Bouncy Comet is a small independent studio making bright, bouncy mobile games. We are early. One title, DiceBack, is in development, and nothing has shipped yet. So this page is the honest version of who we are and how we work, rather than a list of awards we have not won.</p>
-      </div>
-      <div class="pill-row">
-        <span class="pill">Independent studio</span>
-        <span class="pill">Mobile first</span>
-        <span class="pill">Six genres</span>
-        <span class="pill">First title in development</span>
+        <p class="lead">Bouncy Comet is a small independent studio making bright, bouncy mobile games. We are early: our first title, Dice Duo, is in closed testing and nothing is public yet. So this page is the honest version of who we are and how we work, rather than a list of awards we have not won.</p>
+        <div class="pill-row">
+          <span class="pill">Independent studio</span>
+          <span class="pill">Mobile first</span>
+          <span class="pill">First title in closed testing</span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ===================================================================
        THE NAME
-       Uses .hero__inner / .hero__copy / .hero__art so the copy and the
-       phone sit side by side. These classes are defined independently of
-       .hero in css/style.css, so no new CSS is needed.
        =================================================================== -->
   <section class="section" id="the-name">
-    <div class="wrap hero__inner reveal">
-      <div class="hero__copy">
+    <div class="wrap split split--wide-left reveal">
+      <div class="stack--lg">
         <p class="eyebrow">The name</p>
-        <h2 class="h2 balance">Bounce, then comet</h2>
+        <h2 class="h2 balance">Bounce, then <span class="pop">comet</span></h2>
         <p>Bounce is the feel we chase. A casual game lives or dies in the half second after you tap: the little hop of a token as it lands, a die that settles instead of snapping, a button that gives slightly before it goes. Get that right and a plain set of rules feels wonderful in the hand. Get it wrong and no amount of content rescues it.</p>
-        <p>Comet is the streak. It is the run you do not want to break, the daily reward that turns into a seven day ladder, the win you protect because losing it would sting. A bright thing with a long tail, moving fast. That is what we want the games to feel like, and it is a fair description of a studio at the start of its first project.</p>
+        <p>Comet is the streak. It is the run you do not want to break, the daily reward you come back for, the win you protect because losing it would sting. A bright thing with a long tail, moving fast. That is what we want the games to feel like, and it is a fair description of a studio at the start of its first project.</p>
       </div>
 
-      <div class="hero__art">
-        <div class="phone phone--tilt-r">
-          <picture>
-            <source type="image/webp" srcset="assets/img/diceback-win.webp 1x, assets/img/diceback-win@2x.webp 2x">
-            <img src="assets/img/diceback-win.jpg" srcset="assets/img/diceback-win.jpg 1x, assets/img/diceback-win@2x.jpg 2x" width="540" height="959" alt="DiceBack win screen reading You Win with a fifty coin reward" loading="eager" fetchpriority="high" decoding="async">
-          </picture>
-        </div>
-      </div>
+      <figure class="figure float-slow">
+        <picture><source type="image/webp" srcset="assets/art/mascot-hero-200.webp?v=5a182c80 200w, assets/art/mascot-hero-400.webp?v=4823a43c 400w, assets/art/mascot-hero-800.webp?v=de3af2d6 800w" sizes="(max-width: 899px) 60vw, 400px"><img src="assets/art/mascot-hero.png?v=40ed311d" width="400" height="400" alt="Comet, the Bouncy Comet mascot: a purple rock comet with glowing red lava cracks, flying on a green-yellow trail of rock chunks" loading="lazy"></picture>
+        <figcaption>This is Comet. It turns up wherever the studio does.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -118,174 +99,211 @@
        =================================================================== -->
   <section class="section section--tint" id="what-we-build">
     <div class="wrap">
-      <div class="section__head section__head--center">
+      <div class="section__head section__head--center reveal">
         <p class="eyebrow">What we build</p>
         <h2 class="h2 balance">Six genres, one standard</h2>
         <p class="lead">We are not spread across six genres because we cannot pick one. They all answer the same question from a different angle: what makes a person open the game again tomorrow?</p>
       </div>
 
-      <div class="grid grid--3 reveal">
-        <article class="genre-card">
-          <span class="genre-card__emoji" aria-hidden="true">&#129513;</span>
-          <h3 class="h3">Puzzle</h3>
-          <p>Puzzle is where we find out whether an idea is actually good. A puzzle rule cannot hide behind speed or spectacle. If the loop is dull at ten seconds it will still be dull at ten minutes. We aim for the small earned click of understanding, then hand you a slightly harder version of the same thought.</p>
+      <div class="genres genres--long reveal">
+        <article class="genre">
+          <picture class="genre__icon"><source type="image/webp" srcset="assets/art/genre-puzzle.webp?v=c2bc49cf 1x, assets/art/genre-puzzle@2x.webp?v=a0f8738a 2x"><img src="assets/art/genre-puzzle.png?v=2a6b5d14" width="96" height="96" alt="" loading="lazy"></picture>
+          <div>
+            <h3 class="h3">Puzzle</h3>
+            <p>Puzzle is where we find out whether an idea is actually good.<span class="more"> A puzzle rule cannot hide behind speed or spectacle. If the loop is dull at ten seconds it will still be dull at ten minutes. We aim for the small earned click of understanding, then hand you a slightly harder version of the same thought.</span></p>
+          </div>
         </article>
-
-        <article class="genre-card">
-          <span class="genre-card__emoji" aria-hidden="true">&#9889;</span>
-          <h3 class="h3">Hypercasual</h3>
-          <p>Hypercasual keeps us honest about clarity. One input, one goal, nothing to read. We treat it as a discipline rather than a shortcut: if a new player cannot explain the game to a friend after a single round, the design is not finished, no matter how nice it looks.</p>
+        <article class="genre">
+          <picture class="genre__icon"><source type="image/webp" srcset="assets/art/genre-hypercasual.webp?v=caada0a0 1x, assets/art/genre-hypercasual@2x.webp?v=d58e4733 2x"><img src="assets/art/genre-hypercasual.png?v=8786fcea" width="96" height="96" alt="" loading="lazy"></picture>
+          <div>
+            <h3 class="h3">Hypercasual</h3>
+            <p>Hypercasual keeps us honest about clarity.<span class="more"> One input, one goal, nothing to read. We treat it as a discipline rather than a shortcut: if a new player cannot explain the game to a friend after a single round, the design is not finished, no matter how nice it looks.</span></p>
+          </div>
         </article>
-
-        <article class="genre-card">
-          <span class="genre-card__emoji" aria-hidden="true">&#128377;</span>
-          <h3 class="h3">Arcade</h3>
-          <p>Arcade is about the retry. How fast does a round restart, how clearly do you understand what beat you, and does the next attempt feel like your own idea instead of the game nagging you? Short rounds, readable failure, no waiting between you and one more go.</p>
+        <article class="genre">
+          <picture class="genre__icon"><source type="image/webp" srcset="assets/art/genre-arcade.webp?v=1c83c59e 1x, assets/art/genre-arcade@2x.webp?v=776536ab 2x"><img src="assets/art/genre-arcade.png?v=e92b894e" width="96" height="96" alt="" loading="lazy"></picture>
+          <div>
+            <h3 class="h3">Arcade</h3>
+            <p>Arcade is about the retry.<span class="more"> How fast does a round restart, how clearly do you understand what beat you, and does the next attempt feel like your own idea instead of the game nagging you? Short rounds, readable failure, no waiting between you and one more go.</span></p>
+          </div>
         </article>
-
-        <article class="genre-card">
-          <span class="genre-card__emoji" aria-hidden="true">&#128256;</span>
-          <h3 class="h3">Hybrid-casual</h3>
-          <p>Hybrid-casual is where a simple loop earns depth. We start with a core anyone can play in the first ten seconds, then layer progression, collection and longer goals on top only once the base game is genuinely fun without them. Depth should be a reward, never a patch over a weak loop.</p>
+        <article class="genre">
+          <picture class="genre__icon"><source type="image/webp" srcset="assets/art/genre-hybrid-casual.webp?v=8a49d9c8 1x, assets/art/genre-hybrid-casual@2x.webp?v=910259d0 2x"><img src="assets/art/genre-hybrid-casual.png?v=9cf14df6" width="96" height="96" alt="" loading="lazy"></picture>
+          <div>
+            <h3 class="h3">Hybrid-casual</h3>
+            <p>Hybrid-casual is where a simple loop earns depth.<span class="more"> We start with a core anyone can play in the first ten seconds, then layer progression, collection and longer goals on top only once the base game is genuinely fun without them. Depth should be a reward, never a patch over a weak loop.</span></p>
+          </div>
         </article>
-
-        <article class="genre-card">
-          <span class="genre-card__emoji" aria-hidden="true">&#129309;</span>
-          <h3 class="h3">Multiplayer</h3>
-          <p>Games get better when someone else is in the room. Two players on one device is the version we love most, because you get to watch the other person's face when the dice turn on them. Online matchmaking matters too, but we design for the table first and the internet second.</p>
+        <article class="genre">
+          <picture class="genre__icon"><source type="image/webp" srcset="assets/art/genre-multiplayer.webp?v=9215a7ae 1x, assets/art/genre-multiplayer@2x.webp?v=86e0454f 2x"><img src="assets/art/genre-multiplayer.png?v=205fdb0f" width="96" height="96" alt="" loading="lazy"></picture>
+          <div>
+            <h3 class="h3">Multiplayer</h3>
+            <p>Games get better when someone else is in the room.<span class="more"> Two players on one device is the version we love most, because you get to watch the other person's face when the dice turn on them. Online matchmaking matters too, but we design for the table first and the internet second.</span></p>
+          </div>
         </article>
-
-        <article class="genre-card">
-          <span class="genre-card__emoji" aria-hidden="true">&#129528;</span>
-          <h3 class="h3">Kids</h3>
-          <p>Children's games get the strictest brief in the studio. Big targets, forgiving inputs, nothing you need to read before you can start, and no pressure mechanics anywhere. If a feature would only work by nudging a child toward a purchase or a ticking timer, the feature is cut.</p>
+        <article class="genre">
+          <picture class="genre__icon"><source type="image/webp" srcset="assets/art/genre-kids-family.webp?v=079f20c2 1x, assets/art/genre-kids-family@2x.webp?v=192de966 2x"><img src="assets/art/genre-kids-family.png?v=9e402959" width="96" height="96" alt="" loading="lazy"></picture>
+          <div>
+            <h3 class="h3">Kids &amp; Family</h3>
+            <p>Children's games get the strictest brief in the studio.<span class="more"> Big targets, forgiving inputs, nothing you need to read before you can start, and no pressure mechanics anywhere. If a feature would only work by nudging a child toward a purchase or a ticking timer, the feature is cut.</span></p>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
   <!-- ===================================================================
-       HOW WE WORK
+       HOW WE WORK - a path of four dice along a comet trail, not four cards
        =================================================================== -->
   <section class="section" id="how-we-work">
+    <div class="floaters" aria-hidden="true">
+      <picture class="floater floater--wide" style="--size:120px; right:6%; top:8%; --depth:.5; --tilt:-14deg; --bob:8s"><source type="image/webp" srcset="assets/art/toy-line-red.webp?v=8f1492f5 1x, assets/art/toy-line-red@2x.webp?v=c7b9f6d6 2x"><img src="assets/art/toy-line-red.png?v=450d2bab" width="160" height="160" alt="" loading="lazy"></picture>
+      <picture class="floater floater--wide" style="--size:76px; right:20%; top:17%; --depth:-.4; --tilt:8deg; --bob:6.5s; --delay:-3s"><source type="image/webp" srcset="assets/art/toy-token-yellow.webp?v=2189850f 1x, assets/art/toy-token-yellow@2x.webp?v=341486fc 2x"><img src="assets/art/toy-token-yellow.png?v=38c78e96" width="160" height="160" alt="" loading="lazy"></picture>
+    </div>
     <div class="wrap">
-      <div class="section__head">
+      <div class="section__head reveal">
         <p class="eyebrow">How we work</p>
         <h2 class="h2 balance">Four steps, repeated until it feels right</h2>
         <p class="lead">Every idea goes through the same loop. Most of them do not survive step one, and that is the point of having a step one.</p>
       </div>
 
-      <ol class="steps reveal">
-        <li class="step">
-          <span class="step__num" aria-hidden="true">1</span>
-          <div class="step__body">
-            <h3 class="h3">Prototype in a week</h3>
-            <p>A new idea gets seven days and no art budget. Gray boxes, placeholder dice, one input. If the raw loop is not fun with nothing pretty on the screen, more time will not save it, and we shelve it without ceremony.</p>
-          </div>
-        </li>
-        <li class="step">
-          <span class="step__num" aria-hidden="true">2</span>
-          <div class="step__body">
-            <h3 class="h3">Test the first ten seconds</h3>
-            <p>We hand the build to someone who has never seen it and then say nothing at all. Where do they tap first? What do they think the goal is? If we have to explain the rules out loud, the rules are wrong, not the player.</p>
-          </div>
-        </li>
-        <li class="step">
-          <span class="step__num" aria-hidden="true">3</span>
-          <div class="step__body">
-            <h3 class="h3">Polish the feel</h3>
-            <p>This is the longest phase by far. Roll timing, how a token travels across the board, the weight of a button press, the sound that lands when your last token clears. Feel is not decoration. It is most of the reason a casual game gets a second session.</p>
-          </div>
-        </li>
-        <li class="step">
-          <span class="step__num" aria-hidden="true">4</span>
-          <div class="step__body">
-            <h3 class="h3">Ship and keep tuning</h3>
-            <p>Launch is the start of the work, not the end. We watch where players stall, rebalance the bot, fix whatever turns out to be annoying in real hands, and add the things people actually ask for. A live game is a conversation, not a delivery.</p>
-          </div>
-        </li>
-      </ol>
+      <!-- The trail is drawn for a 1000 x 160 box and stretched over the row; the four dice sit
+           at 11%, 37%, 63% and 89% of its width (see .path in css/style.css). -->
+      <div class="path reveal">
+        <svg class="path__trail" viewBox="0 0 1000 160" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="pathLava" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#FA2E4B" stop-opacity="0"/>
+              <stop offset=".16" stop-color="#FA2E4B" stop-opacity=".9"/>
+              <stop offset="1" stop-color="#FBDF97"/>
+            </linearGradient>
+          </defs>
+          <path d="M-20,152 C40,150 70,134 110,128 S300,112 370,96 S560,80 630,64 S820,48 890,32 S980,18 1020,12" fill="none" stroke="#8C3CFA" stroke-width="22" stroke-linecap="round" opacity=".3" vector-effect="non-scaling-stroke"/>
+          <path d="M-20,152 C40,150 70,134 110,128 S300,112 370,96 S560,80 630,64 S820,48 890,32 S980,18 1020,12" fill="none" stroke="url(#pathLava)" stroke-width="6" stroke-linecap="round" stroke-dasharray="1 15" vector-effect="non-scaling-stroke"/>
+        </svg>
+        <ol class="path__steps">
+          <li class="path__step">
+            <span class="die die--1" aria-hidden="true"></span>
+            <div>
+              <h3 class="h3">Prototype in a week</h3>
+              <p>A new idea gets seven days and no art budget. Gray boxes, placeholder dice, one input. If the raw loop is not fun with nothing pretty on the screen, more time will not save it, and we shelve it without ceremony.</p>
+            </div>
+          </li>
+          <li class="path__step">
+            <span class="die die--2" aria-hidden="true"></span>
+            <div>
+              <h3 class="h3">Test the first ten seconds</h3>
+              <p>We hand the build to someone who has never seen it and then say nothing at all. Where do they tap first? What do they think the goal is? If we have to explain the rules out loud, the rules are wrong, not the player.</p>
+            </div>
+          </li>
+          <li class="path__step">
+            <span class="die die--3" aria-hidden="true"></span>
+            <div>
+              <h3 class="h3">Polish the feel</h3>
+              <p>This is the longest phase by far. Roll timing, how a token travels across the board, the weight of a button press, the sound that lands when your last token clears. Feel is not decoration. It is most of the reason a casual game gets a second session.</p>
+            </div>
+          </li>
+          <li class="path__step">
+            <span class="die die--4" aria-hidden="true"></span>
+            <div>
+              <h3 class="h3">Ship and keep tuning</h3>
+              <p>Launch is the start of the work, not the end. We watch where players stall, rebalance the bot, fix whatever turns out to be annoying in real hands, and add the things people actually ask for. A live game is a conversation, not a delivery.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
     </div>
   </section>
 
   <!-- ===================================================================
-       WHAT WE WON'T DO
+       WHAT WE WON'T DO - one cream "house rules" board, not six cards
        =================================================================== -->
   <section class="section section--tint" id="principles">
     <div class="wrap">
-      <div class="section__head section__head--center">
+      <div class="section__head section__head--center reveal">
         <p class="eyebrow">Our principles</p>
         <h2 class="h2 balance">What we will not do</h2>
         <p class="lead">Casual mobile has a bad reputation for a reason, and most of it is earned. These are the lines we hold, written down so you can hold us to them.</p>
       </div>
 
-      <div class="grid grid--3 reveal">
-        <article class="card">
-          <span class="card__icon" aria-hidden="true">&#9878;</span>
-          <h3 class="card__title">No pay-to-win</h3>
-          <p class="card__text">You will never buy a win from us. Coins, skins and bundles change how the game looks and what you collect, not who takes the match. A player who has spent nothing and a player who has spent plenty sit down to exactly the same rules.</p>
-        </article>
-
-        <article class="card">
-          <span class="card__icon" aria-hidden="true">&#128683;</span>
-          <h3 class="card__title">No dark patterns</h3>
-          <p class="card__text">No countdown invented to rush you, no fake shortage, no confirm button dressed up so you misread it. If an offer is genuinely good it survives being described in plain language, and if it does not survive that, it was never a good offer.</p>
-        </article>
-
-        <article class="card">
-          <span class="card__icon" aria-hidden="true">&#127922;</span>
-          <h3 class="card__title">No gambling mechanics</h3>
-          <p class="card__text">No paid loot boxes with hidden odds, no spin-the-wheel sold for real money, and nothing built to feel like a slot machine in a game a child might open. Chests in our games are earned by playing, and what is inside them is cosmetic.</p>
-        </article>
-
-        <article class="card">
-          <span class="card__icon" aria-hidden="true">&#128250;</span>
-          <h3 class="card__title">Honest, skippable ads</h3>
-          <p class="card__text">Ads are opt in wherever the business allows it. Watch one for a reward, or do not, and keep playing either way. No unskippable wall between you and the next round, and no ad dressed up as a game button to farm mistaken taps.</p>
-        </article>
-
-        <article class="card">
-          <span class="card__icon" aria-hidden="true">&#128274;</span>
-          <h3 class="card__title">Privacy by design</h3>
-          <p class="card__text">We collect as little as a game can run on, and we do not sell player data. For titles aimed at children we design against COPPA and GDPR-K expectations from the first sprint, including no behavioral ad targeting to kids. That is our design brief, not a certification we are claiming.</p>
-        </article>
-
-        <article class="card">
-          <span class="card__icon" aria-hidden="true">&#128100;</span>
-          <h3 class="card__title">No forced accounts</h3>
-          <p class="card__text">Guest play is a first class option, not a nag screen you learn to tap past. Create an account if you want your progress, streaks and coins to follow you to a new phone. If you would rather just play, that path stays open forever.</p>
-        </article>
+      <div class="board reveal">
+        <ul class="board__sheet">
+          <li class="rule">
+            <span class="cross" aria-hidden="true"></span>
+            <div>
+              <h3 class="h3">No rigged table</h3>
+              <p>Both players sit down to the same rules and roll the same die. Every roll lands on the table where both of you can see it, and no match is ever played for real money.</p>
+            </div>
+          </li>
+          <li class="rule">
+            <span class="cross" aria-hidden="true"></span>
+            <div>
+              <h3 class="h3">No dark patterns</h3>
+              <p>No countdown invented to rush you, no fake shortage, no confirm button dressed up so you misread it. If an offer is genuinely good it survives being described in plain language, and if it does not survive that, it was never a good offer.</p>
+            </div>
+          </li>
+          <li class="rule">
+            <span class="cross" aria-hidden="true"></span>
+            <div>
+              <h3 class="h3">No real-money play</h3>
+              <p>Coins are game pieces. They have no cash value, there are no cash prizes, and nothing can be withdrawn or traded for money. A dice game on our shelf is a board game, and it stays one.</p>
+            </div>
+          </li>
+          <li class="rule">
+            <span class="cross" aria-hidden="true"></span>
+            <div>
+              <h3 class="h3">No disguised ads</h3>
+              <p>A rewarded ad is always a choice: watch one for a few coins, or skip it. No ad is ever dressed up as a game button to farm mistaken taps.</p>
+            </div>
+          </li>
+          <li class="rule">
+            <span class="cross" aria-hidden="true"></span>
+            <div>
+              <h3 class="h3">No vague data talk</h3>
+              <p>We say what a game collects and why. The <a href="privacy.html">Privacy Policy</a> lists every kind of data and who processes it, and you can <a href="account-deletion.html">delete a Dice Duo account</a> from inside the game or from this site.</p>
+            </div>
+          </li>
+          <li class="rule">
+            <span class="cross" aria-hidden="true"></span>
+            <div>
+              <h3 class="h3">No forced accounts</h3>
+              <p>Playing the computer or a friend on the same phone never needs an account. Create one when you want online matches, saved progress and leaderboards. If you would rather just play, that path stays open.</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- ===================================================================
-       CTA BAND
-       =================================================================== -->
   <section class="cta-band">
-    <div class="wrap">
-      <h2 class="h2 balance">Want to work with us?</h2>
-      <p class="lead">Publishers, UA partners, artists, sound designers and anyone who just wants to tell us the bot plays too well. We read everything that arrives.</p>
-      <div class="btn-row">
-        <a class="btn btn--gold btn--lg" href="contact.html">Get in touch</a>
-        <a class="btn btn--light btn--lg" href="diceback.html">See DiceBack</a>
+    <div class="wrap reveal">
+      <div class="cta cta--with-toys">
+        <div class="floaters" aria-hidden="true">
+          <picture class="floater floater--wide" style="--size:128px; right:7%; top:16%; --depth:.5; --tilt:-12deg; --bob:7s"><source type="image/webp" srcset="assets/art/toy-die-five.webp?v=b8c0f000 1x, assets/art/toy-die-five@2x.webp?v=ac6cd15d 2x"><img src="assets/art/toy-die-five.png?v=e9ca6fb8" width="160" height="160" alt="" loading="lazy"></picture>
+          <picture class="floater floater--wide" style="--size:92px; right:21%; top:54%; --depth:-.4; --tilt:8deg; --bob:8.5s; --delay:-2s"><source type="image/webp" srcset="assets/art/toy-token-yellow.webp?v=2189850f 1x, assets/art/toy-token-yellow@2x.webp?v=341486fc 2x"><img src="assets/art/toy-token-yellow.png?v=38c78e96" width="160" height="160" alt="" loading="lazy"></picture>
+          <picture class="floater floater--wide" style="--size:56px; right:5%; top:66%; --depth:.9; --bob:5.5s; --delay:-1s"><source type="image/webp" srcset="assets/art/toy-star.webp?v=210b7ae7 1x, assets/art/toy-star@2x.webp?v=ae93a521 2x"><img src="assets/art/toy-star.png?v=64d28e29" width="160" height="160" alt="" loading="lazy"></picture>
+        </div>
+        <h2 class="h2 balance">Want to work with us?</h2>
+        <p class="lead">Publishers, UA partners, artists, sound designers and anyone who just wants to tell us the bot plays too well. We read everything that arrives.</p>
+        <div class="btn-row">
+          <a class="btn btn--comet btn--lg" href="contact.html">Get in touch</a>
+          <a class="btn btn--ghost btn--lg" href="diceback.html">See Dice Duo</a>
+        </div>
       </div>
+      
     </div>
   </section>
-
 </main>
 
 <footer class="site-footer">
   <div class="wrap footer__grid">
     <div class="footer__brand">
       <a class="nav__logo" href="index.html" aria-label="Bouncy Comet - home">
-        <svg class="nav__logo-mark" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-          <path d="M6 58C6 40 18 20 40 10l12 12C42 44 24 56 6 58Z" fill="#FFC61A" opacity=".55"/>
-          <circle cx="45" cy="19" r="13" fill="#FFE9A8"/>
-        </svg>
+        <img class="nav__logo-mark" src="assets/icons/logo-mark.png?v=7af52c43" srcset="assets/icons/logo-mark.png?v=7af52c43 1x, assets/icons/logo-mark@2x.png?v=5d838990 2x, assets/icons/logo-mark@3x.png?v=66e2e5da 3x" width="44" height="44" alt="">
         <span class="nav__logo-text">Bouncy<span>Comet</span></span>
       </a>
-      <p class="footer__tag">We make bright, bouncy games worth coming back to - puzzle, arcade, hypercasual, hybrid-casual, multiplayer and games for kids.</p>
+      <picture class="footer__mascot"><source type="image/webp" srcset="assets/art/mascot-wave-sm.webp?v=4ca5598c 1x, assets/art/mascot-wave-sm@2x.webp?v=2ddb4091 2x"><img src="assets/art/mascot-wave-sm.png?v=08e10111" width="120" height="120" alt="Comet, the Bouncy Comet mascot: a purple rock comet with glowing red cracks and a sparkle of stars" loading="lazy"></picture>
+      <p class="footer__tag">We make bright, bouncy games worth coming back to. First out of the toybox: Dice Duo, five two-player dice games in one app.</p>
     </div>
     <div class="footer__col">
       <h2 class="footer__head">Studio</h2>
@@ -296,10 +314,11 @@
       </ul>
     </div>
     <div class="footer__col">
-      <h2 class="footer__head">DiceBack</h2>
+      <h2 class="footer__head">Dice Duo</h2>
       <ul class="footer__links">
         <li><a href="diceback.html">Overview</a></li>
-        <li><a href="diceback.html#how-to-play">How to play</a></li>
+        <li><a href="diceback.html#how-to-play">The five games</a></li>
+        <li><a href="diceback.html#modes">Ways to play</a></li>
         <li><a href="diceback.html#screens">Screenshots</a></li>
       </ul>
     </div>
@@ -319,6 +338,6 @@
   </div>
 </footer>
 
-<script src="js/main.js" defer></script>
+<script src="js/main.js?v=8120d787" defer></script>
 </body>
 </html>

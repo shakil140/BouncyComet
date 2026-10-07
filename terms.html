@@ -6,31 +6,31 @@
   <title>Terms of Service | Bouncy Comet</title>
   <meta name="description" content="Read the Bouncy Comet Terms of Service: how you may use our website and games, account rules, virtual items, acceptable play and legal terms.">
   <link rel="canonical" href="https://bouncycomet.com/terms.html">
-  <meta name="theme-color" content="#071A33">
+  <meta name="theme-color" content="#0A1436">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Bouncy Comet">
   <meta property="og:title" content="Terms of Service | Bouncy Comet">
   <meta property="og:description" content="Read the Bouncy Comet Terms of Service: how you may use our website and games, account rules, virtual items, acceptable play and legal terms.">
   <meta property="og:url" content="https://bouncycomet.com/terms.html">
-  <meta property="og:image" content="https://bouncycomet.com/assets/img/og-image.jpg">
+  <meta property="og:image" content="https://bouncycomet.com/assets/img/og-image.jpg?v=16e1dc48">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="A Bouncy Comet banner showing three phones running Dice Duo, the studio's two-player dice game.">
+  <meta property="og:image:alt" content="Bouncy Comet, an independent mobile game studio.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Terms of Service | Bouncy Comet">
   <meta name="twitter:description" content="Read the Bouncy Comet Terms of Service: how you may use our website and games, account rules, virtual items, acceptable play and legal terms.">
-  <meta name="twitter:image" content="https://bouncycomet.com/assets/img/og-image.jpg">
-  <meta name="twitter:image:alt" content="A Bouncy Comet banner showing three phones running Dice Duo, the studio's two-player dice game.">
-  <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
-  <link rel="icon" href="assets/icons/favicon-32.png" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap">
-  <!-- Set before first paint so .reveal blocks are only hidden when JS can reveal them. -->
-  <script>document.documentElement.classList.add('js');</script>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="twitter:image" content="https://bouncycomet.com/assets/img/og-image.jpg?v=16e1dc48">
+  <meta name="twitter:image:alt" content="Bouncy Comet, an independent mobile game studio.">
+  <link rel="icon" href="assets/icons/favicon.ico?v=2050a3d2" sizes="any">
+  <link rel="icon" href="assets/icons/favicon-32.png?v=d00324c3" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png?v=4e0e32cf">
+  <link rel="manifest" href="site.webmanifest?v=643073f1">
+  <link rel="preload" href="assets/fonts/LilitaOne-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/Nunito-Bold.woff" as="font" type="font/woff" crossorigin>
+  <!-- Set before first paint so .reveal blocks and the mobile menu are only hidden when JS can show them;
+       taken away again if js/main.js never arrives. -->
+  <script>document.documentElement.classList.add('js');addEventListener('load',function(){window.__bc||document.documentElement.classList.remove('js')});</script>
+  <link rel="stylesheet" href="css/style.css?v=34b49416">
 </head>
 <body>
 
@@ -38,22 +38,10 @@
 <header class="site-header" id="siteHeader">
   <nav class="wrap nav" aria-label="Main">
     <a class="nav__logo" href="index.html" aria-label="Bouncy Comet - home">
-      <svg class="nav__logo-mark" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-        <defs>
-          <linearGradient id="bcTail" x1="0" y1="1" x2="1" y2="0">
-            <stop offset="0" stop-color="#FFC61A" stop-opacity="0"/>
-            <stop offset="1" stop-color="#FFC61A" stop-opacity=".95"/>
-          </linearGradient>
-          <radialGradient id="bcHead" cx=".35" cy=".3" r=".75">
-            <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFC61A"/>
-          </radialGradient>
-        </defs>
-        <path d="M6 58C6 40 18 20 40 10l12 12C42 44 24 56 6 58Z" fill="url(#bcTail)"/>
-        <circle cx="45" cy="19" r="13" fill="url(#bcHead)"/>
-      </svg>
+      <img class="nav__logo-mark" src="assets/icons/logo-mark.png?v=7af52c43" srcset="assets/icons/logo-mark.png?v=7af52c43 1x, assets/icons/logo-mark@2x.png?v=5d838990 2x, assets/icons/logo-mark@3x.png?v=66e2e5da 3x" width="44" height="44" alt="">
       <span class="nav__logo-text">Bouncy<span>Comet</span></span>
     </a>
-    <button class="nav__burger" id="navBurger" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+    <button class="nav__burger" id="navBurger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
     <div class="nav__links" id="navLinks">
@@ -61,13 +49,12 @@
       <a class="nav__link" href="games.html">Games</a>
       <a class="nav__link" href="diceback.html">Dice Duo</a>
       <a class="nav__link" href="about.html">About</a>
-      <a class="nav__cta btn btn--primary" href="contact.html">Contact</a>
+      <a class="nav__cta btn btn--comet btn--sm" href="contact.html">Contact</a>
     </div>
   </nav>
 </header>
 
 <main id="main">
-
   <!-- ===================================================================
        PAGE HEAD
        =================================================================== -->
@@ -97,17 +84,17 @@
 
       <div class="grid grid--3 reveal">
         <article class="card">
-          <span class="card__icon" aria-hidden="true">&#127918;</span>
+          <span class="die die--1 card__icon" aria-hidden="true"></span>
           <h3 class="card__title">Play fair</h3>
           <p class="card__text">We give you a personal license to play our games. Do not cheat, exploit bugs, automate play or take our games apart.</p>
         </article>
         <article class="card">
-          <span class="card__icon" aria-hidden="true">&#129689;</span>
+          <span class="die die--2 card__icon" aria-hidden="true"></span>
           <h3 class="card__title">Coins are not money</h3>
           <p class="card__text">Coins, tokens, skins and dice live inside the game. They have no cash value, cannot be sold, and cannot be exchanged for real money.</p>
         </article>
         <article class="card">
-          <span class="card__icon" aria-hidden="true">&#128683;</span>
+          <span class="die die--3 card__icon" aria-hidden="true"></span>
           <h3 class="card__title">No cash betting</h3>
           <p class="card__text">Dice Duo uses chance-based dice games for entertainment. It has no real-money wagering, cash prizes or cash withdrawals.</p>
         </article>
@@ -242,28 +229,27 @@
        =================================================================== -->
   <section class="cta-band">
     <div class="wrap">
+      <div class="cta">
       <h2 class="h2 balance">Something here unclear?</h2>
       <p class="lead">Ask us. We would rather explain a clause in a sentence than have you guess at it.</p>
       <div class="btn-row">
-        <a class="btn btn--gold btn--lg" href="contact.html">Contact the studio</a>
+        <a class="btn btn--comet btn--lg" href="contact.html">Contact the studio</a>
         <a class="btn btn--light btn--lg" href="privacy.html">Read the Privacy Policy</a>
+      </div>
       </div>
     </div>
   </section>
-
 </main>
 
 <footer class="site-footer">
   <div class="wrap footer__grid">
     <div class="footer__brand">
       <a class="nav__logo" href="index.html" aria-label="Bouncy Comet - home">
-        <svg class="nav__logo-mark" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-          <path d="M6 58C6 40 18 20 40 10l12 12C42 44 24 56 6 58Z" fill="#FFC61A" opacity=".55"/>
-          <circle cx="45" cy="19" r="13" fill="#FFE9A8"/>
-        </svg>
+        <img class="nav__logo-mark" src="assets/icons/logo-mark.png?v=7af52c43" srcset="assets/icons/logo-mark.png?v=7af52c43 1x, assets/icons/logo-mark@2x.png?v=5d838990 2x, assets/icons/logo-mark@3x.png?v=66e2e5da 3x" width="44" height="44" alt="">
         <span class="nav__logo-text">Bouncy<span>Comet</span></span>
       </a>
-      <p class="footer__tag">We make bright, bouncy games worth coming back to - puzzle, arcade, hypercasual, hybrid-casual, multiplayer and games for kids.</p>
+      <picture class="footer__mascot"><source type="image/webp" srcset="assets/art/mascot-wave-sm.webp?v=4ca5598c 1x, assets/art/mascot-wave-sm@2x.webp?v=2ddb4091 2x"><img src="assets/art/mascot-wave-sm.png?v=08e10111" width="120" height="120" alt="Comet, the Bouncy Comet mascot: a purple rock comet with glowing red cracks and a sparkle of stars" loading="lazy"></picture>
+      <p class="footer__tag">We make bright, bouncy games worth coming back to. First out of the toybox: Dice Duo, five two-player dice games in one app.</p>
     </div>
     <div class="footer__col">
       <h2 class="footer__head">Studio</h2>
@@ -277,7 +263,8 @@
       <h2 class="footer__head">Dice Duo</h2>
       <ul class="footer__links">
         <li><a href="diceback.html">Overview</a></li>
-        <li><a href="diceback.html#how-to-play">How to play</a></li>
+        <li><a href="diceback.html#how-to-play">The five games</a></li>
+        <li><a href="diceback.html#modes">Ways to play</a></li>
         <li><a href="diceback.html#screens">Screenshots</a></li>
       </ul>
     </div>
@@ -297,6 +284,6 @@
   </div>
 </footer>
 
-<script src="js/main.js" defer></script>
+<script src="js/main.js?v=8120d787" defer></script>
 </body>
 </html>
