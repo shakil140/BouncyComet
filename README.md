@@ -3,7 +3,7 @@
 Marketing site for **Bouncy Comet**, an independent mobile game studio making
 puzzle, hypercasual, arcade, hybrid-casual, multiplayer and kids' games.
 
-First title, in closed testing on Android: **Dice Duo: 2 Player Board Games**, one app with
+First title, in closed testing on Google Play (Android): **Dice Duo: 2 Player Dice Games**, one app with
 five two-player dice games (Grid War, DiceBack, Roll Race, Six Spots, Scoop Stack).
 "Dice Duo" is the product; "DiceBack" is one of its five games.
 
@@ -27,12 +27,15 @@ about.html        Workshop illustration, studio story, genres, the four-step pat
 contact.html      Contact form + routes
 privacy.html      Privacy Policy (app-store ready)
 terms.html        Terms of Service
+refunds.html      Refund and Cancellation Policy (footer label "Refunds and Cancellations"):
+                  purchases, delivery and refund steps for Dice Duo
 account-deletion.html  Dice Duo account/data deletion request and retention information
 privacy-policy.html, terms-of-service.html   Redirects to the two pages above
 404.html          Not-found page (uses root-absolute paths — see note below)
 
 css/style.css     Full design system: tokens, components, responsive, reduced-motion
-js/main.js        Nav, scroll reveal, rails (carousels), toy parallax, screenshot lightbox, contact form
+js/main.js        Nav, scroll reveal, rails (carousels), toy parallax, screenshot lightbox, contact form,
+                  and the launch switch (see "Launch day")
 
 assets/art/       Illustrations, cut and resized by tools/import_art.py
 assets/shots/     Real game screenshots, resized by tools/import_art.py
@@ -114,6 +117,31 @@ python tools/stamp_assets.py --check   # changes nothing, fails if a stamp is ou
 
 It only rewrites the `?v=` part of links that are already in the pages; fonts are left alone.
 When a new picture is added to a page, write its plain path and run the script.
+
+### Launch day
+
+While Dice Duo is in closed testing its Google Play page opens for enrolled testers only, so the
+site says "In closed testing on Google Play" and offers "Tell me when it launches". It never says
+"coming soon to Google Play": the game is already there, for testers. One line changes that on
+every page at once. At the top of `js/main.js`:
+
+```js
+var DICE_DUO_IS_PUBLIC = false;   // launch day: false -> true
+```
+
+Then publish as above (`python tools/stamp_assets.py` renews the stamp of `js/main.js`, so
+browsers fetch it again). Every "closed testing" line becomes a "Get it on Google Play" link to
+<https://play.google.com/store/apps/details?id=com.bouncycomet.diceduo>.
+
+How it is built: a page writes both versions of a line and marks them `data-launch="soon"` and
+`data-launch="live"`; the "live" one also carries `hidden`, so without the script the "soon"
+version shows. When a new line depends on whether the game is public, write it the same way.
+Page descriptions and structured data cannot be switched by a script, so they say nothing about
+closed testing or a launch.
+
+In the same commit or the next one, delete the `data-launch="soon"` elements and take `hidden`
+off the "live" ones, so the page is right without the script (link previews, readers without
+JavaScript and the first paint otherwise still get the closed-testing text).
 
 ### DNS records at Squarespace
 
@@ -281,7 +309,7 @@ These need to exist (mailbox or forwarding) before launch:
 | --- | --- |
 | `hello@bouncycomet.com` | General contact, footer |
 | `partners@bouncycomet.com` | Business and publishing enquiries |
-| `support@bouncycomet.com` | Player support |
+| `support@bouncycomet.com` | Player support, purchases and refunds; the contact form sends its "Player support" and "Purchase or refund" subjects here |
 | `privacy@bouncycomet.com` | Privacy requests, referenced in the Privacy Policy |
 | `legal@bouncycomet.com` | Referenced in the Terms of Service |
 
@@ -310,18 +338,18 @@ These need to exist (mailbox or forwarding) before launch:
 - [ ] Paste `ArtDrop/GPT_PROMPT.md` into GPT (its first lines say what to attach), save the 17
       illustrations into `ArtDrop/incoming/`, run `python tools/import_art.py`, look at
       `ArtDrop/preview/cut_*.png`, and publish only when `python tools/import_art.py --check` passes
-- [ ] `privacy.html` needs three sentences revised by the owner (legal wording is not touched
-      by design work), plus its "Last updated" date:
-      section 3 still says "Some pages load Google Fonts" (no page does: fonts are self-hosted);
-      it names the app "Dice Duo: 2 Player Dice Games" while the site says "2 Player Board Games";
-      its Scope lists DiceBack, Six Spots and Scoop Stack but not Grid War and Roll Race.
 - [ ] Confirm the wording about coin entry fees (Dice Duo page: the note under "Four ways to
       start a match" and the FAQ "Is Dice Duo free?"): matches against the computer and online
       quick matches have a coin entry fee and pay coins to the winner; two players on one phone
       is always free. Private rooms are not mentioned because the server can switch their fee.
-- [ ] Add the real Google Play link to `diceback.html`, `games.html` and `index.html` at launch,
-      replacing the plain "Coming soon to Google Play" text
-- [ ] Update the "Last updated" dates in `privacy.html` and `terms.html` when you change them
+- [ ] At launch, flip the launch switch (see "Launch day"): one line in `js/main.js` puts the
+      Google Play link on `diceback.html`, `games.html`, `index.html` and `about.html`, then
+      remove the "soon" versions as that section says
+- [ ] Update the "Last updated" dates in `privacy.html`, `terms.html` and `refunds.html` when you
+      change them. `terms.html`, `refunds.html`, `privacy.html` and `account-deletion.html` describe
+      Google Play purchases so that they are true with purchases switched on or off: when the
+      purchase rules, the refund handling or the purchase records on the server change, change
+      all four together
 
 ## Done
 

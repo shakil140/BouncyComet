@@ -64,7 +64,7 @@
       <a class="btn btn--comet btn--wrap" href="mailto:privacy@bouncycomet.com?subject=Dice%20Duo%20account%20deletion&amp;body=Please%20delete%20my%20Dice%20Duo%20account%20and%20associated%20account%20data.%0A%0AMy%20game%20account%20email%3A%20%0APlayer%20ID%20%28optional%29%3A%20%0A">Request account deletion by email</a>
       <p class="doc__email"><a href="mailto:privacy@bouncycomet.com">privacy@bouncycomet.com</a></p>
       <p class="doc__small muted">The button opens your email app. It does not send a message automatically. If it does not open, copy the address into your usual email service and send your request there.</p>
-      <div class="doc__notice"><strong>Deletion is permanent.</strong> You lose this account's online progress, coins and cosmetic items. Deleting Dice Duo does not delete your Google account. Signing out or uninstalling the game alone does not delete the server account.</div>
+      <div class="doc__notice"><strong>Deletion is permanent.</strong> You lose this account's online progress, coins and items, including purchased ones, and deleting the account does not refund a purchase. Deleting Dice Duo does not delete your Google account. Signing out or uninstalling the game alone does not delete the server account.</div>
     </header>
     <section class="doc__card" aria-labelledby="request-steps">
       <h2 id="request-steps">Request deletion without the app</h2>
@@ -104,6 +104,7 @@
         <li><strong>Match records:</strong> opponents' match history keeps the result and player/match identifiers, with your name changed to Deleted player. These records currently have no automatic expiry. They are not claimed to be fully anonymous.</li>
         <li><strong>Security and moderation:</strong> ban records, restricted staff notes and hashed blocked identities can remain to investigate abuse and prevent ban evasion. They currently have no automatic expiry.</li>
         <li><strong>Audit and reward records:</strong> administrative audit records are cleaned up after 730 days; rewarded-ad callback records after 90 days. Reward callbacks lose the account foreign-key link on deletion, but technical payloads can remain until cleanup.</li>
+        <li><strong>Purchase records:</strong> if the account made a Google Play purchase, the server's record of it remains with the direct account link removed: the hashed purchase token, a one-way hashed account identifier, the Google Play order ID, the product, what was delivered, the purchase status and times, and the record of a one-time bundle. A purchase token still waiting for Google's acknowledgement also stays in protected form until that step completes. They stop the same purchase being delivered twice, let a later refund or dispute be checked, and currently have no automatic expiry. Google keeps its own order records under its own policies. Deleting an account does not refund a purchase.</li>
         <li><strong>Confirmation email:</strong> the server's deletion-confirmation outbox record is subject to a 30-day retention policy with periodic cleanup. Delivered email copies are handled by the receiving mailbox and email provider.</li>
         <li><strong>Backups and operational logs:</strong> existing protected backups can contain earlier account data. The current deployment does not automatically expire database backups. Log and provider retention can differ; deletion of the active account is not an immediate backup or provider-data purge.</li>
         <li><strong>Configuration history:</strong> an internal account identifier can remain in earlier configuration versions or account-specific maintenance and ad-exemption lists. These versions and lists currently have no automatic deletion deadline.</li>
@@ -111,7 +112,7 @@
       </ul>
       <p>Contact <a href="mailto:privacy@bouncycomet.com">privacy@bouncycomet.com</a> about retained information or other privacy requests. We review whether continued retention is necessary, explain any justified exception and address requests involving service-provider data.</p>
     </section>
-    <p class="doc__foot">Dice Duo: 2 Player Dice Games · Bouncy Comet · Android package com.bouncycomet.diceduo<br>Updated 2 October 2026 · <a href="mailto:privacy@bouncycomet.com">Privacy and account support</a> · <a href="index.html">Studio website</a></p>
+    <p class="doc__foot">Dice Duo: 2 Player Dice Games · Bouncy Comet · Android package com.bouncycomet.diceduo<br>Updated 9 October 2026 · <a href="mailto:privacy@bouncycomet.com">Privacy and account support</a> · <a href="index.html">Studio website</a></p>
   
       </div>
     </div>
@@ -150,6 +151,7 @@
       <ul class="footer__links">
         <li><a href="privacy.html">Privacy Policy</a></li>
         <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="refunds.html">Refunds and Cancellations</a></li>
         <li><a href="account-deletion.html">Delete Dice Duo account</a></li>
         <li><a href="mailto:hello@bouncycomet.com">hello@bouncycomet.com</a></li>
       </ul>
@@ -161,6 +163,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=8120d787" defer></script>
+<script src="js/main.js?v=83903227" defer></script>
 </body>
 </html>

@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Our Games | Bouncy Comet</title>
-  <meta name="description" content="Everything Bouncy Comet is making: Dice Duo, five two-player dice games in one app, in closed testing on Android, and the directions we are prototyping next.">
+  <meta name="description" content="Everything Bouncy Comet is making: Dice Duo, five two-player dice games in one Android app, and the directions we are prototyping next.">
   <link rel="canonical" href="https://bouncycomet.com/games.html">
   <meta name="theme-color" content="#0A1436">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Bouncy Comet">
   <meta property="og:title" content="Our Games | Bouncy Comet">
-  <meta property="og:description" content="Everything Bouncy Comet is making: Dice Duo, five two-player dice games in one app, in closed testing on Android, and the directions we are prototyping next.">
+  <meta property="og:description" content="Everything Bouncy Comet is making: Dice Duo, five two-player dice games in one Android app, and the directions we are prototyping next.">
   <meta property="og:url" content="https://bouncycomet.com/games.html">
   <meta property="og:image" content="https://bouncycomet.com/assets/img/og-image.jpg?v=16e1dc48">
   <meta property="og:image:width" content="1200">
@@ -18,7 +18,7 @@
   <meta property="og:image:alt" content="Bouncy Comet, an independent mobile game studio.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Our Games | Bouncy Comet">
-  <meta name="twitter:description" content="Everything Bouncy Comet is making: Dice Duo, five two-player dice games in one app, in closed testing on Android, and the directions we are prototyping next.">
+  <meta name="twitter:description" content="Everything Bouncy Comet is making: Dice Duo, five two-player dice games in one Android app, and the directions we are prototyping next.">
   <meta name="twitter:image" content="https://bouncycomet.com/assets/img/og-image.jpg?v=16e1dc48">
   <meta name="twitter:image:alt" content="Bouncy Comet, an independent mobile game studio.">
   <link rel="icon" href="assets/icons/favicon.ico?v=2050a3d2" sizes="any">
@@ -65,7 +65,8 @@
       <div class="banner__copy">
         <p class="eyebrow">Our slate</p>
         <h1 class="h1 balance">Our <span class="pop">Games</span></h1>
-        <p class="lead">One app in closed testing, five games inside it, and a workbench of ideas behind it. This page is the whole list, with nothing dressed up as bigger than it is. When something ships, it appears here first.</p>
+        <!-- data-launch: both versions of a line are written here; js/main.js (LAUNCH SWITCH, top of the file) shows one. -->
+        <p class="lead"><span data-launch="soon">One app in closed testing on Google Play</span><span data-launch="live" hidden>One app on Google Play</span>, five games inside it, and a workbench of ideas behind it. This page is the whole list, with nothing dressed up as bigger than it is. When something ships, it appears here first.</p>
       </div>
       <div class="toy-heap" aria-hidden="true">
         <picture style="--w:46%; left:6%; top:16%; --tilt:-9deg; --bob:7.5s"><source type="image/webp" srcset="assets/art/toy-cone.webp?v=f39dc585 1x, assets/art/toy-cone@2x.webp?v=3998e43e 2x"><img src="assets/art/toy-cone.png?v=923b28d3" width="160" height="160" alt="" loading="eager"></picture>
@@ -83,7 +84,7 @@
     <div class="wrap split split--wide-left reveal">
       <div class="stack--lg">
         <p class="eyebrow">Featured title</p>
-        <h2 class="dd-title"><picture><source type="image/webp" srcset="assets/art/dice-duo-logo.webp?v=8ca54c96 1x, assets/art/dice-duo-logo@2x.webp?v=e64622bb 2x"><img src="assets/art/dice-duo-logo.png?v=6b7e9f2b" width="600" height="300" alt="Dice Duo" loading="eager"></picture> <span>2 Player Board Games</span></h2>
+        <h2 class="dd-title"><picture><source type="image/webp" srcset="assets/art/dice-duo-logo.webp?v=8ca54c96 1x, assets/art/dice-duo-logo@2x.webp?v=e64622bb 2x"><img src="assets/art/dice-duo-logo.png?v=6b7e9f2b" width="600" height="300" alt="Dice Duo" loading="eager"></picture> <span>2 Player Dice Games</span></h2>
         <p class="tagline">Pick a game. Challenge a friend.</p>
         <p class="lead">One app, five two-player dice games. Every game is played with a single die and chunky toy pieces, and every one can be learned in a round.</p>
         <ul class="ticks">
@@ -94,9 +95,11 @@
         </ul>
         <div class="btn-row">
           <a class="btn btn--primary btn--lg" href="diceback.html">See Dice Duo</a>
-          <span class="status">In closed testing on Android</span>
+          <span class="status" data-launch="soon">In closed testing on Google Play</span>
+          <a class="btn btn--ghost btn--lg" href="https://play.google.com/store/apps/details?id=com.bouncycomet.diceduo" data-launch="live" hidden>Get it on Google Play</a>
         </div>
-        <p class="muted">Coming soon to Google Play. No release date announced yet.</p>
+        <p class="muted" data-launch="soon">On Google Play in closed testing: only invited testers can open the store page today. No public release date announced yet.</p>
+        <p class="muted" data-launch="live" hidden>On Google Play for Android.</p>
       </div>
 
       <div class="phone-pair">
@@ -239,7 +242,7 @@
           <picture class="floater floater--wide" style="--size:56px; right:5%; top:66%; --depth:.9; --bob:5.5s; --delay:-1s"><source type="image/webp" srcset="assets/art/toy-star.webp?v=210b7ae7 1x, assets/art/toy-star@2x.webp?v=ae93a521 2x"><img src="assets/art/toy-star.png?v=64d28e29" width="160" height="160" alt="" loading="lazy"></picture>
         </div>
         <h2 class="h2 balance">Want to publish with us?</h2>
-        <p class="lead">We are a new studio with a five-game app in closed testing and a full pipeline behind it. If you publish casual mobile titles, tell us what you are looking for and we will send a playable build and straight answers about where the game is.</p>
+        <p class="lead">We are a new studio with a five-game app <span data-launch="soon">in closed testing on Google Play</span><span data-launch="live" hidden>on Google Play</span> and a full pipeline behind it. If you publish casual mobile titles, tell us what you are looking for and we will send a playable build and straight answers about where the game is.</p>
         <div class="btn-row">
           <a class="btn btn--comet btn--lg" href="contact.html">Start a conversation</a>
           <a class="btn btn--ghost btn--lg btn--wrap" href="mailto:partners@bouncycomet.com">partners@bouncycomet.com</a>
@@ -282,6 +285,7 @@
       <ul class="footer__links">
         <li><a href="privacy.html">Privacy Policy</a></li>
         <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="refunds.html">Refunds and Cancellations</a></li>
         <li><a href="account-deletion.html">Delete Dice Duo account</a></li>
         <li><a href="mailto:hello@bouncycomet.com">hello@bouncycomet.com</a></li>
       </ul>
@@ -293,6 +297,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=8120d787" defer></script>
+<script src="js/main.js?v=83903227" defer></script>
 </body>
 </html>

@@ -4,11 +4,36 @@
    Modules: mobile nav, sticky header, scroll reveal, footer year, rails
             (carousels), floating-toy parallax, screenshot lightbox,
             contact form, smooth anchor scroll, the rules of each game
-            (folded on a phone).
+            (folded on a phone), the launch switch.
    ========================================================================== */
 
 (function () {
   'use strict';
+
+  /* ======================================================================
+     LAUNCH SWITCH - is Dice Duo public on Google Play yet?
+     ----------------------------------------------------------------------
+     false  The game is on Google Play in closed testing: its store page opens
+            for enrolled testers only. Every page says "In closed testing on
+            Google Play" and offers "Tell me when it launches". This is how
+            the site ships.
+     true   The game is public. Every "closed testing" line becomes a
+            "Get it on Google Play" link, on every page at once.
+
+     LAUNCH DAY: change false to true on the line below. Nothing else.
+     Then publish as always (python tools/stamp_assets.py first, so browsers
+     fetch this file again).
+
+     How it works: a page writes both versions of a line and marks them
+     data-launch="soon" and data-launch="live". The "live" one also carries
+     the `hidden` attribute, so a browser that never runs this file shows the
+     "soon" version. initLaunch() (section 10) shows one set and hides the
+     other. The store address is written in the links themselves:
+     https://play.google.com/store/apps/details?id=com.bouncycomet.diceduo
+     ====================================================================== */
+
+  var DICE_DUO_IS_PUBLIC = false;
+
 
   /* ----------------------------------------------------------------------
      Helpers
@@ -476,6 +501,9 @@
 
     var note = $('.form__note', form) || $('#formNote');
     var TO = 'hello@bouncycomet.com';
+    // Player support and purchase questions go to the address every page names for them.
+    var SUPPORT = 'support@bouncycomet.com';
+    var SUPPORT_TOPICS = ['Player support', 'Purchase or refund'];
 
     // keepFocus: the note is announced (it is a live region) but the keyboard stays where it is.
     function showNote(message, isError, keepFocus) {
@@ -562,14 +590,16 @@
       bodyLines.push('--');
       bodyLines.push('Sent from bouncycomet.com');
 
-      var href = 'mailto:' + TO +
+      var to = SUPPORT_TOPICS.indexOf(topic) !== -1 ? SUPPORT : TO;
+
+      var href = 'mailto:' + to +
                  '?subject=' + encodeURIComponent(subject) +
                  '&body=' + encodeURIComponent(bodyLines.join('\n'));
 
       window.location.href = href;
 
       showNote('Your email app should have opened with the message ready to send. ' +
-               'If nothing happened, email ' + TO + ' directly.');
+               'If nothing happened, email ' + to + ' directly.');
     });
   }
 
@@ -629,10 +659,25 @@
 
 
   /* ----------------------------------------------------------------------
+     10. Launch switch
+         Shows the data-launch="live" version of every marked line when
+         DICE_DUO_IS_PUBLIC (top of this file) is true, and the
+         data-launch="soon" version when it is false.
+     ---------------------------------------------------------------------- */
+
+  function initLaunch() {
+    $$('[data-launch]').forEach(function (el) {
+      el.hidden = (el.getAttribute('data-launch') === 'live') !== DICE_DUO_IS_PUBLIC;
+    });
+  }
+
+
+  /* ----------------------------------------------------------------------
      Boot
      ---------------------------------------------------------------------- */
 
   function boot() {
+    try { initLaunch(); }        catch (e) { /* no-op */ }
     try { initNav(); }           catch (e) { /* no-op */ }
     try { initScroll(); }        catch (e) { /* no-op */ }
     try { initReveal(); }        catch (e) { /* no-op */ }
